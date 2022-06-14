@@ -1,0 +1,31 @@
+let data=[
+
+{  
+
+//mandatory for all //
+
+  Prodct ID:
+    image:https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5vxs7/18/prod_display_image/1634636034.6091--2021-10-1915:03:54--1818?format=webp,
+
+    Title:Chunky Butter Chicken Spread (Single Serve)
+    Details:
+    Net wt:35gms
+    Gross:
+    MRP:
+
+//as per filter option//
+
+    Dilevery:
+    Menu:
+    Pack size:
+
+// as per product page?//
+
+ productPage-details:Freshly roasted chunks of chicken coated in the ever-favourite butter chicken base make this spread a gourmet treat. This ready-to-eat, single-serve pack is ideal for your protein-rich, quick lunch break. Apply the mildly spicy spread generously on a roti or a naan and satiate your hunger and butter chicken cravings. Our chunky meat spreads have zero trans-fat and are preservative free. Order the Chunky Butter Chicken Spread online from Licious and get doorstep delivery.,
+   Bestbuy:Best before 25 days,
+   image1:https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5vxs7/18/prod_image/1634636036.2392--2021-10-1915:03:56--1818?format=webp,
+
+}
+
+
+]
