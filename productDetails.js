@@ -1,23 +1,16 @@
-
+// DUMMY DATA 
 let data={
-    ProductID:"chicken-107",
-    image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/041fd1e0-80fa-2cf1-387e-5c13b7310def/original/HeroShot.jpg?format=webp",
-    Title:"Chicken Drumstick",
-    Details:"Bone-in,juicy meat from the lower leg with a unique flav...",
-    Netwt:"450gms",
-    Gross:"600gms",
-    MRP:"269",
-  
-    Delivery:"Normal Delivery",
-    ChickenType:"Broiler",
-    BoneType:"Bone-in",
-    CutType:"Mince",
-    BestSuitedFor:"Roast",
-    PackSize:"Large Pack",
-  
-    productPageDetails:"A mix of dark and white meat, our large Chicken Curry Cut pieces include one leg, one wing without tip, and one breast quarter with backbone. Obtained from pasture-raised healthy chickens, the meat has a rich, juicy flavour with a tender, smooth and moderate-firm texture. ",
-    Serves:"4",
-    image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/041fd1e0-80fa-2cf1-387e-5c13b7310def/original/HeroShot.jpg?format=webp"
+    ProductId:"cook101",
+    image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/59f81a69-ae84-72e8-b310-92678caa5a4b/original/Crispy-Chicken-Wings-Tag_(1).jpg?format=webp",
+    Title:"Crispy Chicken Wings | Ready To Cook",
+    productPageDetails:"Craving crispy, juicy wings but don't have the time to make them from scratch? Licious Crispy Chicken Wings are what you need! Marinated in hot chilli seasoning, the wings are then coated in batter & covered in panko bread crumbs. This means that all you have to do is to deep-fry these wings & it's ready within 8 minutes! Have the crispy, juicy wings with a squeeze of lime or paired with your favourite condiment.",
+    Details:"Chicken wings marinated in spices & coated in panko crumbs.",
+    Netwt:"225gms", 
+    Pieces:"7-8",
+    MRP:"99",
+    Menu:"Wings",
+   image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/710f58cb-052c-7e81-a97b-3962aff07022/original/Crispy-Chicken-Wings-Hero-Shot-Cooked.jpg?format=webp",
+   
 }
 
 //PRODUCT DETAILS DISPLAY - 1
@@ -28,6 +21,12 @@ let title=document.createElement("h1")
 title.innerText=data.Title
 let details=document.createElement("p")
 details.innerText=data.productPageDetails
+let div2=document.createElement("div")
+let image5=document.createElement("img")
+image5.setAttribute("src", "https://d2407na1z3fc0t.cloudfront.net/Banner/Netwt.png")
+let netwt=document.createElement("p")
+netwt.innerText="Net wt."+data.Netwt;
+div2.append(image5, netwt)
 let price=document.createElement("h2")
 price.innerText="MRP:₹"+data.MRP
 let btn=document.createElement("button")
@@ -39,7 +38,7 @@ let delivery=document.createElement("p")
 delivery.innerText="Tomorrow 6 AM - 8 AM"
 
 document.querySelector(".image").append(image)
-document.querySelector(".details").append(title, details, price, btn, line, image2, delivery)
+document.querySelector(".details").append(title, details, div2, price, btn, line, image2, delivery)
 
 //PRODUCT DETAILS DISPLAY - 2
 

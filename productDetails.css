@@ -42,9 +42,11 @@
         line-height: 20px;
         color: gray;
         margin-bottom: 15px;
+        font-size: 14px;
        }
        .details>h1{
         color: #4a4a4a;
+        font-size: 28px;
        }
 
        .details>p:last-child{
@@ -55,6 +57,22 @@
         margin-bottom: -6px;
         margin-left: 140px;
        }
+
+       .details>div{
+        border: 1px solid gray;
+        border-radius: 5px;
+        display: flex;
+        margin-bottom: 15px;
+        font-size: 15px;
+       }
+       .details>div>img{
+        width: 25px;
+        height: 25px;
+        margin-top: 13px;
+        margin-right: 8px;
+        margin-left: 330px;
+       }
+
 
        #partition{
         width: 105%;
