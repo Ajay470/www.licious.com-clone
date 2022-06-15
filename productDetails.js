@@ -3,7 +3,7 @@ let data={
     ProductId:"cook101",
     image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/59f81a69-ae84-72e8-b310-92678caa5a4b/original/Crispy-Chicken-Wings-Tag_(1).jpg?format=webp",
     Title:"Crispy Chicken Wings | Ready To Cook",
-    productPageDetails:"Craving crispy, juicy wings but don't have the time to make them from scratch? Licious Crispy Chicken Wings are what you need! Marinated in hot chilli seasoning, the wings are then coated in batter & covered in panko bread crumbs. This means that all you have to do is to deep-fry these wings & it's ready within 8 minutes! Have the crispy, juicy wings with a squeeze of lime or paired with your favourite condiment.",
+    productPagedetails:"Craving crispy, juicy wings but don't have the time to make them from scratch? Licious Crispy Chicken Wings are what you need! Marinated in hot chilli seasoning, the wings are then coated in batter & covered in panko bread crumbs. This means that all you have to do is to deep-fry these wings & it's ready within 8 minutes! Have the crispy, juicy wings with a squeeze of lime or paired with your favourite condiment.",
     Details:"Chicken wings marinated in spices & coated in panko crumbs.",
     Netwt:"225gms", 
     Pieces:"7-8",
@@ -20,7 +20,7 @@ image.setAttribute("src", data.image)
 let title=document.createElement("h1")
 title.innerText=data.Title
 let details=document.createElement("p")
-details.innerText=data.productPageDetails
+details.innerText=data.productPagedetails
 let div2=document.createElement("div")
 let image5=document.createElement("img")
 image5.setAttribute("src", "https://d2407na1z3fc0t.cloudfront.net/Banner/Netwt.png")
