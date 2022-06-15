@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+        body{
+            background-color: #f7f6f6;
+            font-family: "Source Sans Pro";
+        }
+        #main{
+            width: 1100px;
+            margin: auto;
+            display: flex;
+            height: 400px;
+            margin-top: 100px;
+            background-color: white;
+        }
+
+        #main>.image>img{
+            width: 550px;
+        }
+
+        #main>.details{
+            box-sizing: border-box;
+            padding: 0px 30px;
+            text-align: justify;
+        }
+
+        .details>button{
+            background-color: #d11243 ;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            padding: 9px 10px;
+            margin-left: 270px;
+        }
+
+       .details>h2{
+        display: inline;
+        color: #d11243 ;
+       }
+
+       .details>p{
+        line-height: 20px;
+        color: gray;
+        margin-bottom: 15px;
+       }
+       .details>h1{
+        color: #4a4a4a;
+       }
+
+       .details>p:last-child{
+        display: inline;
+        margin-left: 8px;
+       }
+       .details>img{
+        margin-bottom: -6px;
+        margin-left: 140px;
+       }
+
+       #partition{
+        width: 105%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: white;
+        margin-top: 80px;
+        height: 330px;
+        margin: 80px -20px 80px -20px;
+       }
+
+       #header{
+        width: 600px;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+       }
+       #header>h2{
+        display: inline;
+        margin-right: 3px;
+        color: #4a4a4a;
+       }
+       #header>h2:nth-child(2){
+        color: #d11243;
+        font-size: 27px;
+       }
+
+       #partition>#body{
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+       }
+
+       #partition>#body>div{
+        width: 140px;
+        text-align: center;
+        font-size: 12px;
+       }
+
+       #partition>#body img{
+        width: 140px;
+       }
+       
+       #body>div:first-child{
+        padding-top: 30px;
+       }
+       #body>div:nth-child(2){
+        padding-top: 50px;
+       }
+       #body>div:nth-child(3){
+        padding-top: 20px;
+       }
+
+       #finalpay{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 1000px;
+        height: 115px;
+        background-color: white;
+        margin: auto;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+       }
+
+       #product{
+        display: flex;
+
+       }
+
+       #product>img{
+        width: 140px;
+        height: 90px;
+        border-radius: 5px;
+       }
+
+       #price{
+        width: 450px;
+       }
+       #price>h2{
+        display: inline;
+       }
+
+       #price>p{
+        display: inline;
+        margin-left: 8px;
+       }
+
+       #price>img{
+        margin-bottom: -6px;
+        margin-left: 120px;
+       }
+
+       #price>button{
+        background-color: #d11243 ;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            padding: 9px 10px;
+            margin-left: 230px;
+       }
+
+       #product>div{
+        margin-left: 10px;
+       }
+
+       #price>h2{
+        color: #d11243;
+       }
