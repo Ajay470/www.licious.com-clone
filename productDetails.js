@@ -9,10 +9,8 @@ let data={
     Pieces:"7-8",
     MRP:"99",
     Menu:"Wings",
-   image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/710f58cb-052c-7e81-a97b-3962aff07022/original/Crispy-Chicken-Wings-Hero-Shot-Cooked.jpg?format=webp",
-   
+   image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/710f58cb-052c-7e81-a97b-3962aff07022/original/Crispy-Chicken-Wings"
 }
-
 //PRODUCT DETAILS DISPLAY - 1
 
 let image=document.createElement("img")
