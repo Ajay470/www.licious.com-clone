@@ -11,6 +11,9 @@ let data={
     Menu:"Wings",
    image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/710f58cb-052c-7e81-a97b-3962aff07022/original/Crispy-Chicken-Wings"
 }
+
+//let data=JSON.parse(localStorage.getItem("in-page-obj"));
+
 //PRODUCT DETAILS DISPLAY - 1
 
 let image=document.createElement("img")
@@ -29,6 +32,7 @@ let price=document.createElement("h2")
 price.innerText="MRP:₹"+data.MRP
 let btn=document.createElement("button")
 btn.innerText="ADD TO CART"
+btn.addEventListener("click", addtoCart)
 let line=document.createElement("hr")
 let image2=document.createElement("img")
 image2.setAttribute("src", "https://www.licious.in/img/rebranding/express_delivery.svg")
@@ -55,6 +59,7 @@ let price2=document.createElement("h2")
 price2.innerText="MRP:₹"+data.MRP
 let btn2=document.createElement("button")
 btn2.innerText="ADD TO CART"
+btn2.addEventListener("click", addtoCart)
 let line2=document.createElement("hr")
 let image4=document.createElement("img")
 image4.setAttribute("src", "https://www.licious.in/img/rebranding/express_delivery.svg")
@@ -62,3 +67,9 @@ let delivery2=document.createElement("p")
 delivery2.innerText="Tomorrow 6 AM - 8 AM"
 
 document.querySelector("#price").append(price2, btn2, line2, image4, delivery2)
+
+function addtoCart(){
+    let cartProduct=JSON.parse(localStorage.getItem("cartpage")) || []
+    cartProduct.push(data)
+    localStorage.setItem("cartpage", JSON.stringify(cartProduct));
+}
