@@ -9,7 +9,7 @@ image.setAttribute("src", data.image)
 let title=document.createElement("h1")
 title.innerText=data.Title
 let details=document.createElement("p")
-details.innerText=data.productPagedetails
+details.innerText=data.productPageDetails
 let div2=document.createElement("div")
 let image5=document.createElement("img")
 image5.setAttribute("src", "https://d2407na1z3fc0t.cloudfront.net/Banner/Netwt.png")
