@@ -70,6 +70,12 @@ document.querySelector("#price").append(price2, btn2, line2, image4, delivery2)
 
 function addtoCart(){
     let cartProduct=JSON.parse(localStorage.getItem("cartpage")) || []
-    cartProduct.push(data)
-    localStorage.setItem("cartpage", JSON.stringify(cartProduct));
+    let present=false
+    let filtered=cartProduct.filter(function(el){
+        return el.ProductId==data.ProductId
+    })
+    if(filtered.length==0){
+        cartProduct.push(data)
+        localStorage.setItem("cartpage", JSON.stringify(cartProduct))
+    }  
 }
