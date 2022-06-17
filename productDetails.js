@@ -58,12 +58,16 @@ document.querySelector("#price").append(price2, btn2, line2, image4, delivery2)
 
 function addtoCart(){
     let cartProduct=JSON.parse(localStorage.getItem("cartpage")) || []
-    let present=false
     let filtered=cartProduct.filter(function(el){
-        return el.ProductId==data.ProductId
+        
+        return el.ProductID === data.ProductID;
+        
     })
-    if(filtered.length==0){
+    console.log(filtered)
+    if(filtered.length>0){
+        alert("Product is already in Cart")
+    }else{
         cartProduct.push(data)
         localStorage.setItem("cartpage", JSON.stringify(cartProduct))
-    }  
+    }
 }
