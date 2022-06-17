@@ -1,18 +1,6 @@
-// DUMMY DATA 
-let data={
-    ProductId:"cook101",
-    image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/59f81a69-ae84-72e8-b310-92678caa5a4b/original/Crispy-Chicken-Wings-Tag_(1).jpg?format=webp",
-    Title:"Crispy Chicken Wings | Ready To Cook",
-    productPagedetails:"Craving crispy, juicy wings but don't have the time to make them from scratch? Licious Crispy Chicken Wings are what you need! Marinated in hot chilli seasoning, the wings are then coated in batter & covered in panko bread crumbs. This means that all you have to do is to deep-fry these wings & it's ready within 8 minutes! Have the crispy, juicy wings with a squeeze of lime or paired with your favourite condiment.",
-    Details:"Chicken wings marinated in spices & coated in panko crumbs.",
-    Netwt:"225gms", 
-    Pieces:"7-8",
-    MRP:"99",
-    Menu:"Wings",
-   image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/710f58cb-052c-7e81-a97b-3962aff07022/original/Crispy-Chicken-Wings"
-}
 
-//let data=JSON.parse(localStorage.getItem("in-page-obj"));
+
+let data=JSON.parse(localStorage.getItem("in-page-obj"));
 
 //PRODUCT DETAILS DISPLAY - 1
 
