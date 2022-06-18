@@ -1,6 +1,25 @@
+let data={
+    ProductID:"chicken-101",
+    image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/58b7f670-6e56-a198-73a6-039b07182868/original/ChickenLC.jpg?format=webp",
+    Title:"Chicken Curry Cut (Small Pcs)",
+    Details:"Small pieces of bone-in & boneless chicken for curries",
+    Netwt:"500gms",
+    Gross:"526gms",
+    MRP:"170",
+  
+    Delivery:"Normal Delivery",
+    ChickenType:"Broiler",
+    BoneType:"Bone-in",
+    CutType:"Breast",
+    BestSuitedFor:"Grill",
+    PackSize:"Regular",
+  
+    productPageDetails:"With our Chicken Curry Cut on hand, making a delicious chicken curry has never been easier! Licious Chicken Curry Cut is a mix of bone-in, small pieces of breast, wing (without the tip), leg and thigh meat, enough to feed a small to medium-sized family. This Small pack consists of 13-16 pieces of smaller cuts of chicken, for when you are making a smaller portion of curry or looking to reduce cooking time. Smaller pieces of chicken cook faster because of the higher surface-to-volume ratio.These pieces remain juicy and turn tender once cooked. Make Andhra Style Chicken Curry, Dhaba Style Chicken Curry, Mughlai Chicken Curry and more with Licious Chicken Curry Cut (Small).  Licious chickens are raised on bio-secure farms and are antibiotic-residue free.",
+    Serves:"4",
+    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_5785b9065d7e1/3/prod_display_image/1584770437.9208--2020-03-2111:30:37--738?format=webp"
+  }
 
-
-let data=JSON.parse(localStorage.getItem("in-page-obj"));
+//let data=JSON.parse(localStorage.getItem("in-page-obj"));
 
 //PRODUCT DETAILS DISPLAY - 1
 
@@ -12,10 +31,16 @@ let details=document.createElement("p")
 details.innerText=data.productPageDetails
 let div2=document.createElement("div")
 let image5=document.createElement("img")
-image5.setAttribute("src", "https://d2407na1z3fc0t.cloudfront.net/Banner/Netwt.png")
+image5.setAttribute("src", "https://d2407na1z3fc0t.cloudfront.net/Banner/ColdCut.png")
+image5.setAttribute("id", "imgwt")
 let netwt=document.createElement("p")
 netwt.innerText="Net wt."+data.Netwt;
-div2.append(image5, netwt)
+let image6=document.createElement("img")
+image6.setAttribute("src", "https://d2407na1z3fc0t.cloudfront.net/Banner/Netwt.png")
+
+let grosswt=document.createElement("p")
+grosswt.innerText="Gross Wt."+data.Gross;
+div2.append(image6, grosswt, image5, netwt)
 let price=document.createElement("h2")
 price.innerText="MRP:₹"+data.MRP
 let btn=document.createElement("button")
