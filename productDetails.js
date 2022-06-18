@@ -68,6 +68,7 @@ function addtoCart(){
         alert("Product is already in Cart")
     }else{
         cartProduct.push(data)
-        localStorage.setItem("cartpage", JSON.stringify(cartProduct))
+        localStorage.setItem("cartpage", JSON.stringify(cartProduct));
+        window.location.reload();
     }
 }
