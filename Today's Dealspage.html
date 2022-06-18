@@ -1,1 +1,1713 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todays's Deals page</title>
+
+    <style>
+* {
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Lato', sans-serif;
+font-family: 'Rubik', sans-serif;
+      font-size: 15px;
+  
+    }
+    body{
+      background-color: #F7F6F6;
+      width: 1500px;
+    }
+.card{
+            display: grid;
+            grid-template-columns: repeat(3,420px);
+            width: 1300px;
+            margin: auto;
+
+            gap: 18px;
+        }
+        .mainbox{
+            /* border: 1px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+       border-radius: 10px; 
+       border-radius: 10px;
+       background-color: white;
+      
+            
+        }
+        .topimg{
+      width: 100%;
+      border-radius: 10px 10px 0px 0px ;
+      
+    }
+    .carddetails{
+      padding: 15px 15px 0px 15px;
+      background-color: white;
+     
+    }
+    .cardbottom{
+      padding: 0px 15px 0px 15px;
+      /* background-color: white; */
+     
+    }
+    .cardtitle{
+      line-height: 55px;
+      font-weight: 600;
+       
+      white-space: nowrap  ;
+      width: 90%;
+      overflow-wrap: break-word;
+
+    
+    }
+    .carddesc{
+      line-height: 30px;
+      color: rgb(98, 98, 98);
+      
+      
+    }
+    .cardweight{
+      font-weight: 600;
+      display: flex;
+      line-height: 45px;
+      
+      
+    }
+    .cardweight>span{
+      margin-right: 40px;
+      font-size: 15px;
+      /* margin-bottom: 15px; */
+      
+    }
+    .cardaction{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .endbotton1{
+      /* border: 1px solid red; */
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .cardbottomspan{
+    margin-left: 12px;
+    color: rgb(98, 98, 98);
+  
+  }
+    .cardactionmain{
+      
+      display: flex;
+      width: 55%;
+      justify-content: space-between;
+      align-items: baseline;
+
+    }
+    .rate{
+      font-size: 20px;
+      color: #d11243;
+      font-weight: 600;
+
+    }
+    .ratelogo{
+      color: rgb(98, 98, 98);
+
+    }
+    .rateprice{
+
+  color: rgb(98, 98, 98);
+  text-decoration: line-through;
+    }
+    .ratediscount{
+      color: green;
+    font-weight: 600;
+    font-size: 17px;
+
+      
+    }
+    .buttoncart{
+      background-color: #d11243;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+
+
+ 
+/* /////////////////////////////////////////////////////////// */
+        .bottomstatic {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+          
+        }
+.static{
+    width: 1300px; 
+    margin: auto;
+}
+        .bottomstatic>span {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+        }
+
+        .bottomstatic>span>span {
+
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .bottomstatic>span>h1 {
+
+            font-size: 25px;
+            color: rgb(98, 98, 98);
+            margin-right: 55px;
+        }
+
+        .topstatic {
+            margin: 20px;
+            margin-left: 0px;
+            text-decoration: none;
+            
+        }
+
+        .topstatic>span {
+            margin: 10px 10px 10px 0px;
+        }
+/* ///////////////////////////////////// */
+        /* .filterpart {
+            padding: 20px 20px 20px 50px;
+            width: 1280px;
+            margin-left: 200px;
+            padding-left: 0px;
+            position: sticky;
+            margin: auto;
+            top: 80px;
+            background-color: #F7F6F6;
+        } */
+        .filterpart {
+            padding: 20px 20px 20px 50px;
+            width: 1500px;
+            /* margin-left: 100px; */
+            padding-left: 100px;
+            position: sticky;
+            /* border: 1px solid red; */
+            top: 80px;
+           
+          
+            background-color:  #F7F6F6;
+        }
+
+        .filterpart>span {
+            margin-right: 20px;
+
+
+        }
+
+        .Delivery {
+            margin-right: 20px;
+            /* background-color: red; */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(180, 180, 180);
+
+
+        }
+
+        .Menu {
+            margin-right: 20px;
+
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(180, 180, 180);
+        }
+
+        .pack {
+            margin-right: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(180, 180, 180);
+
+
+        }
+
+        .imgcato {
+            display: flex;
+            width: 1300px;
+            /* border: 1px solid red; */
+            margin: auto;
+            justify-content: space-between;
+
+        }
+
+        .concato {
+            display: flex;
+            width: 1300px;
+            /* border: 1px solid red; */
+            margin: auto;
+            justify-content: space-between;
+        }
+
+        .concato>span {
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        /* for cata */
+        #cata {
+            display: flex;
+            text-align: center;
+            padding-left: 100px;
+            background-color: white;
+
+
+        }
+
+        .cataimg {
+            width: 80px;
+            /* margin: 10px; */
+        }
+
+        .cataspan {
+            margin: 10px;
+
+
+        }
+
+        .catatxt>p {
+            margin: 10px;
+        }
+
+        .catatxt {
+
+            color: gray;
+            text-decoration: none;
+        }
+
+        br+span:hover {
+            color: #d11243;
+        }
+
+        /* footer */
+         /* *{
+            margin: 0px;
+            padding: 0px;
+            background-color: #f7f6f6;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(109, 109, 109);
+        } */
+        #footcontainer p{
+            line-height: 25px;
+            font-size: 15px;
+        }
+        #footContainer{
+           
+            padding-top: 20px;
+            width: 85%;
+            height: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(109, 109, 109);
+            margin: 0px auto 0px auto;
+            padding-bottom: 20px;
+        }
+        #foottop{
+            margin: 20px;
+        }
+        #foottop>img{
+            height: 50px;
+        }
+
+        #footContainer hr{
+           top: 40px;
+           
+           width: 85%;
+           padding-right: 10px;
+          border-color: transparent;
+          background-color: rgb(225, 225, 225);
+        }
+        #seconddivision{
+            display: flex;
+            margin: 0px auto 20px auto;
+          
+            height: auto;
+            
+        }
+        #footContainer #uselink{
+            display: flex;
+        }
+        #uselink>div:nth-child(1){
+            height: auto;
+            width: 150px;
+           
+            padding: 10px;
+        }
+
+        #uselink>div:nth-child(2){
+            height: 400px;
+            width: 340px;
+            
+            padding: 10px;
+        }
+        #footContainer .hhhh{
+            font-weight: 300;
+            font-weight: bold;
+            color: rgb(109, 109, 109);
+           
+
+        }
+        #footContainer #uselink>p{
+            font-size: 15px;
+        }
+        #socialcatch{
+            bottom: 0px;
+            display: flex;
+            align-items: center;
+        }
+        #footContainer #connt{
+            display: flex;
+        }
+        #connt>div:nth-child(1){
+            height: auto;
+            width: 239px;
+            
+            padding: 10px;
+        }
+
+        #connt>div:nth-child(2){
+            height: 400px;
+            width: 210px;
+           
+            padding: 5px;
+        }
+        /* #connt>div:nth-child(3){
+            height: 400px;
+            width: 350px;
+            border: 1px solid red;
+            padding: 10px;
+        } */
+        #connt>div>img{
+            width: 130px;
+        }
+     
+        .devider{
+            display: flex;
+            align-items: center;
+          
+
+        }
+        #city{
+            text-align: center;
+        }
+        .linefull{
+            width: 99%;
+        }
+        #copyright{
+            text-align: center;
+        }
+
+        /* nav+login */       /* nav+login */       /* nav+login */        /* nav+login */
+         /* *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        } */
+        .pointer{
+            height:6px;
+            width: 6px;
+            border-radius: 100%;
+            background-color: #b4b4b4;
+        }
+        #contactuso{
+            background-color: #eaeaea;
+            text-align: right;
+            font-size:14px;
+            color: #787878;
+            border-color: transparent;
+            text-align: center;
+            cursor: pointer;
+            width: 30%;
+        }
+        #topnav{
+            width: 100%;
+            height: 25px;
+           display: flex;
+            background-color: #eaeaea;
+            font-size:14px;
+            font-weight:7px;
+            color: #787878;
+           
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #topnav>div{
+            width: 1150px;
+            display: flex;
+            height: 100%;
+            margin: auto;
+
+        }
+        #topnav>div>div:nth-child(1){
+            width: 40%;
+            margin: 0px;
+           
+            display: flex;
+            align-items: center;
+        }
+        #topnav>div>div:nth-child(2){
+            width: 60%;
+            margin: 0px;
+           
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+        /* #topnav>div>div>p,img{
+            padding-right:10px;
+            padding-left: 10px; */
+        /* } */
+        #navbar{
+            position:sticky;
+            top: 0px;
+            width: 100%;
+            height: 80px;
+            background-color: #ffffff;
+        }
+        #navbar>div{
+            width: 1150px;
+            height: 100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #location{
+            display: flex;
+            width: auto;
+            height: 70%;
+           cursor: pointer;
+            align-items: center;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #searchBar{
+            border: 1px solid rgb(213, 213, 213);
+            width:480px;
+            height: 40px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding: 7px 16px;
+
+        }
+        #searchBar>input{
+            width: 95%;
+            height: 100%;
+            background-color: #f8f8f8;
+            font-size: 20px;
+            border-color: transparent;
+            /* border: none; */
+        }
+        #searchBar>input[type=text]:focus {
+             border: 0px solid #555;
+        }
+           
+        
+        
+       
+
+
+        .signin{
+            display: flex;
+            height: 100%;
+            width: 140px;
+            align-items: center;
+            cursor: pointer;
+        }
+        .signin>div{
+            border: 1px solid rgb(166, 160, 160);
+            width: 40px;
+            height: 40px;
+            margin:auto 10px;
+            border-radius: 100%;
+        }
+        .signin>div>img{
+           padding: 5px;
+           width: 30px;
+        }
+        #cartdiv{
+            border-color: transparent;
+        }
+        /* #demo{
+            width: 100%;
+            height: 5005px;
+        } */
+
+  /* pop pop window for sign up ams sign in */  /* pop pop window for sign up ams sign in */  /* pop pop window for sign up ams sign in */
+        .signin-slide{
+            position: fixed;
+            /* add js */
+            right: -500px;    
+            /* right: 0px; */
+             /* add js */
+            top: 0px;
+            height: 100%;
+            width: 430px;
+            background-image: url(https://i.postimg.cc/mr2myCMH/Capture.png);
+            background-size: cover;  
+            display: flex;
+            flex-direction: column-reverse;
+            /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+            box-shadow: 0 0 35px;
+            justify-content: space-between;
+            transition: all ease 0.5s;
+        }
+        .signin-slide #signindiv{
+            background-color: white;
+            margin: auto auto 0px auto;
+            width:90%;
+            height: 410px;
+            border-radius: 5px 5px 0px 0px;
+            padding: 10px;
+            
+        }
+        .signin-slide #signindiv>form>input{
+            width: 90%;
+            height: 20px;
+            margin: 15px auto 10px auto;
+            font-size: 20px;
+            padding: 17px;
+           border-color:gray;
+            border-width: 0px 0px 1px 0px;
+        }
+        .signin-slide a{
+            color: rgb(255, 42, 78);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .signin-slide p{
+            text-align: center;
+        }
+        .signin-slide #signindiv>form>button{
+            width: 100%;
+            height: 50px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(255, 42, 78);
+            border-color: transparent;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+        .signin-slide .close-logpop{
+            position: absolute;
+            top: 6px;
+            right: 19px;
+            /* right: -200px; */
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+             transition: all ease 0.5s;
+        }
+        /* pop pop window for sign up ams sign in */  /* pop pop window for sign up ams sign in */  /* pop pop window for sign up ams sign in */
+        .signup-slide{
+            position: fixed;
+            /* add js */
+            right: -500px;    
+            /* right: 0px; */
+             /* add js */
+            top: 0px;
+            height: 100%;
+            width: 430px;
+            background-image: url(https://i.postimg.cc/mr2myCMH/Capture.png);
+            background-size: cover;  
+            display: flex;
+            flex-direction: column-reverse;
+            /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+            box-shadow: 0 0 35px;
+            justify-content: space-between;
+            transition: all ease 0.5s;
+        }
+        .signup-slide #signupdiv{
+            background-color: white;
+            margin: auto auto 0px auto;
+            width:90%;
+            height: 410px;
+            border-radius: 5px 5px 0px 0px;
+            padding: 10px;
+            
+        }
+        .signup-slide #signupdiv>form>input{
+            width: 90%;
+            height: 20px;
+            margin: 15px auto 10px auto;
+            font-size: 20px;
+            padding: 17px;
+           border-color:gray;
+            border-width: 0px 0px 1px 0px;
+
+
+        }
+        .signup-slide a{
+            color: rgb(255, 42, 78);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .signup-slide p{
+            text-align: center;
+        }
+        .signup-slide #signupdiv>form>button{
+            width: 100%;
+            height: 50px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(255, 42, 78);
+            border-color: transparent;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+        .signup-slide .close-signpop{
+            position: absolute;
+            top: 6px;
+            right: 19px;
+            /* right: -200px; */
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+             transition: all ease 0.5s;
+        }
+
+
+
+
+        /* loginends */
+
+ 
+    </style>
+</head>
+
+<body>
+        <!-- /* nav+login */       /* nav+login */       /* nav+login */        /* nav+login */ -->
+        <div id="topnav">
+            <div>
+                <div class="topnavx">
+                    <p>Why Licious?</p>
+                    <div class="pointer"></div>
+                    <p>Download App</p>
+                    <img src="https://www.licious.in/img/rebranding/ios_app_icon.svg" alt="" >
+                    <img src="https://www.licious.in/img/rebranding/android_app_icon.svg" alt="">
+                </div>
+                <div>
+                     <select name="" id="contactuso">
+                        <option value="">Contact Us</option>
+                        <option value="">1800-4190-786</option>
+                        <option value="">talktous@licious.com</option>
+                     </select>
+                     <div class="pointer"></div>
+                     <p>Careers @Licious</p>
+                     <div class="pointer"></div>
+                     <p>About Us</p>
+                     <div class="pointer"></div>
+                     <p>FSSC 22000 Certification</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="navbar">
+            <div>
+                <img src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="">
+                <div id="location">
+                    <img src="https://www.licious.in/img/rebranding/location_icon.svg" alt="">
+                    <div>
+                        <p>BENGALURU</p>
+                        <b>Bengaluru, Karnatak...  ﹀</b>
+                    </div>
+                    
+                </div>
+                <div id="searchBar">
+                    <input type="text" placeholder="Search for any delicious product" onclick="borderxxx" id="xxxin">
+                    <img src="https://www.licious.in/img/rebranding/search_icon.svg" alt="">
+                </div>
+    
+    
+                <div class="signin">
+                    <div>
+                        <img src="https://www.licious.in/img/rebranding/profile_icon.svg" alt="">
+                        
+                    </div>
+            
+                        <p class="font" id="person">Login</p>
+                    
+                    
+                </div>
+    
+                <div class="signin">
+                    <div id="cartdiv">
+                        <img src="https://www.licious.in/img/rebranding/cart_icon.svg" alt="">
+                        
+                    </div>
+                    <p class="font">Cart</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="demo">
+        </div> -->
+        <!-- signup-slide in-->
+       
+
+
+        <!-- login ends -->
+
+    <div id="cata">
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Today's Dealspage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/59724ce1-1f3d-f1f4-c688-c05a0005c8de/original/Circle@3x-16.png?format=webp"
+                    alt="">
+                <br>
+                <span class="catatxt">
+                    <p>Today's Deals</p>
+                </span>
+
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Chickenpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c777a59e-f2f7-dd37-9ba0-7f385aed3eb3/original/Circle@3x.png?format=webp"
+                    alt="">
+                <br>
+                <span class="catatxt">
+                    <p>Chicken </p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Fish & Seafoodpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/e13f894d-d51e-beea-4ef5-aab1a193d373/original/Circle@3x-13.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Fish & Seafood </p>
+                </span>
+
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Muttonpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/4d9c0c72-c070-dd56-4a2e-9fbfe8230f42/original/Circle@3x-1.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Mutton </p>
+                </span>
+            </a>
+        </span>
+
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Ready to Cookpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/450e3217-59ac-8145-3bee-296e729f03bf/original/Circle@3x-17.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Ready to Cook </p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Prawnspage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/f7ef9035-9baa-b9b5-d56d-97059ffe6c39/original/Circle@3x-18.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Prawns</p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="spreadpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/7b500ec8-8001-436b-74ca-430fd4e2ff0b/original/Circle@3x-14.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Spreads</p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Eggspage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/27cf80b9-2a8f-d70d-7695-8142c85e5bcb/original/Circle@3x-2.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Eggs </p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Kebabs & Tandoorpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c7cde9d8-4e31-8ea5-79a4-cce48c7ed109/original/Circle@3x-15.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Kebabs & Tandoor</p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Combospage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/3130cc9b-71e5-ff33-d413-9fcda531afac/original/Circle@3x-20.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p>Combos</p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="BestSeller.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/90882875-962a-8e96-6c45-f7d6492abd3b/original/Circle@3x-16.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p>Bestsellers </p>
+                </span>
+            </a>
+        </span>
+
+
+    </div>
+
+
+    <div class="cointainer">
+
+        <div class="static">
+            <div class="topstatic">
+                <span> <a href="">Home</a></span> <span> > </span><span>Todays's Deals</span>
+            </div>
+            <div class="bottomstatic">
+                <span>
+                    <h1>Todays's Deals</h1>
+                </span>
+                <span>
+                    <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_60828eb6451d0" alt="">
+                    <span>Ready To Eat</span>
+                    <span>|</span>
+                </span>
+
+                <span>
+                    <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_60828f0a9667d" alt="">
+                    <span>Real Meat Chunks</span>
+                    <span>|</span>
+                </span>
+
+                <span>
+                    <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_6082903259d91" alt="">
+                    <span>No Artificial Preservatives</span>
+                    <span>|</span>
+                </span>
+
+                <span>
+                    <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_6082906db5f90" alt="">
+                    <span>Delicious Flavours</span>
+                </span>
+
+
+            </div>
+
+
+        </div>
+        <div class="filterpart">
+            <!-- append filterpart here -->
+            <span><button class="Delivery">Express Delivery</button>
+                <!-- <select id="Delivery">  
+                <option value="Express Delivery">Express Delivery</option>
+            </select> -->
+            </span>
+            <span> <select class="Menu">
+                    <option>Menu</option>
+                    <option value="Chicken Spreads">Chicken Spreads</option>
+                    <option value="Prawn Spreads">Prawn Spreads</option>
+                    <option value="Egg Spreads">Egg Spreads</option>
+                </select></span>
+            <span> <select class="pack">
+                    <option>Pack Size </option>
+                    <option value="Mini">Mini</option>
+                    <option value="Combo">Combo</option>
+                    <option value="Regular">Regular</option>
+                </select></span>
+
+
+
+
+        </div>
+        <div class="signin-slide">
+    
+    
+            <div id="signindiv">
+                <form action="" id="signinin">
+                    <h2>Sign In</h2>
+    
+                    <input type="email" placeholder="Enter user id" id="inmail" >
+                    <br>
+                    <input type="password" placeholder="Enter password" id="inpassword">
+                
+                    <br>
+                    <button >Sign in</button>
+                    <p>Don't have an account.<a id="signupage">Sign Up</a>.</p>
+                    <p>By signing in you agree to our <a href="tandc.html">Term and conditions</a>.</p>
+    
+                </form>
+            </div>
+            <div class="close-logpop">
+                ╳
+            </div>
+        </div>
+        <!-- signup-slide up-->
+        <div class="signup-slide">
+    
+    
+            <div id="signupdiv">
+                <form action="" id="signuppp">
+                    <h2>Sign up</h2>
+                    <input type="text" placeholder="Enter first name" id="sname">
+                    <br>
+                    <input type="text" placeholder="Enter last name" id="galtisemistake">
+                    <br>
+    
+                    <input type="text" placeholder="Enter email" id="semail">
+                    <br>
+                    <input type="password" placeholder="Enter password" id="spassword">
+                
+                    <br>
+                    <button>Sign up</button>
+                    <p>Already have an account.<a id="signuptosignin">Sign in</a>.</p>
+                </form>
+            </div>
+            <div class="close-signpop">
+                ╳
+            </div>
+        </div>
+        <div class="card">
+            <!-- <a id="card-a"> -->
+
+            <!-- </a> -->
+
+            <!-- append all products here -->
+        </div>
+        
+
+
+
+    </div>
+    <div id="footContainer">
+        <!-- <hr> -->
+        <div id="foottop">
+            <img src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="">
+        </div>
+    
+        <div id="seconddivision">
+            <div id="uselink">
+                <div>
+                    <p class="hhhh">USEFUL LINKS
+                    </p>
+                    <p>Why Licious?</p>
+                    <p>Refer & Earn</p>
+                    <p>Licious Cash & Cash+</p>
+                    <p>Careers</p>
+                    <p>BLOG</p>
+                    <p>Campaign</p>
+                    <p>Bug Bounty Guidelines</p>
+                    <p>About Us</p>
+                    <p>FSSC 22000 Certification</p>
+                    <p>FSSAI Licenses</p>
+                    <p>Sitemap</p>
+                  
+                </div>
+                <div>
+                    <p class="hhhh">EXPERIENCE LICIOUS APP ON MOBILE</p>
+                    <br>
+                    <img src="https://www.licious.in/img/rebranding/app-store-new.svg" alt="">
+                    <img src="https://www.licious.in/img/rebranding/play-store-new.png" alt="">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+                    <span id="socialcatch">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <p class="hhhh">KEEP IN TOUCH  </p>
+                        &nbsp;
+                        &nbsp;
+                            
+                            
+                            <img src="https://www.licious.in/img/rebranding/insta_color.png" alt="">
+                            &nbsp;
+                            &nbsp;
+                            <img src="https://www.licious.in/img/rebranding/fb_color.png" alt="">
+                            &nbsp;
+                            &nbsp;
+                            <img src="https://www.licious.in/img/rebranding/twitter_color.png" alt="">
+                        
+                    </span>
+    
+                </div>
+            </div>
+            <div id="connt">
+                <div>
+                    <p class="hhhh">CONTACT US</p>
+                    <p>Call: 1800-4190-786</p>
+                    <p>Talktous@licious.com</p>
+                    <br><br>
+    
+                    <p class="hhhh">REGISTERED OFFICE ADDRESS:</p>
+                    <p>House of Licious, Zed Pearl, No 12,</p>
+                    <p>Domlur Layout</p>
+                    <p>Bangalore, Karnataka - 560071</p>
+                
+                </div>
+    
+                <div>
+                    <p>T&C</p>
+                    <p>FAQ</p>
+                    <p>Privacy Policy</p>
+                    <p class="hhhh">HAVE SECURITY CONCERN?</p>
+                    <p>Mail us to:</p>
+                    <p>security@licious.com</p>
+                </div>
+    
+                <div>
+                    <img src="https://www.licious.in/img/rebranding/3-dsecure.png" alt="">
+                </div>
+            </div>
+    
+        </div>
+       <div class="devider">
+        <p class="hhhh">CITIES WE SERVE</p>
+        <hr>
+       </div>
+       <p id="city">Bengaluru &nbsp; | &nbsp;NCR &nbsp; | &nbsp; Hyderabad  &nbsp; | &nbsp;Chandigarh &nbsp; | &nbsp; Panchkula &nbsp; | &nbsp; Mohali &nbsp; | &nbsp; Mumbai &nbsp; | &nbsp; Pune  &nbsp; | &nbsp;Chennai  &nbsp; | &nbsp;Coimbatore  &nbsp; | &nbsp;Jaipur &nbsp; | &nbsp; Cochin  &nbsp; | &nbsp;Vijayawada &nbsp; | &nbsp; Visakhapatnam  &nbsp; | &nbsp;Pondicherry  &nbsp; | &nbsp;Kolkata  &nbsp; | &nbsp;Trichy &nbsp; | &nbsp; Lucknow &nbsp; | &nbsp; Kanpur  &nbsp; | &nbsp;Agra &nbsp; | &nbsp; Thrissur &nbsp; | &nbsp; Nagpur &nbsp; | &nbsp; Bhilai &nbsp; | &nbsp; Nashik &nbsp; | &nbsp; Palakkad</p>
+          <br>
+          <hr class="linefull">
+          <br>
+    
+    
+          <p class="hhhh">We will sell only the meat that we would eat ourselves.</p>
+          <p>At Licious, we’re big meat-lovers. And by big, we mean huge. So when it comes to the meat we put on your plate, we’re extremely picky. Every single product is handpicked by a team with years of experience.</p>
+    
+    
+          <p class="hhhh">If it’s not fresh, we won’t sell it</p>
+          <p>For meat to stay fresh and retain its natural juices, it needs to be stored at a temperature between 0° and 5°C. We maintain this temperature from the time we procure the product to cleaning, cutting and storing it, until it leaves for delivery. And even when it’s out for delivery, we keep it chilled right up to your doorstep.Did we mention that we’re obsessed?</p>
+    
+          <p class="hhhh">We will charge only for what you buy</p>
+          <p>Doesn’t everyone do this? Not really. Most other places first weigh the meat, then cut up the pieces, and throw out the parts which aren’t fit to eat, such as offal, gizzard, wingtips, etc. But you still pay based on the original weight even though what you finally get is 10% to 30% less</p>
+    <br><br>
+          <hr class="linefull">
+          <div id="copyright">
+            <img src="" alt="">
+            <div>
+    
+                <p class="hhhh">© &nbsp; 2022 &nbsp; Delightful Gourmet Pvt Ltd. All Rights Reserved.</p>
+                <br>
+                <p>Licious is your one-stop fresh meat delivery shop. In here, you get nothing but the freshest meat & seafood, delivered straight to your doorstep. Now you can buy meat online anytime at your convenience. Indulge in our diverse selection: Chicken, Mutton, Seafood (Fish, Prawns, Crabs), Marinades & Cold Cuts. All our products are completely natural and healthy. Once you've experienced Licious, you'll never go back to the old way of buying meat and seafood.</p>
+               
+            
+            
+            </div>
+    
+          </div>
+    
+    </div>
+
+
+</body>
+
+</html>
+<script>
+
+    let data = [
+
+        {
+
+
+
+            ProductID: "spreads-101",
+            image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_6j4jhlmxsk1/18/prod_display_image/1611136904.6573--2021-01-2015:31:44--738?format=webp",
+
+            Title: "Chunky Butter Chicken Spread (Single Serve)",
+            Details: "Freshly roasted chunks of chicken ....",
+            Netwt: "35gms",
+            Gross: "35gms",
+            MRP: "139",
+
+
+
+            Delivery: "Express Dilevery",
+            Menu: "Chicken Spreads",
+            Packsize: "Regular",
+
+            productPagedetails: "Freshly roasted chunks of chicken coated in the ever-favourite butter chicken base make this spread a gourmet treat. This ready-to-eat, single-serve pack is ideal for your protein-rich, quick lunch break. Apply the mildly spicy spread generously on a roti or a naan and satiate your hunger and butter chicken cravings. Our chunky meat spreads have zero trans-fat and are preservative free. Order the Chunky Butter Chicken Spread online from Licious and get doorstep delivery.",
+            Bestbuy: "Best before 25 days",
+            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5vxs7/18/prod_image/1634636036.2392--2021-10-1915:03:56--1818?format=webp",
+
+        },
+
+        {
+
+            ProductID: "spreads-102",
+            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_display_image/1634636526.4799--2021-10-1915:12:06--1818?format=webp",
+
+            Title: "Chunky Butter Chicken Spread",
+            Details: "Our Chunky Butter Chicken Spread offers freshly....",
+            Netwt: "200gms",
+            Gross: "200gms",
+            MRP: "199",
+
+            Delivery: "Normal Dilevery",
+            Menu: "Egg Spreads",
+            Packsize: "Mini",
+
+            productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+            Bestbuy: "Best before 30 days",
+            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+
+        },
+
+        {
+
+            ProductID: "spreads-103",
+            image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_599441c9064f2/3/prod_display_image/1596007571.402--2020-07-2912:56:11--738",
+            Title: "Chunky Shawarma Chicken Spread",
+            Details: "Get the authentic smoky taste of ....",
+            Netwt: "200gms",
+            Gross: "200gms",
+            MRP: "199",
+
+            Delivery: "Express Delivery",
+            Menu: "Chicken Spreads",
+            Packsize: "Regular",
+
+            productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+            Bestbuy: "Best before 30 days",
+            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_fagkel6pboh/3/prod_display_image/1599039295.0495--2020-09-0215:04:55--472",
+
+        },
+
+        {
+
+            ProductID: "spreads-104",
+            image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_6j4jhlmxsk1/18/prod_display_image/1611136904.6573--2021-01-2015:31:44--738?format=webp",
+
+            Title: "Chunky Continental Chicken Spread - 400gms",
+            Details: "A meaty delight which has the right ....",
+            Netwt: "200gms",
+            Gross: "400gms",
+            MRP: "390",
+
+            Delivery: "Express Delivery",
+            Menu: "Prawn Spreads",
+            Packsize: "Combo",
+
+            productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+            Bestbuy: "Best before 30 days",
+            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+
+        },
+
+        {
+
+            ProductID: "spreads-105",
+            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_display_image/1634636526.4799--2021-10-1915:12:06--1818?format=webp",
+
+            Title: "Chunky Butter Chicken Spread",
+            Details: "Our Chunky Butter Chick....",
+            Netwt: "200gms",
+            Gross: "200gms",
+            MRP: "199",
+
+            Delivery: "Normal Dilevery",
+            Menu: "Prawn Spreads",
+            Packsize: "Mini",
+
+            productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+            Bestbuy: "Best before 30 days",
+            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+
+        },
+
+        {
+
+            ProductID: "spreads-106",
+            image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_599441c9064f2/3/prod_display_image/1596007571.402--2020-07-2912:56:11--738",
+            Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
+            Details: "Freshly cooked chunks of chicken are ....",
+            Netwt: "200gms",
+            Gross: "200gms",
+            MRP: "199",
+
+            Delivery: "Normal Delivery",
+            Menu: "Chicken Spreads",
+            Packsize: "Mini",
+
+            productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+            Bestbuy: "Best before 30 days",
+            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+
+        },
+
+        {
+
+            ProductID: "spreads-107",
+            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5vg2a/18/prod_image/1631600500.9901--2021-09-1411:51:40--1818?format=webp",
+
+            Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
+            Details: "Freshly cooked chunks of chicken are ....",
+            Netwt: "200gms",
+            Gross: "200gms",
+            MRP: "199",
+
+            Delivery: "Normal Delivery",
+            Menu: "Egg Spreads",
+            Packsize: "Mini",
+
+            productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+            Bestbuy: "Best before 30 days",
+            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+
+        },
+
+        {
+
+            ProductID: "spreads-108",
+            image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_599441c9064f2/3/prod_display_image/1596007571.402--2020-07-2912:56:11--738",
+
+            Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
+            Details: "Freshly cooked chunks of chicken ....",
+            Netwt: "200gms",
+            Gross: "200gms",
+            MRP: "199",
+
+            Delivery: "Normal Delivery",
+            Menu: "Prawn Spreads",
+            Packsize: "Mini",
+
+            productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+            Bestbuy: "Best before 30 days",
+            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+
+        },
+
+        {
+
+            ProductID: "spreads-109",
+            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_fagkel6pboh/3/prod_display_image/1599039295.0495--2020-09-0215:04:55--472",
+
+            Title: "Chunky Continental Chicken Spread - 400gms",
+            Details: "A meaty delight which has the  ....",
+            Netwt: "200gms",
+            Gross: "400gms",
+            MRP: "490",
+
+            Delivery: "Normal Delivery",
+            Menu: "Egg Spreads",
+            Packsize: "Combo",
+
+            productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+            Bestbuy: "Best before 30 days",
+            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+
+        },
+
+        {
+
+            ProductID: "spreads-110",
+            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5vg2a/18/prod_image/1631600500.9901--2021-09-1411:51:40--1818?format=webp",
+
+            Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
+            Details: "Freshly cooked chunks of chicken ....",
+            Netwt: "200gms",
+            Gross: "200gms",
+            MRP: "199",
+
+            Delivery: "Normal Delivery",
+            Menu: "Prawn Spreads",
+            Packsize: "Regular",
+
+            productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+            Bestbuy: "Best before 30 days",
+            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+
+        },
+
+
+    ]
+
+
+    let productcontainer = document.querySelector(".card");
+    let filtermenu = document.querySelector(".Menu");
+    let filterdelivery = document.querySelector(".Delivery");
+    let filterpack = document.querySelector(".pack");
+
+
+    let cartls = JSON.parse(localStorage.getItem("cartpage")) || [];
+    // console.log(cartls)
+
+    display(data);
+
+    function display(data) {
+        productcontainer.innerHTML = "";
+        
+        
+        data.forEach(function (elem, index) {
+            let main1 = document.createElement("div");
+            main1.classList.add("mainbox");
+            // create a tag
+                                          let ipage = document.createElement("a");//
+                                          
+                                          ipage.addEventListener("click", function () {
+                                            
+                                          console.log("inside ipage");
+                                           let insidepageobj = elem;
+                                          
+                                           
+                                           localStorage.setItem("in-page-obj", JSON.stringify(insidepageobj));
+                                        //    ipage.href = "https://www.google.com/";
+                                        })
+                                           
+
+                                            //div-1.1
+                                            let cardtop = document.createElement("div");
+                                            cardtop.classList.add("otherclass");
+
+                                              //img            
+                                            let img = document.createElement("img");
+                                            img.classList.add("topimg");
+                                            img.src = elem.image;
+                   
+                                                //div
+                                            let itemdetails = document.createElement("div");
+                                            itemdetails.classList.add("carddetails");
+
+                                            //div
+                                            let detailstitle = document.createElement("div");
+
+                                              //span            
+                                            let detailstitlespan = document.createElement("span");
+                                            detailstitlespan.classList.add("cardtitle");
+                                            detailstitlespan.innerText = elem.Title;
+                                            detailstitle.append(detailstitlespan);              
+
+                                            //div  
+                                            let detailsdesc = document.createElement("div");
+                                            detailsdesc.classList.add("carddesc");
+                                            detailsdesc.innerText = elem.Details;
+                      
+                                            //p            
+                                            let itemweight = document.createElement("p");
+
+                                             itemweight.classList.add("cardweight");
+
+                                             //span           
+                                             let itemnetweight = document.createElement("span");
+                                             itemnetweight.innerText = "Net wt: " + elem.Netwt;
+
+                                             //span           
+                                             let itemgrossweight = document.createElement("span");
+                                             itemgrossweight.innerText = "Gross: " + elem.Gross;
+                                             itemweight.append(itemnetweight, itemgrossweight);           
+                                             
+                                             
+                                             itemdetails.append(detailstitle, detailsdesc, itemweight);
+                                             cardtop.append(img, itemdetails);
+                                           
+
+                                             ipage.append(cardtop)
+
+                                            
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                        
+                                                let cartend = document.createElement("div");//
+                                                cartend.classList.add("cardbottom");
+
+
+                                                            //div           
+                                                           let rateaction = document.createElement("div");//
+                                                           rateaction.classList.add("cardaction");
+                                                            //div           
+                                                           let rateline = document.createElement("div");
+                                                           rateline.classList.add("cardactionmain");
+                                                           //span           
+                                                           let rate = document.createElement("span");
+                                                           rate.classList.add("rate");
+                                                           let percent = elem.MRP * .8;
+                                                           rate.innerText = "₹" + percent.toFixed(0);;
+                                                           //span           
+                                                           let ratelogo = document.createElement("span");
+                                                           ratelogo.classList.add("ratelogo");
+                                                           ratelogo.innerText = "MRP:" + " ";
+                                                           //span           
+                                                           let rateprice = document.createElement("span");
+                                                           rateprice.classList.add("rateprice");
+                                                           rateprice.innerText = " " + "  ₹" + elem.MRP;
+                                                           //span           
+                                                           let ratediscount = document.createElement("span");
+                                                           ratediscount.classList.add("ratediscount");
+                                                           ratediscount.innerText = "20% OFF";
+                                                           rateline.append(rate, ratelogo, rateprice, ratediscount);
+                                                        //    div            
+                                                           let ratelinened = document.createElement("div");
+                                                           ratelinened.classList.add("cardactionend");
+                                               
+                                               
+                                               
+                                               
+                                                           let minus = document.createElement("div");
+                                                           // minus.innerText="1";
+                                               
+                                                           let addtocart = document.createElement("button");
+                                                           addtocart.classList.add("button");
+                                                           addtocart.classList.add("buttoncart");
+                                               
+                                                           let plus = document.createElement("div");
+                                                           // plus.innerText="1";
+                                               
+                                               
+                                                           addtocart.innerText = "Add To Cart";
+                                               
+                                                           addtocart.addEventListener("click", function () {
+                                                               // console.log("101-",elem.ProductID);
+                                               
+                                                               if (addtocartfunction(elem.ProductID) === true) {
+                                                                   // console.log("4");
+                                                                   alert("Product Added Successfully");
+                                                                   elem["Quantity"] = 1;
+                                               
+                                                                   // addtocart.innerText=elem.Quantity
+                                               
+                                               
+                                                                   cartls.push(elem);
+                                                                   // console.log(elem);
+                                                                   localStorage.setItem("cartpage", JSON.stringify(cartls));
+                                                               } else {
+                                                                   // console.log("5");
+                                                                   alert("Product Already In Cart");
+                                                               }
+                                               
+                                                           })
+                                               
+                                               
+                                               
+                                                           ratelinened.append(minus, addtocart, plus);
+                                                           rateaction.append(rateline, ratelinened);
+
+                                                           let line1 = document.createElement("hr");
+                                                           let endbotton=document.createElement("div");
+                                                           endbotton.classList.add("endbotton1");
+                                                           let imgdel = document.createElement("img");
+                                                           imgdel.src = "https://www.licious.in/img/rebranding/express_delivery.svg";
+                                                           let ipageendspan = document.createElement("span");
+                                                           ipageendspan.classList.add("cardbottomspan");
+                                                           ipageendspan.innerText = "   Today 6 PM - 9 PM";
+                                                           endbotton.append(imgdel,ipageendspan)
+                                                           cartend.append(rateaction,line1,endbotton);
+                 
+            
+            
+      main1.append(ipage,cartend);
+            document.querySelector(".card").append(main1);
+
+
+
+
+
+
+           
+
+
+
+        })
+    }
+
+
+
+
+
+
+
+    filtermenu.addEventListener("change", function () {
+        console.log("inside menu");
+
+        let filtered = data.filter(function (element) {
+            return element.Menu === filtermenu.value;
+        })
+        display(filtered);
+    })
+
+
+    filterdelivery.addEventListener("click", function () {
+        console.log("inside delivery");
+
+        let filtereddev = data.filter(function (element) {
+            return element.Delivery === filterdelivery.innerText;
+        })
+        display(filtereddev);
+    })
+
+
+    filterpack.addEventListener("change", function () {
+        console.log("inside pack");
+
+        let filtered = data.filter(function (element) {
+            return element.Packsize === filterpack.value;
+        })
+        display(filtered);
+    })
+
+
+    // function add to cart declare
+    function addtocartfunction(ProductID) {
+        // console.log(ProductID);
+        let newcart = cartls.filter(function (elem) {
+            return elem.ProductID === ProductID;
+        })
+        // console.log("newcart.length",newcart.length);
+        if (newcart.length > 0) {
+            // console.log("2");
+            return false;
+        } else {
+            // console.log("3");
+            return true;
+        }
+
+
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////
+
+    let signinbtn =document.querySelector(".signin");
+    signinbtn.addEventListener("click",loginSlide)
+    function loginSlide(){
+        document.querySelector("#person").textContent="Login"
+
+        
+
+    let slideup=document.querySelector(".signin-slide")
+    slideup.style.right="0px"
+    let slidein=document.querySelector(".signup-slide")
+    slidein.style.right="-500px"
+    let closelogin =document.querySelector(".close-logpop")
+    closelogin.style.right="19px"
+    closelogin.addEventListener("click",closelogpop)
+    function closelogpop(){
+        slideup.style.right="-500px"
+    }
+    }
+
+
+    let  sighup =document.querySelector("#signupage");
+    sighup.addEventListener("click",moveTosignup)
+
+    let  signupin =document.querySelector("#signuptosignin");
+    signupin.addEventListener("click",loginSlide)
+
+    function moveTosignup(){
+    let slideup=document.querySelector(".signup-slide")
+    slideup.style.right="0px"
+    let slidein=document.querySelector(".signin-slide")
+    slidein.style.right="-500px"
+    let closelogin =document.querySelector(".close-signpop")
+    closelogin.style.right="19px"
+    closelogin.addEventListener("click",closelogpop)
+    function closelogpop(){
+        slideup.style.right="-500px"
+    }
+    }
+    let userdetails=JSON.parse(localStorage.getItem("user-detail"))||[];
+    
+
+    let formup=document.querySelector("#signuppp");
+
+    formup.addEventListener("submit",signupuser)
+
+    function signupuser(event){
+        event.preventDefault()
+        let inputdata={
+            name:formup.sname.value,
+            email:formup.semail.value,
+            password:formup.spassword.value
+        }
+        if(checkdata(inputdata.email)==true){
+            userdetails.push(inputdata);
+            alert("Account created sucessfuly")
+            localStorage.setItem("user-detail",JSON.stringify(userdetails))
+            formup.sname.value=""
+            formup.semail.value=""
+            formup.spassword.value=""
+            loginSlide()
+        }else{
+            alert("Already have an account")
+        }   
+    }
+    function checkdata(id){
+        let count=0;
+        for(let i=0; i<userdetails.length; i++){
+            if(userdetails[i].email===id){
+                count++;
+            }
+        }
+        if(count==0){
+            return true;
+        }else{
+            return false;
+        }
+       
+    }
+    //login use
+
+    let formin=document.querySelector("#signinin");
+
+    formin.addEventListener("submit",makeLoginin)
+
+
+    function makeLoginin(event){
+        event.preventDefault();
+        let loginArrr=[];
+        count=0;
+        for(let i=0; i<userdetails.length; i++){
+            if(userdetails[i].email===formin.inmail.value && userdetails[i].password==formin.inpassword.value){
+                loginArrr.push(userdetails[i]);
+                count++;
+            }
+        }  
+        if(count==1){
+            alert("Successfully Signin") 
+            formin.inmail.value=""
+            formin.inpassword.value=""
+            itscool(loginArrr);
+        }else{
+            alert("Wrong input data") 
+        }
+        let slidein=document.querySelector(".signin-slide")
+        slidein.style.right="-500px"
+    }
+    function itscool(loginArrr){
+        if(loginArrr.length==1){
+            console.log(loginArrr[0].name)
+            document.querySelector("#person").textContent=loginArrr[0].name+"\n"+"(logout)"
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+</script>
