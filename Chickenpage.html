@@ -730,8 +730,8 @@ let productcontainer = document.querySelector(".card");
   let cartls = JSON.parse(localStorage.getItem("cartpage")) || [];
 // console.log(cartls)
 
-  dispaly(data);
-  function dispaly(data) {
+display(data);
+  function display(data) {
         productcontainer.innerHTML = "";
         
         
@@ -748,7 +748,7 @@ let productcontainer = document.querySelector(".card");
                                           
                                            
                                            localStorage.setItem("in-page-obj", JSON.stringify(insidepageobj));
-                                        //    ipage.href = "https://www.google.com/";
+                                           ipage.href = "productDetails.html";
                                         })
                                            
 

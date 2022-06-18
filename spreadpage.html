@@ -177,6 +177,7 @@ font-family: 'Rubik', sans-serif;
         .topstatic {
             margin: 20px;
             margin-left: 0px;
+            text-decoration: none;
             
         }
 
@@ -720,9 +721,9 @@ font-family: 'Rubik', sans-serif;
     let cartls = JSON.parse(localStorage.getItem("cartpage")) || [];
     // console.log(cartls)
 
-    dispaly(data);
+    display(data);
 
-    function dispaly(data) {
+    function display(data) {
         productcontainer.innerHTML = "";
         
         
