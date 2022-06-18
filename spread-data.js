@@ -19,7 +19,7 @@ let data=[
     Menu:"Chicken Spreads",
     Packsize:"Regular",
 
- productPagedetails:"Freshly roasted chunks of chicken coated in the ever-favourite butter chicken base make this spread a gourmet treat. This ready-to-eat, single-serve pack is ideal for your protein-rich, quick lunch break. Apply the mildly spicy spread generously on a roti or a naan and satiate your hunger and butter chicken cravings. Our chunky meat spreads have zero trans-fat and are preservative free. Order the Chunky Butter Chicken Spread online from Licious and get doorstep delivery.",
+ productPageDetails:"Freshly roasted chunks of chicken coated in the ever-favourite butter chicken base make this spread a gourmet treat. This ready-to-eat, single-serve pack is ideal for your protein-rich, quick lunch break. Apply the mildly spicy spread generously on a roti or a naan and satiate your hunger and butter chicken cravings. Our chunky meat spreads have zero trans-fat and are preservative free. Order the Chunky Butter Chicken Spread online from Licious and get doorstep delivery.",
    Bestbuy:"Best before 25 days",
    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5vxs7/18/prod_image/1634636036.2392--2021-10-1915:03:56--1818?format=webp",
 
@@ -40,7 +40,7 @@ let data=[
     Menu:"Egg Spreads",
     Packsize:"Mini",
 
- productPagedetails:"Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+ productPageDetails:"Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
    Bestbuy:"Best before 30 days",
    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
@@ -61,7 +61,7 @@ let data=[
     Menu:"Chicken Spreads",
     Packsize:"Regular",
 
- productPagedetails:"A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+ productPageDetails:"A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
    Bestbuy:"Best before 30 days",
    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_fagkel6pboh/3/prod_display_image/1599039295.0495--2020-09-0215:04:55--472",
 
@@ -82,7 +82,7 @@ let data=[
     Menu:"Prawn Spreads",
     Packsize:"Combo",
 
- productPagedetails:"A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+ productPageDetails:"A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
    Bestbuy:"Best before 30 days",
    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
@@ -103,7 +103,7 @@ let data=[
     Menu:"Prawn Spreads",
     Packsize:"Mini",
 
- productPagedetails:"Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+ productPageDetails:"Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
    Bestbuy:"Best before 30 days",
    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
@@ -124,7 +124,7 @@ ProdctID:"spreads-106",
     Menu:"Chicken Spreads",
     Packsize:"Mini",
 
- productPagedetails:"Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+ productPageDetails:"Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
    Bestbuy:"Best before 30 days",
    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
@@ -145,7 +145,7 @@ ProdctID:"spreads-107",
     Menu:"Egg Spreads",
     Packsize:"Mini",
 
- productPagedetails:"Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+ productPageDetails:"Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
    Bestbuy:"Best before 30 days",
    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
@@ -166,7 +166,7 @@ ProdctID:"spreads-108",
     Menu:"Prawn Spreads",
     Packsize:"Mini",
 
- productPagedetails:"Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+ productPageDetails:"Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
    Bestbuy:"Best before 30 days",
    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
@@ -187,7 +187,7 @@ ProdctID:"spreads-108",
     Menu:"Egg Spreads",
     Packsize:"Combo",
 
- productPagedetails:"A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+ productPageDetails:"A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
    Bestbuy:"Best before 30 days",
    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
@@ -208,7 +208,7 @@ ProdctID:"spreads-110",
     Menu:"Prawn Spreads",
     Packsize:"Regular",
 
- productPagedetails:"A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+ productPageDetails:"A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
    Bestbuy:"Best before 30 days",
    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 

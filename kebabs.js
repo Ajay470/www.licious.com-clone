@@ -13,11 +13,7 @@ let kebabsdata =[
 
   MRP:"269",
 
-  productPageDetails:"Bring home the flavours of Punjab with this smoky, spicy tikka that can be rustled up in under 8 minutes.
-
-Boneless pieces of chicken are marinated in a spicy curd base that has spices such as red kashmiri chilli powder and more. It's mildly spiced, easy to make and perfect for an evening snack, appetiser or an accompaniment for your meal. Pair it with a pulao or add it to parathas along with your favourite veggies for a lip-smacking roll.
-
-All you have to do is simply toss the tikkas in a pan for 5-6 minutes or roast in an oven for a few minutes until it starts to brown. Bite in and prepare for the smoky, spicy and slightly tangy flavour of the marinate and juices of fresh chicken to hit your tastebuds.",
+  productPageDetails:"Bring home the flavours of Punjab with this smoky, spicy tikka that can be rustled up in under 8 minutes. Boneless pieces of chicken are marinated in a spicy curd base that has spices such as red kashmiri chilli powder and more. It's mildly spiced, easy to make and perfect for an evening snack, appetiser or an accompaniment for your meal. Pair it with a pulao or add it to parathas along with your favourite veggies for a lip-smacking roll. All you have to do is simply toss the tikkas in a pan for 5-6 minutes or roast in an oven for a few minutes until it starts to brown. Bite in and prepare for the smoky, spicy and slightly tangy flavour of the marinate and juices of fresh chicken to hit your tastebuds.",
   Serves:"2 -3",
   image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/1c3a3101-4cc0-a9ba-3f61-27250573d49b/original/Angara-Murgh-Tikka+New+Tag.jpg?format=webp",
 Menu:"Tandoor(Smoky)",
@@ -38,16 +34,11 @@ CutType:"Mince",
   Title:"Hariyali Murgh Tikka | Ready in 8 Minutes",
   Details:"Boneless chicken marinated in a fresh green herbs base.",
   Netwt:"300gms",
-  Gross:"3gms",
+  Gross:"310gms",
   MRP:"269",
 Pieces: "6-8",
 
-  productPageDetails:"Inspired by it's beautiful colour, you can now enjoy the flavours of Punjab with this spicy, flavourful and fresh tikka that can be cooked under 8 minutes.
-
-Boneless pieces of chicken are marinated in a fresh green herb and spice base that consists of mint, coriander leaves, curd, aromatic spices and green chilli.
-
-Medium spiced, this tikka makes for a great snack, appetiser or a side. When you bite into it you're met with a juicy, spicy, smoky and slight minty flavour. To cook, simply toss in a pan for 5-6 minutes with water or roast in oven for until brownish green.
-",
+  productPageDetails:"Inspired by it's beautiful colour, you can now enjoy the flavours of Punjab with this spicy, flavourful and fresh tikka that can be cooked under 8 minutes. Boneless pieces of chicken are marinated in a fresh green herb and spice base that consists of mint, coriander leaves, curd, aromatic spices and green chilli. Medium spiced, this tikka makes for a great snack, appetiser or a side. When you bite into it you're met with a juicy, spicy, smoky and slight minty flavour. To cook, simply toss in a pan for 5-6 minutes with water or roast in oven for until brownish green.",
   Serves:"2 -3",
   image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/ef0bbddd-4451-e35a-0369-5def8da6ac24/original/Hariyali-Murgh-Tikka-Cooked.jpg?format=webp",
 Menu:"Kebabs",
@@ -70,12 +61,7 @@ CutType:"Mince",
   Gross:"270gms",
   MRP:"249",
 Pieces: "5-6",
-  productPageDetails:"Meat minced from tender cuts of the chicken is shaped in to perfect ready-to-cook kebabs after it is mixed with spices and herbs. The authentic Afghani Murgh Seekh Kebab is ideal for pan-frying or grilling. When evenly cooked, the kebab turns charred on the outside and succulent on the inside. Order Afghani Murgh Seekh Kebabs from Licious and get them home delivered.
-
-Note:
-
-Use within 15 days from the date of manufacture.
-FSSAI Category 8.3.2: Heat-treated processed comminuted meat and poultry products.",
+  productPageDetails:"Meat minced from tender cuts of the chicken is shaped in to perfect ready-to-cook kebabs after it is mixed with spices and herbs. The authentic Afghani Murgh Seekh Kebab is ideal for pan-frying or grilling. When evenly cooked, the kebab turns charred on the outside and succulent on the inside. Order Afghani Murgh Seekh Kebabs from Licious and get them home delivered.",
   Serves:"2-3",
   image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/958b7818-1f19-66b0-96bc-c2cd4fd3e24c/original/Afghani-Murgh-Seekh-Kebab-Hero-Shot-Cooked(1).jpg?format=webp",
 Menu:"Tandoor(Smoky)",
@@ -144,9 +130,7 @@ CutType:"Drumsticks",
   Gross:"350gms",
   MRP:"224",
 Pieces: "6-8",
-  productPageDetails:"Bring the flavours of the streets of Delhi home with the Chicken Tangdi Kebab that can be rustled up just 8 minutes. Chicken drumsticks are marinated in spices such as mace, fennel and cardamom and then pre-smoked and roasted over charcoal.
-
-These drumsticks are freshly marinated and ready to cook! All you need to do is grill it or pan-fry it and serve it with a squeeze of lime.",
+  productPageDetails:"Bring the flavours of the streets of Delhi home with the Chicken Tangdi Kebab that can be rustled up just 8 minutes. Chicken drumsticks are marinated in spices such as mace, fennel and cardamom and then pre-smoked and roasted over charcoal. These drumsticks are freshly marinated and ready to cook! All you need to do is grill it or pan-fry it and serve it with a squeeze of lime.",
   Serves:"2 -3",
   image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/8757b7aa-cd68-09cf-c2e3-060cf11aa552/original/Tangdi-Kebab---pr_nalklga5atr---Cooked_.jpg?format=webp",
 Menu:"Kebabs",
@@ -169,13 +153,7 @@ CutType:"Boneless",
   Gross:"326gms",
   MRP:"598",
 Pieces: "6-8",
-  productPageDetails:"The perfect set for any game-viewing party - all our smoky Tandoori treats in one platter! Celebrate your team’s win with spicy Tandoori Chicken, creamy Chicken Malai Tikka and juicy Chicken Tangdi Kebab. Each ready to eat in 8 minutes!
-
-Note:
-
-
-Use within 15 days from the date of manufacture.
-FSSAI Category 8.2.2 Heat-treated processed meat and poultry products in whole pieces or cuts.",
+  productPageDetails:"The perfect set for any game-viewing party - all our smoky Tandoori treats in one platter! Celebrate your team’s win with spicy Tandoori Chicken, creamy Chicken Malai Tikka and juicy Chicken Tangdi Kebab. Each ready to eat in 8 minutes!",
   Serves:"2 -3",
   image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_15ckn5inh87/1/prod_display_image/1622089748.3833--2021-05-2709:59:08--472",
 Menu:"Tandoor(Smoky)",
