@@ -1001,6 +1001,8 @@
         <option value="Mini">Mini</option>
         <option value="Combo">Combo</option>
         <option value="Regular">Regular</option>
+        <option value="Large Pack">Large Pack</option>
+        
       </select></span>
        
       
@@ -1155,7 +1157,7 @@ let data = [
   BoneType:"Bone-in",
   CutType:"Breast",
   BestSuitedFor:"Grill",
-  PackSize:"Regular",
+  PackSize:"Mini",
 
   productPageDetails:"With our Chicken Curry Cut on hand, making a delicious chicken curry has never been easier! Licious Chicken Curry Cut is a mix of bone-in, small pieces of breast, wing (without the tip), leg and thigh meat, enough to feed a small to medium-sized family. This Small pack consists of 13-16 pieces of smaller cuts of chicken, for when you are making a smaller portion of curry or looking to reduce cooking time. Smaller pieces of chicken cook faster because of the higher surface-to-volume ratio.These pieces remain juicy and turn tender once cooked. Make Andhra Style Chicken Curry, Dhaba Style Chicken Curry, Mughlai Chicken Curry and more with Licious Chicken Curry Cut (Small).  Licious chickens are raised on bio-secure farms and are antibiotic-residue free.",
   Serves:"4",
@@ -1197,7 +1199,7 @@ let data = [
     BoneType:"Boneless",
     CutType:"Mince",
     BestSuitedFor:"Roast",
-    PackSize:"Large Pack",
+    PackSize:"Mini",
   
     productPageDetails:"Chicken Breast is one of the meatier cuts of a Chicken, which comes from the breast-bone of the bird. This cut is skinless and has a supple texture.A good source of vitamins and minerals, Chicken Breast, is also a great choice for a lean protein diet.",
     Serves:"4",
@@ -1260,7 +1262,7 @@ let data = [
     BoneType:"Boneless",
     CutType:"Wings",
     BestSuitedFor:"Grill",
-    PackSize:"Large Pack",
+    PackSize:"Combo",
   
     productPageDetails:"The Chicken Mini Bites from Licious are finely cut, boneless, bite-sized pieces of chicken. These tender, juicy mini bites of chicken are obtained from the breast portion. Rich in proteins, vitamin B6, and minerals, these mini bites are a great way to up your nutrient intake.",
     Serves:"4",
@@ -1281,7 +1283,7 @@ let data = [
     BoneType:"Bone-in",
     CutType:"Mince",
     BestSuitedFor:"Roast",
-    PackSize:"Large Pack",
+    PackSize:"Mini",
   
     productPageDetails:"A mix of dark and white meat, our large Chicken Curry Cut pieces include one leg, one wing without tip, and one breast quarter with backbone. Obtained from pasture-raised healthy chickens, the meat has a rich, juicy flavour with a tender, smooth and moderate-firm texture. ",
     Serves:"4",
@@ -1302,7 +1304,7 @@ let data = [
     BoneType:"Boneless",
     CutType:"Cubes & Strips",
     BestSuitedFor:"Grill",
-    PackSize:"Regular",
+    PackSize:"Combo",
   
     productPageDetails:"Licious Chicken Tikka Cut is a mix of skinless & boneless leg & breast pieces. These pieces turn juicy & tender when cooked which makes them ideal for grilling or pan-roasting/frying. Marinate them in a mix of aromatic spices and grill them to make a perfect, finger-licking chicken tikka.",
     Serves:"4",
@@ -1549,7 +1551,7 @@ display(data);
     let filtered = data.filter(function (element) {
       return element.BestSuitedFor === filterBestSuitedFor.value;
     })
-    dispaly(filtered);
+    display(filtered);
   })
 
   
@@ -1559,7 +1561,7 @@ display(data);
     let filtered = data.filter(function (element) {
       return element.CutType === filterCutType.value;
     })
-    dispaly(filtered);
+    display(filtered);
   })
 
 
@@ -1569,7 +1571,7 @@ display(data);
     let filtered = data.filter(function (element) {
       return element.BoneType === filterBoneType.value;
     })
-    dispaly(filtered);
+    display(filtered);
   })
   
 
@@ -1579,7 +1581,7 @@ display(data);
     let filtered = data.filter(function (element) {
       return element.ChickenType === filterChickenType.value;
     })
-    dispaly(filtered);
+    display(filtered);
   })
 
 
@@ -1589,7 +1591,7 @@ display(data);
     let filtereddev = data.filter(function (element) {
       return element.Delivery === filterdelivery.innerText;
     })
-    dispaly(filtereddev);
+    display(filtereddev);
   })
 
 
@@ -1597,9 +1599,9 @@ display(data);
     console.log("inside pack");
 
     let filtered = data.filter(function (element) {
-      return element.Packsize === filterpack.value;
+      return element.PackSize === filterpack.value;
     })
-    dispaly(filtered);
+    display(filtered);
   })
 
 
