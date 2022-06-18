@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body{
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+}
+section .card .image{
+  width: 340px;
+  height: 340px;
+  padding: 20px;
+  padding-top: 0px;
+}
+section .card .image img{
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    /* object-fit: cover; */
+}
+.card{
+    background: #fff;
+    position: relative;
+    border-radius:20px;
+    margin: 20px 0px;
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+.name-profession .name{
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    line-height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.card .button{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin-top: 20px;
+}
+.card .button button{
+    background: #D11243;
+    outline: none;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    position: absolute;
+    top: 69%;
+    width: 100px;
+    height: 36px;
+}  
+.swiper{
+    width: 950px;
+}
+.swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: grey;
+    transition: all 250ms ease;
+}
+section{
+    position: relative;
+    height: 450px;
+    width: 1075px;
+    display: flex;
+    align-items: center;
+}
+:root{
+    --swiper-navigation-size: 26px;
+}
+.name-profession p{
+    position: absolute; 
+}
+.name-profession>p:nth-child(2){
+color: grey;
+font-weight: 700;
+font-size: 12px;
+top: 58%;
+left: 5%;
+}
+.name-profession>p:nth-child(3){
+font-weight: 1000;
+font-size: 12px;
+top: 65%;
+left: 5%;
+}
+.name-profession>p:nth-child(4){
+font-weight: 1000;
+font-size: 12px;
+top: 65%;
+right: 25%;
+}
+.name-profession>p:nth-child(5){
+font-weight:bolder;
+font-size: 16px;
+color:#D11243;
+top: 71%;
+left: 5%;
+}
+.name-profession>p:nth-child(6){
+font-weight: 1000;
+font-size: 12px;
+}
+.last{
+    margin-top: 200px;
+}
+.last>img{
+    position: absolute;
+    top: 77.5%;
+    left: 20%;
+}
+.last>p{
+    position: absolute;
+    top: 78%;
+    width: 200px;
+    left: 30%;
+}
+.swiper-slide{
+    height: 475px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+section>h2{
+    position: absolute;
+    top:-10%;
+    left: 6%;     
+    font-weight: bold;
+    font-size: 22px;
+}
+#reward-box{
+    border: 2px solid blue;
+    width: 56%;
+    height: 85px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #FDE8EB;
+    background-image:url(https://www.licious.in/img/default/rewards/rewards_banner_background.svg);
+}
+#reward-box>img{
+    position: absolute;
+    left: 1.5%;
+    top: 20%;
+}
+#reward-box>h2{
+    position: absolute;
+    left: 7%;
+    top: 13%;
+    font-size: 15px;
+}
+#reward-box>p{
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    font-size: 11.5px;
+    font-weight: 600;
+}
+#reward-box>a{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    font-size: 11px;
+    text-decoration: none;
+    color: #D11243;
+    font-weight: bolder;
+}
+.blog-text{
+    color: rgb(77, 74, 74);
+   font-size: 20px;
+   position: absolute;
+   top: 14%;
+   left: 12.5%;
+   font-family: sans-serif;
+}
+#blog-box{
+    display: flex;
+    width: 80%;
+    height: 400px;
+    margin: auto;  
+}
+#blog-box>div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+#blog-box>div>img{
+    width: 100%;
+    height: 90%;
+    border-radius: 6px;
+}
+#blog-box>div>h2{
+    font-size: 16px;
+    line-height: 36px;
+    font-family: sans-serif;
+    color: rgb(77, 74, 74);
+}
+#blog-box>div:nth-child(2){
+   margin-left: 20px;
+   margin-right: 20px;
+}
+#blog-box>div:nth-child(1){
+   margin-left: 30px;
+}
+#blog-box+img{
+    position: absolute;
+    top:82%;
+    left: 12%;
+    width: 75%;
+}
+#main1{
+    position: absolute;
+    top: 100%;
+}
+#main2{
+    position: absolute;
+    top: 200%;
+}
+/* #banner-box{
+    display: flex;
+    flex-direction: column;
+} */
+.banner{
+    width: 100%;
+    margin-top: 20%;
+}
+.banner2{
+    width: 100%;
+}
+/* #category-box{
+   display: flex;
+} */
+.category{
+    width: 100%;
+    margin-top: 10%;
+}
+.category2{
+    width: 100%;
+}
