@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CartPage.css">
+
+</head>
+
+<body>
+    <div class="slideCart" id="surajcart">
+        <div id="main">
+            <div class="close-cart" id="cartclose">
+                ╳
+            </div>
+
+
+            <!-- <br> -->
+            <h2>Order Summary</h2>
+            <div id="deliveryCharge">
+                <h4> Your cart value is less than ₹399 & delivery charge applies </h4>
+            </div>
+            <!-- <br> -->
+            <div id="discountText">
+                <p>Congratulations!, You've saved ₹<span id="gotDiscounted">0</span></p>
+            </div>
+            <!-- **********appended from here********** -->
+            <!-- <div class="mainAttached">
+                       <div class="firstLine" >
+                              <span>1</span>
+                               <div class="nameBox">
+                                   <h4>item_name</h4>
+                               </div>
+                               <span>X</span>
+                        </div>
+    
+                        <div class="secondLine">
+                            <span class="item_weight"> weight </span>
+                            <span class="item_price"> price </span>
+                            <div class="counter">
+                                  <span class="minus_one">-</span>
+                                  <span class="item_qty">1</span>
+                                  <span class="plus_one">+</span>  
+                                  <hr/>
+                            </div>
+    
+                        </div>
+            </div> -->
+
+        </div>
+        <br>
+        <p>Stop paying delivery charges. Join Meatopia today!</p>
+        <br>
+        <div id="design">
+            <img src="https://www.licious.in/img/rebranding/loyalty_licious_logo.svg" alt="Meatopia">
+            <button class="popup" onclick="myFunction()">
+                <span class="popuptext" id="myPopup"></span>JOIN NOW ></button>
+        </div>
+        <h4>Don't miss out on these Meaty Treats!</h4>
+        <div id="treats">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="cartBill">
+            <div id="bill">
+                <div style="font-size:14px; padding: 15px; font-weight: bold;">BILL DETAILS</div>
+
+                <ul>Subtotal <span id="subtotal">0</span></ul>
+                <ul>Delivery Charge <span id="extraCharge">0</span></ul>
+                <ul>Discount <span>0</span></ul>
+                <hr style="width: 95%">
+                <h3 id="padit">Total <span style="margin-left: 280px; color: #d11243;">₹<span>0</span></span></h3>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <!-- <h4 >Total <span style="margin-left: 280px;">₹<span  id="toPay">0</span></span></h4> -->
+
+
+            </div>
+
+        </div>
+        <div id="last">
+            <div id="firstHalf">
+                <h2>Total:₹ <span></span><span style="margin-left:8px;"><img
+                            src="https://www.licious.in/img/rebranding/info-icon.svg" alt="logo"></span></h2>
+            </div>
+            <div id="secondHalf">
+                <button>Proceed to checkout</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="CartPage.js"></script>
