@@ -164,20 +164,10 @@ let cartLS = JSON.parse(localStorage.getItem("cartpage")) || []
         }else{
             document.querySelector("#extraCharge").innerText=39
             document.querySelector("#padit>span>span").innerText=sum+39;
-            document.querySelector("#firstHalf>h2>span").innerText=sum+39;
-            
+            document.querySelector("#firstHalf>h2>span").innerText=sum+39;    
         }
       
-       
-      
-
-
-     
-
         document.querySelector("#subtotal").innerText=sum
-        
-        
-       
         
         let firstDiv = document.createElement("div")
         firstDiv.setAttribute("class", "mainAttached")
@@ -216,7 +206,6 @@ let cartLS = JSON.parse(localStorage.getItem("cartpage")) || []
 
         // 2nd line
 
-
         let rowSecondDiv = document.createElement("div")
         rowSecondDiv.setAttribute("class", "secondLine")
         document.querySelector(".mainAttached").append(rowSecondDiv)
@@ -253,9 +242,6 @@ let cartLS = JSON.parse(localStorage.getItem("cartpage")) || []
            minusOne(elem,index)
         })
 
-       
-        
-
         let plus = document.createElement("span")
         plus.innerText = "+";
         plus.setAttribute("class", "plus_one")
@@ -272,12 +258,11 @@ let cartLS = JSON.parse(localStorage.getItem("cartpage")) || []
         
     })
 
-
  function deleteOne(index,elem){
        cartLS.splice(index, 1);
        console.log(cartLS)
       localStorage.setItem("cartpage", JSON.stringify(cartLS))
-      window.location.reload()
+      document.querySelector("#surajcart").location.reload()
  }
 
  function addOne(elem,index){
@@ -297,7 +282,6 @@ function minusOne(elem,index){
     sum=sum- (+elem.MRP)
     document.querySelector("#subtotal").innerText=sum;
     
-
     if(sum<399){
         document.querySelector("#extraCharge").innerText=39
         document.querySelector("#padit>span>span").innerText=sum+39;
