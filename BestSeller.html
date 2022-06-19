@@ -1,307 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Seller page</title>
-
-    <style>
-* {
-      margin: 0px;
-      padding: 0px;
-      font-family: 'Lato', sans-serif;
-font-family: 'Rubik', sans-serif;
-      font-size: 15px;
-  
-    }
-    body{
-      background-color: #F7F6F6;
-      width: 1500px;
-    }
-.card{
-            display: grid;
-            grid-template-columns: repeat(3,420px);
-            width: 1300px;
-            margin: auto;
-
-            gap: 18px;
-        }
-        .mainbox{
-            /* border: 1px solid red; */
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-       border-radius: 10px; 
-       border-radius: 10px;
-       background-color: white;
+    <title>Best Seller</title>
+    <!-- <link rel="stylesheet" href="stylenav.css"> -->
+<style>
+   * {
+          margin: 0px;
+          padding: 0px;
+          font-family: 'Lato', sans-serif;
+    font-family: 'Rubik', sans-serif;
+          font-size: 15px;
       
-            
         }
-        .topimg{
-      width: 100%;
-      padding: 0px;
-      border-radius: 10px 10px 0px 0px ;
-      
-    }
-    .carddetails{
-      padding: 15px 15px 0px 15px;
-      background-color: white;
-     
-    }
-    .cardbottom{
-      padding: 0px 15px 0px 15px;
-      /* background-color: white; */
-     
-    }
-    .cardtitle{
-      line-height: 55px;
-      font-weight: 600;
-       
-      white-space: nowrap  ;
-      width: 90%;
-      overflow-wrap: break-word;
-
+        body{
+          background-color: #F7F6F6;
+          width: 1500px;
+        }
+    .card{
+                display: grid;
+                grid-template-columns: repeat(3,420px);
+                width: 1300px;
+                margin: auto;
     
-    }
-    .carddesc{
-      line-height: 30px;
-      color: rgb(98, 98, 98);
-      
-      
-    }
-    .cardweight{
-      font-weight: 600;
-      display: flex;
-      line-height: 45px;
-      
-      
-    }
-    .cardweight>span{
-      margin-right: 40px;
-      font-size: 15px;
-      /* margin-bottom: 15px; */
-      
-    }
-    .cardaction{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      justify-content: space-between;
-      margin-bottom: 10px;
-    }
-    .endbotton1{
-      /* border: 1px solid red; */
-      margin: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .cardbottomspan{
-    margin-left: 12px;
-    color: rgb(98, 98, 98);
-  
-  }
-    .cardactionmain{
-      
-      display: flex;
-      width: 55%;
-      justify-content: space-between;
-      align-items: baseline;
-
-    }
-    .rate{
-      font-size: 20px;
-      color: #d11243;
-      font-weight: 600;
-
-    }
-    .ratelogo{
-      color: rgb(98, 98, 98);
-
-    }
-    .rateprice{
-
-  color: rgb(98, 98, 98);
-  text-decoration: line-through;
-    }
-    .ratediscount{
-      color: green;
-    font-weight: 600;
-    font-size: 17px;
-
-      
-    }
-    .buttoncart{
-      background-color: #d11243;
-      border: none;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 8px;
-      justify-content: center;
-      align-items: center;
-    }
-  
-
-
- 
-/* /////////////////////////////////////////////////////////// */
-        .bottomstatic {
-            display: flex;
-            justify-content: left;
-            align-items: center;
+                gap: 18px;
+            }
+            .mainbox{
+                /* border: 1px solid red; */
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+           border-radius: 10px; 
+           border-radius: 10px;
+           background-color: white;
+          
+                
+            }
+            .topimg{
+          width: 100%;
+          border-radius: 10px 10px 0px 0px ;
+          padding: 0px;
           
         }
-.static{
-    width: 1300px; 
-    margin: auto;
-}
-        .bottomstatic>span {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-
+        .carddetails{
+          padding: 15px 15px 0px 15px;
+          background-color: white;
+         
         }
-
-        .bottomstatic>span>span {
-
-            margin-left: 15px;
-            margin-right: 15px;
+        .cardbottom{
+          padding: 0px 15px 0px 15px;
+          /* background-color: white; */
+         
         }
-
-        .bottomstatic>span>h1 {
-
-            font-size: 25px;
-            color: rgb(98, 98, 98);
-            margin-right: 55px;
-        }
-
-        .topstatic {
-            margin: 20px;
-            margin-left: 0px;
-            text-decoration: none;
-            
-        }
-
-        .topstatic>span {
-            margin: 10px 10px 10px 0px;
-        }
-/* ///////////////////////////////////// */
-        /* .filterpart {
-            padding: 20px 20px 20px 50px;
-            width: 1280px;
-            margin-left: 200px;
-            padding-left: 0px;
-            position: sticky;
-            margin: auto;
-            top: 80px;
-            background-color: #F7F6F6;
-        } */
-        .filterpart {
-            padding: 20px 20px 20px 50px;
-            width: 1500px;
-            /* margin-left: 100px; */
-            padding-left: 100px;
-            position: sticky;
-            /* border: 1px solid red; */
-            top: 80px;
+        .cardtitle{
+          line-height: 55px;
+          font-weight: 600;
            
+          white-space: nowrap  ;
+          width: 90%;
+          overflow-wrap: break-word;
+    
+        
+        }
+        .carddesc{
+          line-height: 30px;
+          color: rgb(98, 98, 98);
           
-            background-color:  #F7F6F6;
+          
         }
-
-        .filterpart>span {
-            margin-right: 20px;
-
-
+        .cardweight{
+          font-weight: 600;
+          display: flex;
+          line-height: 45px;
+          
+          
         }
-
-        .Delivery {
-            margin-right: 20px;
-            /* background-color: red; */
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid rgb(180, 180, 180);
-
-
+        .cardweight>span{
+          margin-right: 40px;
+          font-size: 15px;
+          /* margin-bottom: 15px; */
+          
         }
-
-        .Menu {
-            margin-right: 20px;
-
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid rgb(180, 180, 180);
+        .cardaction{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          justify-content: space-between;
+          margin-bottom: 10px;
         }
-
-        .pack {
-            margin-right: 20px;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid rgb(180, 180, 180);
-
-
+        .endbotton1{
+          /* border: 1px solid red; */
+          margin: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
-
-        .imgcato {
-            display: flex;
-            width: 1300px;
-            /* border: 1px solid red; */
-            margin: auto;
-            justify-content: space-between;
-
+        .cardbottomspan{
+        margin-left: 12px;
+        color: rgb(98, 98, 98);
+      
+      }
+        .cardactionmain{
+          
+          display: flex;
+          width: 55%;
+          justify-content: space-between;
+          align-items: baseline;
+    
         }
-
-        .concato {
-            display: flex;
-            width: 1300px;
-            /* border: 1px solid red; */
-            margin: auto;
-            justify-content: space-between;
+        .rate{
+          font-size: 20px;
+          color: #d11243;
+          font-weight: 600;
+    
         }
-
-        .concato>span {
-            text-align: center;
-            border: 1px solid black;
+        .ratelogo{
+          color: rgb(98, 98, 98);
+    
         }
-
-        /* for cata */
-        #cata {
-            display: flex;
-            text-align: center;
-            padding-left: 100px;
-            background-color: white;
-
-
+        .rateprice{
+    
+      color: rgb(98, 98, 98);
+      text-decoration: line-through;
         }
-
-        .cataimg {
-            width: 80px;
-            /* margin: 10px; */
+        .ratediscount{
+          color: green;
+        font-weight: 600;
+        font-size: 17px;
+    
+          
         }
-
-        .cataspan {
-            margin: 10px;
-
-
+        .buttoncart{
+          background-color: #d11243;
+          border: none;
+          color: white;
+          padding: 10px 15px;
+          border-radius: 8px;
+          justify-content: center;
+          align-items: center;
         }
+      
+    
+    
+     
+    /* /////////////////////////////////////////////////////////// */
+            .bottomstatic {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+              
+            }
+    .static{
+        width: 1300px; 
+        margin: auto;
+    }
+            .bottomstatic>span {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+    
+            }
+    
+            .bottomstatic>span>span {
+    
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+    
+            .bottomstatic>span>h1 {
+    
+                font-size: 25px;
+                color: rgb(98, 98, 98);
+                margin-right: 55px;
+            }
+    
+            .topstatic {
+                margin: 20px;
+                margin-left: 0px;
+                
+            }
+    
+            .topstatic>span {
+                margin: 10px 10px 10px 0px;
+            }
+    /* ///////////////////////////////////// */
+            .filterpart {
+                padding: 20px 20px 20px 50px;
+                width: 1500px;
 
-        .catatxt>p {
-            margin: 10px;
-        }
+                margin: auto;
+                padding-left: 100px;
+                position: sticky;
+                top: 80px;
+                background-color: #F7F6F6;
+            }
+    
+            .filterpart>span {
+                margin-right: 20px;
+    
+    
+            }
+    
+            .Delivery {
+                margin-right: 20px;
+                /* background-color: red; */
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(180, 180, 180);
+    
+    
+            }
+    
+            .Menu {
+                margin-right: 20px;
+    
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(180, 180, 180);
+            }
+            .ChickenType{
+                margin-right: 20px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(180, 180, 180);
+    
+    
+            }
+            .BoneType{
+                margin-right: 20px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(180, 180, 180);
+    
+    
+            }
+            .CutType{
+                margin-right: 20px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(180, 180, 180);
+    
+    
+            }
+            .BestSuitedFor{
+                margin-right: 20px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(180, 180, 180);
+    
+    
+            }
+    
+            .pack {
+                margin-right: 20px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgb(180, 180, 180);
+    
+    
+            }
+    
+            .imgcato {
+                display: flex;
+                width: 1300px;
+                /* border: 1px solid red; */
+                margin: auto;
+                justify-content: space-between;
+    
+            }
+    
+            .concato {
+                display: flex;
+                width: 1300px;
+                /* border: 1px solid red; */
+                margin: auto;
+                justify-content: space-between;
+            }
+    
+            .concato>span {
+                text-align: center;
+                border: 1px solid black;
+            }
+    
+            /* for cata */
+            #cata {
+                display: flex;
+                text-align: center;
+                padding-left: 100px;
+                background-color: white;
+    
+    
+            }
+    
+            .cataimg {
+                width: 80px;
+                /* margin: 10px; */
+            }
+    
+            .cataspan {
+                margin: 10px;
+    
+    
+            }
+    
+            .catatxt>p {
+                margin: 10px;
+            }
+    
+            .catatxt {
+    
+                color: gray;
+                text-decoration: none;
+            }
+    
+            br+span:hover {
+                color: #d11243;
+            }
 
-        .catatxt {
+            /* other */
 
-            color: gray;
-            text-decoration: none;
-        }
 
-        br+span:hover {
-            color: #d11243;
-        }
 
-        /* /////////////////////////////////////othercode */
-
-        * {
+/* ////////////////////////ajay end */
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Lato', sans-serif;
@@ -923,7 +944,7 @@ font-family: 'Rubik', sans-serif;
         } */
         #bill {
             border: 1px dotted black;
-            height: 210px;
+            height: 160px;
 
         }
 
@@ -1003,249 +1024,238 @@ font-family: 'Rubik', sans-serif;
         #subtotal{
             padding-right: 8px;
         }
-       
+/* cartend */
+</style>
 
 
-        /* loginends */
 
- 
-    </style>
 </head>
-
 <body>
-        <!-- /* nav+login */       /* nav+login */       /* nav+login */        /* nav+login */ -->
-
-        <div id="topnav">
+     <!-- /* nav+login */       /* nav+login */       /* nav+login */        /* nav+login */ -->
+     <div id="topnav">
+        <div>
+            <div class="topnavx">
+                <p>Why Licious?</p>
+                <div class="pointer"></div>
+                <p>Download App</p>
+                <img src="https://www.licious.in/img/rebranding/ios_app_icon.svg" alt="" >
+                <img src="https://www.licious.in/img/rebranding/android_app_icon.svg" alt="">
+            </div>
             <div>
-                <div class="topnavx">
-                    <p>Why Licious?</p>
-                    <div class="pointer"></div>
-                    <p>Download App</p>
-                    <img src="https://www.licious.in/img/rebranding/ios_app_icon.svg" alt="" >
-                    <img src="https://www.licious.in/img/rebranding/android_app_icon.svg" alt="">
-                </div>
-                <div>
-                     <select name="" id="contactuso">
-                        <option value="">Contact Us</option>
-                        <option value="">1800-4190-786</option>
-                        <option value="">talktous@licious.com</option>
-                     </select>
-                     <div class="pointer"></div>
-                     <p>Careers @Licious</p>
-                     <div class="pointer"></div>
-                     <p>About Us</p>
-                     <div class="pointer"></div>
-                     <p>FSSC 22000 Certification</p>
-                </div>
+                 <select name="" id="contactuso">
+                    <option value="">Contact Us</option>
+                    <option value="">1800-4190-786</option>
+                    <option value="">talktous@licious.com</option>
+                 </select>
+                 <div class="pointer"></div>
+                 <p>Careers @Licious</p>
+                 <div class="pointer"></div>
+                 <p>About Us</p>
+                 <div class="pointer"></div>
+                 <p>FSSC 22000 Certification</p>
             </div>
         </div>
-        
-        <div id="navbar">
-            <div>
-                <img src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="">
-                <div id="location">
-                    <img src="https://www.licious.in/img/rebranding/location_icon.svg" alt="">
-                    <div>
-                        <p>BENGALURU</p>
-                        <b>Bengaluru, Karnatak...  ﹀</b>
-                    </div>
-                    
-                </div>
-                <div id="searchBar">
-                    <input type="text" placeholder="Search for any delicious product" onclick="borderxxx" id="xxxin">
-                    <img src="https://www.licious.in/img/rebranding/search_icon.svg" alt="">
-                </div>
-    
-    
-                <div class="signin">
-                    <div>
-                        <img src="https://www.licious.in/img/rebranding/profile_icon.svg" alt="">
-                        
-                    </div>
-            
-                        <p class="font" id="person">Login</p>
-                    
-                    
-                </div>
-    
-                <div class="signin" id="cartbtnx">
-                    <div id="cartdiv">
-                        <img src="https://www.licious.in/img/rebranding/cart_icon.svg" alt="">
-                        
-                    </div>
-                    <p class="font">Cart</p>
-                </div>
-            </div>
-        </div>
-
-
-
-    <!-- ajay html -->
-       
-
-
-        <!-- login ends -->
-
-    <div id="cata">
-        <span class="cataspan">
-            <a style="text-decoration:none" href="Today's Dealspage.html">
-                <img class="cataimg"
-                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/59724ce1-1f3d-f1f4-c688-c05a0005c8de/original/Circle@3x-16.png?format=webp"
-                    alt="">
-                <br>
-                <span class="catatxt">
-                    <p>Today's Deals</p>
-                </span>
-
-            </a>
-        </span>
-        <span class="cataspan">
-            <a style="text-decoration:none" href="Chickenpage.html">
-                <img class="cataimg"
-                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c777a59e-f2f7-dd37-9ba0-7f385aed3eb3/original/Circle@3x.png?format=webp"
-                    alt="">
-                <br>
-                <span class="catatxt">
-                    <p>Chicken </p>
-                </span>
-            </a>
-        </span>
-        <span class="cataspan">
-            <a style="text-decoration:none" href="Fish & Seafoodpage.html">
-                <img class="cataimg"
-                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/e13f894d-d51e-beea-4ef5-aab1a193d373/original/Circle@3x-13.png?format=webp"
-                    alt="">
-                <br><span class="catatxt">
-                    <p> Fish & Seafood </p>
-                </span>
-
-            </a>
-        </span>
-        <span class="cataspan">
-            <a style="text-decoration:none" href="Muttonpage.html">
-                <img class="cataimg"
-                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/4d9c0c72-c070-dd56-4a2e-9fbfe8230f42/original/Circle@3x-1.png?format=webp"
-                    alt="">
-                <br><span class="catatxt">
-                    <p> Mutton </p>
-                </span>
-            </a>
-        </span>
-
-        <span class="cataspan">
-            <a style="text-decoration:none" href="Ready to Cookpage.html">
-                <img class="cataimg"
-                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/450e3217-59ac-8145-3bee-296e729f03bf/original/Circle@3x-17.png?format=webp"
-                    alt="">
-                <br><span class="catatxt">
-                    <p> Ready to Cook </p>
-                </span>
-            </a>
-        </span>
-        <span class="cataspan">
-            <a style="text-decoration:none" href="Prawnspage.html">
-                <img class="cataimg"
-                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/f7ef9035-9baa-b9b5-d56d-97059ffe6c39/original/Circle@3x-18.png?format=webp"
-                    alt="">
-                <br><span class="catatxt">
-                    <p> Prawns</p>
-                </span>
-            </a>
-        </span>
-        <span class="cataspan">
-            <a style="text-decoration:none" href="spreadpage.html">
-                <img class="cataimg"
-                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/7b500ec8-8001-436b-74ca-430fd4e2ff0b/original/Circle@3x-14.png?format=webp"
-                    alt="">
-                <br><span class="catatxt">
-                    <p> Spreads</p>
-                </span>
-            </a>
-        </span>
-        <span class="cataspan">
-            <a style="text-decoration:none" href="Eggspage.html">
-                <img class="cataimg"
-                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/27cf80b9-2a8f-d70d-7695-8142c85e5bcb/original/Circle@3x-2.png?format=webp"
-                    alt="">
-                <br><span class="catatxt">
-                    <p> Eggs </p>
-                </span>
-            </a>
-        </span>
-        <span class="cataspan">
-            <a style="text-decoration:none" href="Kebabs & Tandoorpage.html">
-                <img class="cataimg"
-                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c7cde9d8-4e31-8ea5-79a4-cce48c7ed109/original/Circle@3x-15.png?format=webp"
-                    alt="">
-                <br><span class="catatxt">
-                    <p> Kebabs & Tandoor</p>
-                </span>
-            </a>
-        </span>
-        <span class="cataspan">
-            <a style="text-decoration:none" href="Combospage.html">
-                <img class="cataimg"
-                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/3130cc9b-71e5-ff33-d413-9fcda531afac/original/Circle@3x-20.png?format=webp"
-                    alt="">
-                <br><span class="catatxt">
-                    <p>Combos</p>
-                </span>
-            </a>
-        </span>
-        <span class="cataspan">
-            <a style="text-decoration:none" href="BestSeller.html">
-                <img class="cataimg"
-                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/90882875-962a-8e96-6c45-f7d6492abd3b/original/Circle@3x-16.png?format=webp"
-                    alt="">
-                <br><span class="catatxt">
-                    <p>Bestsellers </p>
-                </span>
-            </a>
-        </span>
-
-
     </div>
-
-
-    <div class="cointainer">
-
-        <div class="static">
-            <div class="topstatic">
-                <span> <a href="">Home</a></span> <span> > </span><span>Best Seller</span>
+    
+    <div id="navbar">
+        <div>
+            <img src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="">
+            <div id="location">
+                <img src="https://www.licious.in/img/rebranding/location_icon.svg" alt="">
+                <div>
+                    <p>BENGALURU</p>
+                    <b>Bengaluru, Karnatak...  ﹀</b>
+                </div>
+                
             </div>
-            <div class="bottomstatic">
-                <span>
-                    <h1>Best Seller</h1>
-                </span>
-                <span>
-                    <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_60828eb6451d0" alt="">
-                    <span>Ready To Eat</span>
-                    <span>|</span>
-                </span>
-
-                <span>
-                    <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_60828f0a9667d" alt="">
-                    <span>Real Meat Chunks</span>
-                    <span>|</span>
-                </span>
-
-                <span>
-                    <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_6082903259d91" alt="">
-                    <span>No Artificial Preservatives</span>
-                    <span>|</span>
-                </span>
-
-                <span>
-                    <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_6082906db5f90" alt="">
-                    <span>Delicious Flavours</span>
-                </span>
-
-
+            <div id="searchBar">
+                <input type="text" placeholder="Search for any delicious product" onclick="borderxxx" id="xxxin">
+                <img src="https://www.licious.in/img/rebranding/search_icon.svg" alt="">
             </div>
 
 
+            <div class="signin">
+                <div>
+                    <img src="https://www.licious.in/img/rebranding/profile_icon.svg" alt="">
+                    
+                </div>
+        
+                    <p class="font" id="person">Login</p>
+                
+                
+            </div>
+
+            <div class="signin" id="cartbtnx">
+                <div id="cartdiv">
+                    <img src="https://www.licious.in/img/rebranding/cart_icon.svg" alt="">
+                    
+                </div>
+                <p class="font">Cart</p>
+            </div>
         </div>
-        <div class="filterpart">
+    </div>
+    <!-- <div id="demo">
+    </div> -->
+
+<!-- ajay html -->
+<div id="cata">
+    <span class="cataspan">
+        <a style="text-decoration:none" href="Today's Dealspage.html">
+            <img class="cataimg"
+                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/59724ce1-1f3d-f1f4-c688-c05a0005c8de/original/Circle@3x-16.png?format=webp"
+                alt="">
+            <br>
+            <span class="catatxt">
+                <p>Today's Deals</p>
+            </span>
+
+        </a>
+    </span>
+    <span class="cataspan">
+        <a style="text-decoration:none" href="Chickenpage.html">
+            <img class="cataimg"
+                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c777a59e-f2f7-dd37-9ba0-7f385aed3eb3/original/Circle@3x.png?format=webp"
+                alt="">
+            <br>
+            <span class="catatxt">
+                <p>Chicken </p>
+            </span>
+        </a>
+    </span>
+    <span class="cataspan">
+        <a style="text-decoration:none" href="Fish & Seafoodpage.html">
+            <img class="cataimg"
+                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/e13f894d-d51e-beea-4ef5-aab1a193d373/original/Circle@3x-13.png?format=webp"
+                alt="">
+            <br><span class="catatxt">
+                <p> Fish & Seafood </p>
+            </span>
+
+        </a>
+    </span>
+    <span class="cataspan">
+        <a style="text-decoration:none" href="Muttonpage.html">
+            <img class="cataimg"
+                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/4d9c0c72-c070-dd56-4a2e-9fbfe8230f42/original/Circle@3x-1.png?format=webp"
+                alt="">
+            <br><span class="catatxt">
+                <p> Mutton </p>
+            </span>
+        </a>
+    </span>
+
+    <span class="cataspan">
+        <a style="text-decoration:none" href="Ready to Cookpage.html">
+            <img class="cataimg"
+                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/450e3217-59ac-8145-3bee-296e729f03bf/original/Circle@3x-17.png?format=webp"
+                alt="">
+            <br><span class="catatxt">
+                <p> Ready to Cook </p>
+            </span>
+        </a>
+    </span>
+    <span class="cataspan">
+        <a style="text-decoration:none" href="Prawnspage.html">
+            <img class="cataimg"
+                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/f7ef9035-9baa-b9b5-d56d-97059ffe6c39/original/Circle@3x-18.png?format=webp"
+                alt="">
+            <br><span class="catatxt">
+                <p> Prawns</p>
+            </span>
+        </a>
+    </span>
+    <span class="cataspan">
+        <a style="text-decoration:none" href="spreadpage.html">
+            <img class="cataimg"
+                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/7b500ec8-8001-436b-74ca-430fd4e2ff0b/original/Circle@3x-14.png?format=webp"
+                alt="">
+            <br><span class="catatxt">
+                <p> Spreads</p>
+            </span>
+        </a>
+    </span>
+    <span class="cataspan">
+        <a style="text-decoration:none" href="Eggspage.html">
+            <img class="cataimg"
+                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/27cf80b9-2a8f-d70d-7695-8142c85e5bcb/original/Circle@3x-2.png?format=webp"
+                alt="">
+            <br><span class="catatxt">
+                <p> Eggs </p>
+            </span>
+        </a>
+    </span>
+    <span class="cataspan">
+        <a style="text-decoration:none" href="Kebabs & Tandoorpage.html">
+            <img class="cataimg"
+                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c7cde9d8-4e31-8ea5-79a4-cce48c7ed109/original/Circle@3x-15.png?format=webp"
+                alt="">
+            <br><span class="catatxt">
+                <p> Kebabs & Tandoor</p>
+            </span>
+        </a>
+    </span>
+    <span class="cataspan">
+        <a style="text-decoration:none" href="Combospage.html">
+            <img class="cataimg"
+                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/3130cc9b-71e5-ff33-d413-9fcda531afac/original/Circle@3x-20.png?format=webp"
+                alt="">
+            <br><span class="catatxt">
+                <p>Combos</p>
+            </span>
+        </a>
+    </span>
+    <span class="cataspan">
+        <a style="text-decoration:none" href="BestSeller.html">
+            <img class="cataimg"
+                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/90882875-962a-8e96-6c45-f7d6492abd3b/original/Circle@3x-16.png?format=webp"
+                alt="">
+            <br><span class="catatxt">
+                <p>Bestsellers </p>
+            </span>
+        </a>
+    </span>
+
+
+</div>
+
+<div class="cointainer">
+
+<div class="static">
+    <div class="topstatic">
+        <span> <a href="">Home</a></span> <span> > </span><span>Best Seller</span>
+    </div>
+  <div class="bottomstatic">
+    <span> <h1>Best Seller </h1></span>
+    <span>
+      <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_60828eb6451d0" alt="">
+      <span>Ready To Eat</span>
+      <span>|</span>
+    </span>
+
+    <span>
+      <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_60828f0a9667d" alt="">
+      <span>Real Meat Chunks</span>
+      <span>|</span>
+    </span>
+
+    <span>
+      <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_6082903259d91" alt="">
+      <span>No Artificial Preservatives</span>
+      <span>|</span>
+    </span>
+
+    <span>
+      <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_6082906db5f90" alt="">
+      <span>Delicious Flavours</span>
+    </span>
+
+    
+  </div>
+  
+  
+ </div>
+
+ <div class="filterpart">
             <!-- append filterpart here -->
             <span><button class="Delivery">Express Delivery</button>
                 <!-- <select id="Delivery">  
@@ -1265,22 +1275,28 @@ font-family: 'Rubik', sans-serif;
                     <option value="Regular">Regular</option>
                 </select></span>
 
-                
+
 
 
         </div>
-        <div class="card">
-            <!-- <a id="card-a"> -->
 
-            <!-- </a> -->
 
-            <!-- append all products here -->
-        </div>
 
-    </div>
+ <div class="card">
+    <!-- <a id="card-a"> -->
 
-    <!--start  -->
-    <!-- signup-slide in-->
+    <!-- </a> -->
+
+    <!-- append all products here -->
+  </div>
+
+</div>
+
+
+
+
+
+
 <!--other start  -->
     <!-- signup-slide in-->
     <div class="signin-slide">
@@ -1333,247 +1349,469 @@ font-family: 'Rubik', sans-serif;
 
 
     <!-- login ends -->
- 
+    <!-- ///////////////////////////cart /////////////////////////////////-->
+   
+    <div class="slideCart"  id="surajcart">
+        <div id="main">
+            <div class="close-cart" id="cartclose">
+                ╳
+            </div>
 
 
+            <br>
+            <h2>Order Summary</h2>
+            <div id="deliveryCharge">
+                <h4> Your cart value is less than ₹399 & delivery charge applies </h4>
+            </div>
+            <br>
+            <div id="discountText">
+                <p>Congratulations!, You've saved ₹<span id="gotDiscounted">0</span></p>
+            </div>
+            <!-- **********appended from here********** -->
+            <!-- <div class="mainAttached">
+                       <div class="firstLine" >
+                              <span>1</span>
+                               <div class="nameBox">
+                                   <h4>item_name</h4>
+                               </div>
+                               <span>X</span>
+                        </div>
+
+                        <div class="secondLine">
+                            <span class="item_weight"> weight </span>
+                            <span class="item_price"> price </span>
+                            <div class="counter">
+                                  <span class="minus_one">-</span>
+                                  <span class="item_qty">1</span>
+                                  <span class="plus_one">+</span>  
+                                  <hr/>
+                            </div>
+
+                        </div>
+            </div> -->
+
+        </div>
+        <br>
+        <p>Stop paying delivery charges. Join Meatopia today!</p>
+        <br>
+        <div id="design">
+            <img src="https://www.licious.in/img/rebranding/loyalty_licious_logo.svg" alt="Meatopia">
+            <button class="popup" onclick="myFunction()">
+                <span class="popuptext" id="myPopup"></span>>JOIN NOW ></button>
+        </div>
+        <h4>Don't miss out on these Meaty Treats!</h4>
+        <div id="treats">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="cartBill">
+            <div id="bill">
+                <div style="font-size:14px;">BILL DETAILS</div>
+                
+                <ul>Subtotal <span id="subtotal">0</span></ul>
+                <ul>Delivery Charge <span id="extraCharge">0</span></ul>
+                <ul>Discount <span>0</span></ul>
+                <hr>
+                <h3 id="padit">Total <span style="margin-left: 280px; color: #d11243;">₹<span>0</span></span></h3>
+                <!-- <h4 >Total <span style="margin-left: 280px;">₹<span  id="toPay">0</span></span></h4> -->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                
+            </div>
+
+        </div>
+        <div id="last">
+            <div id="firstHalf">
+                <h2>Total:₹ <span></span><span style="margin-left:8px;"><img src="https://www.licious.in/img/rebranding/info-icon.svg"
+                            alt="logo"></span></h2>
+            </div>
+            <div id="secondHalf">
+                <button>Proceed to checkout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footContainer">
+        <!-- <hr> -->
+        <div id="foottop">
+            <img src="https://www.licious.in/img/rebranding/licious-logo.svg" alt="">
+        </div>
+    
+        <div id="seconddivision">
+            <div id="uselink">
+                <div>
+                    <p class="hhhh">USEFUL LINKS
+                    </p>
+                    <p>Why Licious?</p>
+                    <p>Refer & Earn</p>
+                    <p>Licious Cash & Cash+</p>
+                    <p>Careers</p>
+                    <p>BLOG</p>
+                    <p>Campaign</p>
+                    <p>Bug Bounty Guidelines</p>
+                    <p>About Us</p>
+                    <p>FSSC 22000 Certification</p>
+                    <p>FSSAI Licenses</p>
+                    <p>Sitemap</p>
+                  
+                </div>
+                <div>
+                    <p class="hhhh">EXPERIENCE LICIOUS APP ON MOBILE</p>
+                    <br>
+                    <img src="https://www.licious.in/img/rebranding/app-store-new.svg" alt="">
+                    <img src="https://www.licious.in/img/rebranding/play-store-new.png" alt="">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+                    <span id="socialcatch">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <p class="hhhh">KEEP IN TOUCH  </p>
+                        &nbsp;
+                        &nbsp;
+                            
+                            
+                            <img src="https://www.licious.in/img/rebranding/insta_color.png" alt="">
+                            &nbsp;
+                            &nbsp;
+                            <img src="https://www.licious.in/img/rebranding/fb_color.png" alt="">
+                            &nbsp;
+                            &nbsp;
+                            <img src="https://www.licious.in/img/rebranding/twitter_color.png" alt="">
+                        
+                    </span>
+    
+                </div>
+            </div>
+            <div id="connt">
+                <div>
+                    <p class="hhhh">CONTACT US</p>
+                    <p>Call: 1800-4190-786</p>
+                    <p>Talktous@licious.com</p>
+                    <br><br>
+    
+                    <p class="hhhh">REGISTERED OFFICE ADDRESS:</p>
+                    <p>House of Licious, Zed Pearl, No 12,</p>
+                    <p>Domlur Layout</p>
+                    <p>Bangalore, Karnataka - 560071</p>
+                
+                </div>
+    
+                <div>
+                    <p>T&C</p>
+                    <p>FAQ</p>
+                    <p>Privacy Policy</p>
+                    <p class="hhhh">HAVE SECURITY CONCERN?</p>
+                    <p>Mail us to:</p>
+                    <p>security@licious.com</p>
+                </div>
+    
+                <div>
+                    <img src="https://www.licious.in/img/rebranding/3-dsecure.png" alt="">
+                </div>
+            </div>
+    
+        </div>
+       <div class="devider">
+        <p class="hhhh">CITIES WE SERVE</p>
+        <hr>
+       </div>
+       <p id="city">Bengaluru &nbsp; | &nbsp;NCR &nbsp; | &nbsp; Hyderabad  &nbsp; | &nbsp;Chandigarh &nbsp; | &nbsp; Panchkula &nbsp; | &nbsp; Mohali &nbsp; | &nbsp; Mumbai &nbsp; | &nbsp; Pune  &nbsp; | &nbsp;Chennai  &nbsp; | &nbsp;Coimbatore  &nbsp; | &nbsp;Jaipur &nbsp; | &nbsp; Cochin  &nbsp; | &nbsp;Vijayawada &nbsp; | &nbsp; Visakhapatnam  &nbsp; | &nbsp;Pondicherry  &nbsp; | &nbsp;Kolkata  &nbsp; | &nbsp;Trichy &nbsp; | &nbsp; Lucknow &nbsp; | &nbsp; Kanpur  &nbsp; | &nbsp;Agra &nbsp; | &nbsp; Thrissur &nbsp; | &nbsp; Nagpur &nbsp; | &nbsp; Bhilai &nbsp; | &nbsp; Nashik &nbsp; | &nbsp; Palakkad</p>
+          <br>
+          <hr class="linefull">
+          <br>
+    
+    
+          <p class="hhhh">We will sell only the meat that we would eat ourselves.</p>
+          <p>At Licious, we’re big meat-lovers. And by big, we mean huge. So when it comes to the meat we put on your plate, we’re extremely picky. Every single product is handpicked by a team with years of experience.</p>
+    
+    
+          <p class="hhhh">If it’s not fresh, we won’t sell it</p>
+          <p>For meat to stay fresh and retain its natural juices, it needs to be stored at a temperature between 0° and 5°C. We maintain this temperature from the time we procure the product to cleaning, cutting and storing it, until it leaves for delivery. And even when it’s out for delivery, we keep it chilled right up to your doorstep.Did we mention that we’re obsessed?</p>
+    
+          <p class="hhhh">We will charge only for what you buy</p>
+          <p>Doesn’t everyone do this? Not really. Most other places first weigh the meat, then cut up the pieces, and throw out the parts which aren’t fit to eat, such as offal, gizzard, wingtips, etc. But you still pay based on the original weight even though what you finally get is 10% to 30% less</p>
+    <br><br>
+          <hr class="linefull">
+          <div id="copyright">x
+            <img src="" alt="">
+            <div>
+    
+                <p class="hhhh">© &nbsp; 2022 &nbsp; Delightful Gourmet Pvt Ltd. All Rights Reserved.</p>
+                <br>
+                <p>Licious is your one-stop fresh meat delivery shop. In here, you get nothing but the freshest meat & seafood, delivered straight to your doorstep. Now you can buy meat online anytime at your convenience. Indulge in our diverse selection: Chicken, Mutton, Seafood (Fish, Prawns, Crabs), Marinades & Cold Cuts. All our products are completely natural and healthy. Once you've experienced Licious, you'll never go back to the old way of buying meat and seafood.</p>
+               
+            
+            
+            </div>
+    
+          </div>
+    
+    </div>
+
+    
 </body>
+<!-- <script src="navbar.js"> -->
+    <script>
 
-</html>
-<script>
 
-    let data = [
+let data = [
 
-        {
+{
 
 
 
-            ProductID: "spreads-101",
-            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5vxs7/18/prod_display_image/1634636034.6091--2021-10-1915:03:54--1818?format=webp",
+    ProductID: "spreads-101",
+    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5vxs7/18/prod_display_image/1634636034.6091--2021-10-1915:03:54--1818?format=webp",
 
-            Title: "Chunky Butter Chicken Spread (Single Serve)",
-            Details: "Freshly roasted chunks of chicken ....",
-            Netwt: "35gms",
-            Gross: "35gms",
-            MRP: "139",
+    Title: "Chunky Butter Chicken Spread (Single Serve)",
+    Details: "Freshly roasted chunks of chicken ....",
+    Netwt: "35gms",
+    Gross: "35gms",
+    MRP: "139",
 
 
 
-            Delivery: "Express Dilevery",
-            Menu: "Chicken Spreads",
-            Packsize: "Regular",
+    Delivery: "Express Dilevery",
+    Menu: "Chicken Spreads",
+    Packsize: "Regular",
 
-            productPagedetails: "Freshly roasted chunks of chicken coated in the ever-favourite butter chicken base make this spread a gourmet treat. This ready-to-eat, single-serve pack is ideal for your protein-rich, quick lunch break. Apply the mildly spicy spread generously on a roti or a naan and satiate your hunger and butter chicken cravings. Our chunky meat spreads have zero trans-fat and are preservative free. Order the Chunky Butter Chicken Spread online from Licious and get doorstep delivery.",
-            Bestbuy: "Best before 25 days",
-            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5vxs7/18/prod_image/1634636036.2392--2021-10-1915:03:56--1818?format=webp",
+    productPagedetails: "Freshly roasted chunks of chicken coated in the ever-favourite butter chicken base make this spread a gourmet treat. This ready-to-eat, single-serve pack is ideal for your protein-rich, quick lunch break. Apply the mildly spicy spread generously on a roti or a naan and satiate your hunger and butter chicken cravings. Our chunky meat spreads have zero trans-fat and are preservative free. Order the Chunky Butter Chicken Spread online from Licious and get doorstep delivery.",
+    Bestbuy: "Best before 25 days",
+    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5vxs7/18/prod_image/1634636036.2392--2021-10-1915:03:56--1818?format=webp",
 
-        },
+},
 
-        {
+{
 
-            ProductID: "spreads-102",
-            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_display_image/1634636526.4799--2021-10-1915:12:06--1818?format=webp",
+    ProductID: "spreads-102",
+    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_display_image/1634636526.4799--2021-10-1915:12:06--1818?format=webp",
 
-            Title: "Chunky Butter Chicken Spread",
-            Details: "Our Chunky Butter Chicken Spread offers freshly....",
-            Netwt: "200gms",
-            Gross: "200gms",
-            MRP: "199",
+    Title: "Chunky Butter Chicken Spread",
+    Details: "Our Chunky Butter Chicken Spread offers freshly....",
+    Netwt: "200gms",
+    Gross: "200gms",
+    MRP: "199",
 
-            Delivery: "Normal Dilevery",
-            Menu: "Egg Spreads",
-            Packsize: "Mini",
+    Delivery: "Normal Dilevery",
+    Menu: "Egg Spreads",
+    Packsize: "Mini",
 
-            productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
-            Bestbuy: "Best before 30 days",
-            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+    productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+    Bestbuy: "Best before 30 days",
+    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
-        },
+},
 
-        {
+{
 
-            ProductID: "spreads-103",
-            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5rtvg/18/prod_image/1631511483.7523--2021-09-1311:08:03--1818?format=webp",
+    ProductID: "spreads-103",
+    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5rtvg/18/prod_image/1631511483.7523--2021-09-1311:08:03--1818?format=webp",
 
-            Title: "Chunky Shawarma Chicken Spread",
-            Details: "Get the authentic smoky taste of ....",
-            Netwt: "200gms",
-            Gross: "200gms",
-            MRP: "199",
+    Title: "Chunky Shawarma Chicken Spread",
+    Details: "Get the authentic smoky taste of ....",
+    Netwt: "200gms",
+    Gross: "200gms",
+    MRP: "199",
 
-            Delivery: "Express Delivery",
-            Menu: "Chicken Spreads",
-            Packsize: "Regular",
+    Delivery: "Express Delivery",
+    Menu: "Chicken Spreads",
+    Packsize: "Regular",
 
-            productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
-            Bestbuy: "Best before 30 days",
-            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_fagkel6pboh/3/prod_display_image/1599039295.0495--2020-09-0215:04:55--472",
+    productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+    Bestbuy: "Best before 30 days",
+    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_fagkel6pboh/3/prod_display_image/1599039295.0495--2020-09-0215:04:55--472",
 
-        },
+},
 
-        {
+{
 
-            ProductID: "spreads-104",
-            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_fagkel6pboh/3/prod_display_image/1599039295.0495--2020-09-0215:04:55--472",
+    ProductID: "spreads-104",
+    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_fagkel6pboh/3/prod_display_image/1599039295.0495--2020-09-0215:04:55--472",
 
-            Title: "Chunky Continental Chicken Spread - 400gms",
-            Details: "A meaty delight which has the right ....",
-            Netwt: "200gms",
-            Gross: "400gms",
-            MRP: "390",
+    Title: "Chunky Continental Chicken Spread - 400gms",
+    Details: "A meaty delight which has the right ....",
+    Netwt: "200gms",
+    Gross: "400gms",
+    MRP: "390",
 
-            Delivery: "Express Delivery",
-            Menu: "Prawn Spreads",
-            Packsize: "Combo",
+    Delivery: "Express Delivery",
+    Menu: "Prawn Spreads",
+    Packsize: "Combo",
 
-            productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
-            Bestbuy: "Best before 30 days",
-            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+    productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+    Bestbuy: "Best before 30 days",
+    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
-        },
+},
 
-        {
+{
 
-            ProductID: "spreads-105",
-            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_display_image/1634636526.4799--2021-10-1915:12:06--1818?format=webp",
+    ProductID: "spreads-105",
+    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_display_image/1634636526.4799--2021-10-1915:12:06--1818?format=webp",
 
-            Title: "Chunky Butter Chicken Spread",
-            Details: "Our Chunky Butter Chick....",
-            Netwt: "200gms",
-            Gross: "200gms",
-            MRP: "199",
+    Title: "Chunky Butter Chicken Spread",
+    Details: "Our Chunky Butter Chick....",
+    Netwt: "200gms",
+    Gross: "200gms",
+    MRP: "199",
 
-            Delivery: "Normal Dilevery",
-            Menu: "Prawn Spreads",
-            Packsize: "Mini",
+    Delivery: "Normal Dilevery",
+    Menu: "Prawn Spreads",
+    Packsize: "Mini",
 
-            productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
-            Bestbuy: "Best before 30 days",
-            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+    productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+    Bestbuy: "Best before 30 days",
+    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
-        },
+},
 
-        {
+{
 
-            ProductID: "spreads-106",
-            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5vg2a/18/prod_image/1631600500.9901--2021-09-1411:51:40--1818?format=webp",
+    ProductID: "spreads-106",
+    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5vg2a/18/prod_image/1631600500.9901--2021-09-1411:51:40--1818?format=webp",
 
-            Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
-            Details: "Freshly cooked chunks of chicken are ....",
-            Netwt: "200gms",
-            Gross: "200gms",
-            MRP: "199",
+    Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
+    Details: "Freshly cooked chunks of chicken are ....",
+    Netwt: "200gms",
+    Gross: "200gms",
+    MRP: "199",
 
-            Delivery: "Normal Delivery",
-            Menu: "Chicken Spreads",
-            Packsize: "Mini",
+    Delivery: "Normal Delivery",
+    Menu: "Chicken Spreads",
+    Packsize: "Mini",
 
-            productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
-            Bestbuy: "Best before 30 days",
-            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+    productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+    Bestbuy: "Best before 30 days",
+    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
-        },
+},
 
-        {
+{
 
-            ProductID: "spreads-107",
-            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5vg2a/18/prod_image/1631600500.9901--2021-09-1411:51:40--1818?format=webp",
+    ProductID: "spreads-107",
+    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5vg2a/18/prod_image/1631600500.9901--2021-09-1411:51:40--1818?format=webp",
 
-            Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
-            Details: "Freshly cooked chunks of chicken are ....",
-            Netwt: "200gms",
-            Gross: "200gms",
-            MRP: "199",
+    Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
+    Details: "Freshly cooked chunks of chicken are ....",
+    Netwt: "200gms",
+    Gross: "200gms",
+    MRP: "199",
 
-            Delivery: "Normal Delivery",
-            Menu: "Egg Spreads",
-            Packsize: "Mini",
+    Delivery: "Normal Delivery",
+    Menu: "Egg Spreads",
+    Packsize: "Mini",
 
-            productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
-            Bestbuy: "Best before 30 days",
-            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+    productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+    Bestbuy: "Best before 30 days",
+    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
-        },
+},
 
-        {
+{
 
-            ProductID: "spreads-108",
-            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5vg2a/18/prod_image/1631600500.9901--2021-09-1411:51:40--1818?format=webp",
+    ProductID: "spreads-108",
+    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5vg2a/18/prod_image/1631600500.9901--2021-09-1411:51:40--1818?format=webp",
 
-            Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
-            Details: "Freshly cooked chunks of chicken ....",
-            Netwt: "200gms",
-            Gross: "200gms",
-            MRP: "199",
+    Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
+    Details: "Freshly cooked chunks of chicken ....",
+    Netwt: "200gms",
+    Gross: "200gms",
+    MRP: "199",
 
-            Delivery: "Normal Delivery",
-            Menu: "Prawn Spreads",
-            Packsize: "Mini",
+    Delivery: "Normal Delivery",
+    Menu: "Prawn Spreads",
+    Packsize: "Mini",
 
-            productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
-            Bestbuy: "Best before 30 days",
-            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+    productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
+    Bestbuy: "Best before 30 days",
+    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
-        },
+},
 
-        {
+{
 
-            ProductID: "spreads-109",
-            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_fagkel6pboh/3/prod_display_image/1599039295.0495--2020-09-0215:04:55--472",
+    ProductID: "spreads-109",
+    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_fagkel6pboh/3/prod_display_image/1599039295.0495--2020-09-0215:04:55--472",
 
-            Title: "Chunky Continental Chicken Spread - 400gms",
-            Details: "A meaty delight which has the  ....",
-            Netwt: "200gms",
-            Gross: "400gms",
-            MRP: "490",
+    Title: "Chunky Continental Chicken Spread - 400gms",
+    Details: "A meaty delight which has the  ....",
+    Netwt: "200gms",
+    Gross: "400gms",
+    MRP: "490",
 
-            Delivery: "Normal Delivery",
-            Menu: "Egg Spreads",
-            Packsize: "Combo",
+    Delivery: "Normal Delivery",
+    Menu: "Egg Spreads",
+    Packsize: "Combo",
 
-            productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
-            Bestbuy: "Best before 30 days",
-            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+    productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+    Bestbuy: "Best before 30 days",
+    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
-        },
+},
 
-        {
+{
 
-            ProductID: "spreads-110",
-            image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5vg2a/18/prod_image/1631600500.9901--2021-09-1411:51:40--1818?format=webp",
+    ProductID: "spreads-110",
+    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5vg2a/18/prod_image/1631600500.9901--2021-09-1411:51:40--1818?format=webp",
 
-            Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
-            Details: "Freshly cooked chunks of chicken ....",
-            Netwt: "200gms",
-            Gross: "200gms",
-            MRP: "199",
+    Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
+    Details: "Freshly cooked chunks of chicken ....",
+    Netwt: "200gms",
+    Gross: "200gms",
+    MRP: "199",
 
-            Delivery: "Normal Delivery",
-            Menu: "Prawn Spreads",
-            Packsize: "Regular",
+    Delivery: "Normal Delivery",
+    Menu: "Prawn Spreads",
+    Packsize: "Regular",
 
-            productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
-            Bestbuy: "Best before 30 days",
-            image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
+    productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
+    Bestbuy: "Best before 30 days",
+    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
 
-        },
+},
 
 
-    ]
+]
 
+let productcontainer = document.querySelector(".card");
 
-    let productcontainer = document.querySelector(".card");
-    let filtermenu = document.querySelector(".Menu");
-    let filterdelivery = document.querySelector(".Delivery");
-    let filterpack = document.querySelector(".pack");
+  
+  
+  let cartls = JSON.parse(localStorage.getItem("cartpage")) || [];
+// console.log(cartls)
 
-
-    let cartls = JSON.parse(localStorage.getItem("cartpage")) || [];
-    // console.log(cartls)
-
-    display(data);
-
-    function display(data) {
+display(data);
+  function display(data) {
         productcontainer.innerHTML = "";
+ 
         
         
         data.forEach(function (elem, index) {
@@ -1589,7 +1827,7 @@ font-family: 'Rubik', sans-serif;
                                           
                                            
                                            localStorage.setItem("in-page-obj", JSON.stringify(insidepageobj));
-                                        //    ipage.href = "https://www.google.com/";
+                                           ipage.href = "productDetails.html";
                                         })
                                            
 
@@ -1699,6 +1937,7 @@ font-family: 'Rubik', sans-serif;
                                                                    // console.log("4");
                                                                    alert("Product Added Successfully");
                                                                    elem["Quantity"] = 1;
+                                                                   
                                                
                                                                    // addtocart.innerText=elem.Quantity
                                                
@@ -1706,6 +1945,7 @@ font-family: 'Rubik', sans-serif;
                                                                    cartls.push(elem);
                                                                    // console.log(elem);
                                                                    localStorage.setItem("cartpage", JSON.stringify(cartls));
+                                                                   window.location.reload();
                                                                } else {
                                                                    // console.log("5");
                                                                    alert("Product Already In Cart");
@@ -1748,7 +1988,10 @@ font-family: 'Rubik', sans-serif;
 
 
 
-
+    let filterChickenType = document.querySelector(".ChickenType");
+    let filtermenu = document.querySelector(".Menu");
+    let filterdelivery = document.querySelector(".Delivery");
+    let filterpack = document.querySelector(".pack");
 
 
 
@@ -1782,33 +2025,27 @@ font-family: 'Rubik', sans-serif;
     })
 
 
-    // function add to cart declare
-    function addtocartfunction(ProductID) {
-        // console.log(ProductID);
-        let newcart = cartls.filter(function (elem) {
-            return elem.ProductID === ProductID;
-        })
-        // console.log("newcart.length",newcart.length);
-        if (newcart.length > 0) {
-            // console.log("2");
-            return false;
-        } else {
-            // console.log("3");
-            return true;
-        }
+
+// function add to cart declare
+function addtocartfunction(ProductID){
+  // console.log(ProductID);
+  let newcart=cartls.filter(function(elem){
+    return elem.ProductID===ProductID;
+  })
+  // console.log("newcart.length",newcart.length);
+  if(newcart.length>0){
+    // console.log("2");
+                return false;
+             }else{
+              // console.log("3");
+                return true;
+             }
 
 
-    }
-    /////////////////////////////////////////////////////////////////////////////////////////////
+}
 
-   
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
  /////////////////////////////////////////////////////////////////////////////////////////////
-
-
-// ////////////////////ajay end
-
 
 
 // ////////////////////ajay end
@@ -2151,3 +2388,4 @@ function deleteOne(index,elem){
       
  }
 </script>
+</html>

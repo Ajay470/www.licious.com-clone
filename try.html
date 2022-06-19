@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eggs page</title>
+    <title>Navbar and footer</title>
     <!-- <link rel="stylesheet" href="stylenav.css"> -->
 <style>
    * {
@@ -1222,10 +1222,10 @@ font-family: 'Rubik', sans-serif;
 
 <div class="static">
   <div class="topstatic">
-    <span> <a href="">Home</a></span> <span> > </span><span>Eggs</span>
-</div>
-<div class="bottomstatic">
-  <span> <h1>Eggs</h1></span>
+    <span> <a href="">Home</a></span> <span> > </span><span>Kababs & Tandoor </span>
+  </div>
+  <div class="bottomstatic">
+    <span> <h1>Kababs & Tandoor </h1></span>
     <span>
       <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_60828eb6451d0" alt="">
       <span>Ready To Eat</span>
@@ -1255,47 +1255,58 @@ font-family: 'Rubik', sans-serif;
   
  </div>
  <div class="filterpart" >
-    <!-- append filterpart here -->
-    <span><button class="Delivery">Express delivery</button>
-     <!-- <select id="Delivery">  
-             <option value="Express Delivery">Express Delivery</option>
-         </select> --></span>
-   
+   <!-- append filterpart here -->
+   <span><button class="Delivery">Express Delivery</button>
+    <!-- <select id="Delivery">  
+            <option value="Express Delivery">Express Delivery</option>
+        </select> --></span>
+   <span> <select class="ChickenType">
+    <option >Chicken Type </option>
+    <option value="Broiler">Broiler</option>
+    <option value="Country">Country</option>
+    <option value="Kadaknath">Kadaknath</option>
+  </select></span>
 
-   <span> <select class="BoneType">
-     <option >Bone Type</option>
-     <option value="Bone-in">Bone-in</option>
-     <option value="Boneless">Boneless</option>
-   
-   </select></span>
+  <span> <select class="BoneType">
+    <option >Bone Type</option>
+    <option value="Bone-in">Bone-in</option>
+    <option value="Boneless">Boneless</option>
+  
+  </select></span>
 
-   <span> <select class="MeatType ">
-     <option >Meat Type </option>
-     <option value="Eggs">Eggs</option>
-     <option value="Fish">Fish</option>
-     <option value="Prawns">Prawns</option>
-     <option value="Mutton">Mutton</option>
-     <option value="Chicken">Chicken</option>
+  <span> <select class="CutType ">
+    <option >Cut Type </option>
+    <option value="Whole & Curry Cut">Whole & Curry Cut</option>
+    <option value="Wings & Offals">Wings & Offals</option>
+    <option value="Thigh & Drumstick">Thigh & Drumstick</option>
+    <option value="Mince">Mince</option>
+    <option value="Cubes & Strips">Cubes & Strips</option>
+    <option value="Whole Leg & Lollipop">Whole Leg & Lollipop</option>
+  </select></span>
 
+  <span> <select class="BestSuitedFor">
+    <option >Best Suited For</option>
+    <option value="Bake">Bake</option>
+    <option value="Grill">Grill</option>
+    <option value="Deep Fry">Deep Fry</option>
+    <option value="Roast">Roast</option>
+    <option value="Stuffing">Stuffing</option>
+    <option value="Curry">Curry</option>
+    <option value="Biryani">Biryani</option>
+    <option value="Pan Fry">Pan Fry</option>
+  </select></span>
 
-   </select></span>
-
-   <span> <select class="BestSuitedFor">
-     <option >Best Suited For</option>
-     <option value="Bake">Bake</option>
-     <option value="Oven">Oven</option>
-          <option value="Curry">Curry</option>
-     <option value="Biryani">Biryani</option>
-     <option value="Pan Fry">Pan Fry</option>
-   </select></span>
-
-
-
+   <span> <select class="pack">
+    <option >Pack Size </option>
+    <option value="Mini">Mini</option>
+    <option value="Combo">Combo</option>
+    <option value="Regular">Regular</option>
+    <option value="Large Pack">Large Pack</option>
     
-   
-   
+  </select></span>
 
-  </div>
+
+ </div>
  <div class="card">
     <!-- <a id="card-a"> -->
 
@@ -1587,151 +1598,220 @@ font-family: 'Rubik', sans-serif;
 <!-- <script src="navbar.js"> -->
     <script>
 
-let data=[
 
-    {
-        ProductID: "combo110",
-        image: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/70d06f58-a64c-fa90-f9ed-7192e191ad32/original/Country-Eggs---Pack-Of-6-Hero-Shot.jpg?format=webp",
-        Title: "Continental Chicken Spread-200gms + Class...",
-        Details: "Enjoy eggs for breakfast & meaty mid-morning snack..",
-        Netwt: "200gms",
-        MeatType:"Mutton",
-        Gross: "",
-        BoneType:"Bone-in",
-        MRP: 221,
-        Delivery: "Normal delivery", BestSuitedFor:"Bake",
-        productPagedetails: "The ultimate breakfast food, we bring to you Classic white shelled eggs. The eggs are naturally laid by healthy chickens and rich in multiple nutrients. Our flavourful eggs are sure to boost the flavours of your meals. The Chunky Continental Chicken Spread is made with freshly roasted chunks of chicken, packed with crushed jalapenos, cracked pepper and garlic. Artificial-preservative free, this spread is perfect for sandwiches, wraps or a canapé platter.",
-        image1: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/45e6d610-d1ce-ee8f-82c3-c8042a454860/original/1635232188.png?format=webp"
-    },
+let data = [
+{
+  ProductID:"chicken-101",
+  image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/e4c543f1-bebc-5e45-5afc-052f4702ebfe/original/uncooked.jpg?format=webp",
+  Title:"Chicken Curry Cut (Small Pcs)",
+  Details:"Small pieces of bone-in & boneless chicken for curries",
+  Netwt:"500gms",
+  Gross:"526gms",
+  MRP:"170",
 
-    {
-        ProductID: "combo111",
-        image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_htvkfobkh1m/3/prod_display_image/1601405662.7327--2020-09-3000:24:22--472",
-        Title: "Lucknowi Mutton Galouti Kebab - 6 Pcs and Chun....",
-        Details: "Need a mid-morning snack? Try this satisfying combo.",
-        Netwt: "200gms",
-        Gross: "",
-        MRP: 520,
-        MeatType:"Mutton",
-        BoneType:"Boneless",
-        Delivery: "Normal delivery", BestSuitedFor:"Bake",
-        productPagedetails: "Sink your teeth into this delicious combo of Lucknowi Mutton Galouti Kebab and Chunky Shawarma Chicken Spread. The all-time favourite Lucknowi Mutton Galouti Kebab uses the best cuts of lamb and an authentic century-old recipe to satiate your taste buds. Exquisite in every bite, they are super easy to cook and ready in under 8 minutes. The Chunky Butter Chicken Spread is a blend of freshly roasted chicken chunks with everyone’s favourite base: Butter Chicken Gravy. This Ready to Eat Spread is a perfect combination of gourmet ingredients and an authentic Indian twist. Perfect to pair with some roti or to spread onto pita breads as a quick snack!",
-        image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/1/prod_image/1634636421.5637--2021-10-1915:10:21--1818?format=webp"
-    },
+  Delivery:"Normal Delivery",
+  ChickenType:"Kadaknath",
+  BoneType:"Bone-in",
+  CutType:"Breast",
+  BestSuitedFor:"Grill",
+  PackSize:"Mini",
 
-    {
-        ProductID: "combo112",
-        image: "https://dao54xqhg9jfa.cloudfront.net/ProductMerchantdising/f4f940dc-7099-e11f-8a41-fd8fe74bcc60/original/1601404517.5112--2020-09-3000_05_17--472.jpeg?format=webp",
-        Title: "Chicken, Three ways Combo",
-        Details: "Try crispy, smoky and meaty treats with this combo.",
-        Netwt: "300gms",
-        MeatType:"Mutton",
-        Gross: "",
-        MRP: 467,
-        BoneType:"Boneless",
-        Delivery: "Express delivery",
-        BestSuitedFor:"Bake",
-        productPagedetails: "For a variety of flavours and meaty treats try our Chicken, Three Ways Combo. Our Amritsari Achari Murgh consists of boneless cuts of chicken from the breast and the leg marinated with mixed spices (chilli, cumin), garlic, mango & more. They can be grilled, baked or pan-fried and every bite has a burst of hot and tangy flavours. For a smoky surprise, try our Smoked Chicken Wings. A huge party pleaser, our ready-to-cook wings have been made with chicken drumettes (the meatier, juicier portion of a chicken wing), these wings are coated in a mixture of hot spices, sauces, vinegar and smoky flavouring. Bite in and prepare for the burst of flavour that leaves a smoky after-taste! Our Crispy Chicken Poppers is a delightful crunchy treat. Seasoned with salt, pepper & paprika, the chicken mince meatballs are stuffed with cheese & diced jalapenos, batter-dipped & then coated with panko breadcrumbs. Juicy, cheesy & spicy on the inside, super crispy on the outside. Ready in 8 minutes, Crispy Chicken Poppers are great for a quick snack. Serve it with ketchup or mayonnaise at get-togethers and house parties.",
-        image1: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/886c2225-db61-bec8-d0bd-b8c1a52fe38f/original/Smoked-Chicken-Wings-(With-Skin)-Hero-Shot-Uncooked.jpg?format=webp"
-    },
+  productPageDetails:"With our Chicken Curry Cut on hand, making a delicious chicken curry has never been easier! Licious Chicken Curry Cut is a mix of bone-in, small pieces of breast, wing (without the tip), leg and thigh meat, enough to feed a small to medium-sized family. This Small pack consists of 13-16 pieces of smaller cuts of chicken, for when you are making a smaller portion of curry or looking to reduce cooking time. Smaller pieces of chicken cook faster because of the higher surface-to-volume ratio.These pieces remain juicy and turn tender once cooked. Make Andhra Style Chicken Curry, Dhaba Style Chicken Curry, Mughlai Chicken Curry and more with Licious Chicken Curry Cut (Small).  Licious chickens are raised on bio-secure farms and are antibiotic-residue free.",
+  Serves:"4",
+  image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_5785b9065d7e1/3/prod_display_image/1584770437.9208--2020-03-2111:30:37--738?format=webp"
+},
 
-    {
-        ProductID: "combo113",
-        image: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/f8d6576d-5464-e064-6dd5-65cb4f0ec487/original/Classic-Eggs---Pack-of-6--Hero-Shot.jpg?format=webp",
-        Title: "Afghani Murgh Seekh Kebab - 4 Pcs and Chunky Sh....",
-        Details: "This combo will keep your evening hunger pangs at bay.",
-        MeatType:"Mutton",
-        Netwt: "200gms",
-        Gross: "",
-        MRP: 399,
-        Delivery: "Normal delivery",
-        BoneType:"Boneless",
-        BestSuitedFor:"Biryani",
-        productPagedetails: "Plate up our Afghani Murgh Seekh Kebab or make a sandwich with the Chunky Shawarma Chicken Spread— this combo is sure to make a wholesome evening snack. The ready-to-cook Afghani Murgh Seekh Kebab is a classic chicken mince kebab packed with flavourful herbs and spices; perfect for when you need a quick, meaty treat. Pair it with our Spicy Pudina Chatni. The Chunky Shawarma Chicken Spread is made of freshly roasted chunks of chicken, spicy chillies and a hint of sweet peppers with garlic. Relish the spread on mini pitas or mix it into your favourite veggie salad.",
-        image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4q4jya5rtvg/1/prod_image/1578400920.4229--2020-01-0718:12:00--458?format=webp"
-    },
+{
+    ProductID:"chicken-102",
+    image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_inuk3ilznwg/18/prod_display_image/1634310373.288--2021-10-1520:36:13--905",
+    Title:"Chicken Curry Cut(Large Pcs)",
+    Details:"Half a chicken cut to chunky pieces including one leg,a..",
+    Netwt:"500gms",
+    Gross:"526gms",
+    MRP:"189",
+  
+    Delivery:"Normal Delivery",
+    ChickenType:"Broiler",
+    BoneType:"Bone-in",
+    CutType:"Mince",
+    BestSuitedFor:"Grill",
+    PackSize:"Regular",
+  
+    productPageDetails:"With our Chicken Curry Cut on hand, making a delicious chicken curry has never been easier! Licious Chicken Curry Cut is a mix of bone-in, small pieces of breast, wing (without the tip), leg and thigh meat, enough to feed a small to medium-sized family. This Small pack consists of 13-16 pieces of smaller cuts of chicken, for when you are making a smaller portion of curry or looking to reduce cooking time. Smaller pieces of chicken cook faster because of the higher surface-to-volume ratio.These pieces remain juicy and turn tender once cooked. Make Andhra Style Chicken Curry, Dhaba Style Chicken Curry, Mughlai Chicken Curry and more with Licious Chicken Curry Cut (Small).  Licious chickens are raised on bio-secure farms and are antibiotic-residue free.",
+    Serves:"8",
+    image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/58b7f670-6e56-a198-73a6-039b07182868/original/ChickenLC.jpg?format=webp"
+},
 
-    {
-        ProductID: "combo114",
-        image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_atbkr2b2j6f/1/prod_display_image/1626198383.4128--2021-07-1323:16:23--738",
-        Title: "Classic Eggs - Pack Of 6 + Rohu Medium - Beng....",
-        Details: "Pack of 6 classic Eggs,naturally laid,7-11 pcs, Rohu,..",
-        Netwt: "500gms",
-        Gross: "",
-        MeatType:"Mutton",
-        MRP: 247,
-        BoneType:"Bone-in",
-        BestSuitedFor:"Biryani",
-        Delivery: "Normal delivery",
-        productPagedetails: "Start your day with these Classic Eggs - pack of 12, laid naturally and perfect for curries, salads or other egg preparations. They are cleaned and safely packed to prevent breakage. Order Classic Eggs - Pack Of 12 and get it delivered on Licious. Perfect medium-sized Bengali cuts of this freshwater fish are ideal for those who have recently started sampling fish. Carved into neat Bengali cut pieces, separate peti and tail pieces, cook popular fish curries from the East like mustard fish with this bony fish. Order Rohu (Rui) Medium - Bengali Cut, No Head 500 g and get it delivered at your doorstep.",
-        image1: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/dc47ff99-49f7-7239-0c93-b0cba95a2780/original/Classic-Eggs---Pack-of-6---pr_590f2bc508b4a---No-of-Piece-Shot.jpg?format=webp"
-    },
+{
+    ProductID:"chicken-103",
+    image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_fmnkgkvc59i/18/prod_display_image/1634572991.2434--2021-10-1821:33:11--1818?format=webp",
+    Title:"Chicken Breast-Boneless",
+    Details:"Tender,boneless fillets of chicken meat cut from the bre...",
+    Netwt:"400gms",
+    Gross:"500gms",
+    MRP:"239",
+  
+    Delivery:"Express Delivery",
+    ChickenType:"Country",
+    BoneType:"Boneless",
+    CutType:"Mince",
+    BestSuitedFor:"Roast",
+    PackSize:"Mini",
+  
+    productPageDetails:"Chicken Breast is one of the meatier cuts of a Chicken, which comes from the breast-bone of the bird. This cut is skinless and has a supple texture.A good source of vitamins and minerals, Chicken Breast, is also a great choice for a lean protein diet.",
+    Serves:"4",
+    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_5785b9065d7e1/3/prod_display_image/1584770437.9208--2020-03-2111:30:37--738?format=webp"
+},
 
-    {
-        ProductID: "combo115",
-        image: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/8775409b-29b5-ee92-1d3a-ca8be174ee5b/original/Classic-Eggs---Pack-Of-30-Hero-Shot.jpg?format=webp",
-        Title: "Chicken Curry Cut (Large Pcs) +Chicken Min....",
-        Details: "Curry and mini bites, cook something new for every meal.",
-        Netwt: "250gms",
-        Gross: "526gms",
-        MeatType:"Mutton",
-        MRP: 277,
-        BoneType:"Boneless",
-        Delivery: "Normal delivery",
-        BestSuitedFor:"Biryani",
-        productPagedetails: "The Chicken Curry Cut (Large) has a variety of pieces that includes one leg, one wing without tip and one breast quarter with backbone. The meat is free from antibiotic residue and has a tender, moderately firm texture. Our chickens are raised on bio secure farms with vegetarian feed to ensue that the meat is safe. Ideal for curries or semi-dry dishes, our chicken curry cut is kept chilled between 0-4? to ensure that it is always fresh and never frozen. Our Chicken Mini Bites (Boneless) have been crafted especially for quick meals and snacks for kids, and the kid in you! Boneless chicken breast are cut it into bite-sized pieces that can easily be added to kid-friendly meals or used as appetizers. Make delicious and juicy chicken popcorn, or grill them and add them as a pizza topping, or you can pan-fry them in butter and garlic and add it in your creamy pasta.",
-        image1: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/a0ee8e8b-0501-3741-b02f-034477a98985/original/1623485172.jpg?format=webp"
-    },
+{
+    ProductID:"chicken-104",
+    image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_ikuk3im1dc7/18/prod_display_image/1623765366.8549--2021-06-1519:26:06--738?format=webp",
+    Title:"Afghani Murgh Seekh Kebab",
+    Details:"The classic chicken seekh kebab,marinated in tradition...",
+    Netwt:"400gms",
+    Gross:"400gms",
+    MRP:"249",
+  
+    Delivery:"Express Delivery",
+    ChickenType:"Country",
+    BoneType:"Boneless",
+    CutType:"Breast",
+    BestSuitedFor:"Grill",
+    PackSize:"Regular",
+  
+    productPageDetails:"Marinated in hot chilli seasoning, the wings are then coated in batter & covered in panko bread crumbs. This means that all you have to do is to deep-fry these wings & it's ready within 8 minutes! Have the crispy, juicy wings with a squeeze of lime or paired with your favourite condiment.",
+    Serves:"2-3",
+    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_c61k6uqaf5h/3/prod_display_image/1636891873.7065--2021-11-1417:41:13--1818?format=webp"
+},
 
-    {
-        ProductID: "combo116",
-        image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_dynkp9gynd2/1/prod_display_image/1623052671.1146--2021-06-0713:27:51--738",
-        Title: "Classic Eggs -pack of 12 + Peppery Chicken Salami",
-        Details: "Indulge in a hearty breakfast and meaty mid-morning...",
-        Netwt: "200gms",
-        Gross: "",
-        MeatType:"Mutton",
-        MRP: 382,
-        BoneType:"Boneless",
-        BestSuitedFor:"Oven",
-        Delivery: "Express delivery",
-        productPagedetails: "Kickstart your day with nutri-rich Classic Eggs, in packs of 12, laid by healthy, hormone-free chicken, for your daily dose of vitamins and protein. Looking for a quick mid-morning snack? Add the perfectly spiced Peppery Chicken Salami in your sandwich or use it as yummy pizza toppings for a meaty indulgence.",
-        image1: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/613d64cb-295c-4a7b-61bb-a153072b9411/original/1635232188.png?format=webp"
-    },
+{
+    ProductID:"chicken-105",
+    image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/c3bb7ea3-79dd-84e5-26bc-b5ea62f6dc5e/original/WhatsApp_Image_2022-06-07_at_9.04.34_PM.jpeg?format=webp",
+    Title:"Crispy Chicken Wings | Ready To Cook",
+    Details:"Chicken wings marinated in spices & coated in panko cru...",
+    Netwt:"225gms",
+    Gross:"270gms",
+    MRP:"99",
+  
+    Delivery:"Express Delivery",
+    ChickenType:"Country",
+    BoneType:"Boneless",
+    CutType:"Mince",
+    BestSuitedFor:"Grill",
+    PackSize:"Regular",
+  
+    productPageDetails:"Craving crispy, juicy wings but don't have the time to make them from scratch? Licious Crispy Chicken Wings are what you need!",
+    Serves:"2-3",
+    image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/50427a48-1e20-5fed-fc1e-050349afcb52/original/Crispy-Chicken-Wings-Tag_(1).jpg?format=webp"
+},
 
-    {
-        ProductID: "combo117",
-        image: "https://dao54xqhg9jfa.cloudfront.net/ProductMerchantdising/fbca71cc-3e02-1bf0-d936-990df6af3403/original/1597139650.6514--2020-08-1115_24_10--401.jpeg",
-        Title: "Chicken Curry Cut (Small pcs) - 500 ....",
-        Details: "Relish a greek salad and Chicken curry for dinner.",
-        Netwt: "500gms",
-        Gross: "526",
-        BoneType:"Bone-in",
-        MeatType:"Mutton",
-        MRP: 194,
-        BestSuitedFor:"Roast",
-        Delivery: "Normal delivery",
-        productPagedetails: "Your chicken curry essential to be. Half a chicken cut to bite-sized pieces including one leg, a wing without the tip, one breast quarter with backbone. A complementary mix of both white and dark, skinned, bone-in meat, Chicken Curry cut is ideal to get a taste of soft and comparatively tougher meat all packed into one dish.The ultimate breakfast club inductee. Classic white shelled eggs with a pale yellow yolk laid naturally by healthy chickens for a flavour boost to any meal. The humane raising of our chickens and natural processing conditions, impart a richer and more sharp-tasting flavour to our eggs.",
-        image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_5785b9065d7e1/1/prod_image/1632403396.2097--2021-09-2318:53:16--1818?format=webp"
-    },
+{
+    ProductID:"chicken-106",
+    image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/1cc2496b-d46c-9e12-0aa8-d98d603f51cd/original/Angara-Murgh-Tikka+New+Tag.jpg?format=webp",
+    Title:"Chicken Mini Bites-Breast Cut",
+    Details:"",
+    Netwt:"250gms",
+    Gross:"350gms",
+    MRP:"165",
+  
+    Delivery:"Normal Delivery",
+    ChickenType:"Broiler",
+    BoneType:"Boneless",
+    CutType:"Wings",
+    BestSuitedFor:"Grill",
+    PackSize:"Combo",
+  
+    productPageDetails:"The Chicken Mini Bites from Licious are finely cut, boneless, bite-sized pieces of chicken. These tender, juicy mini bites of chicken are obtained from the breast portion. Rich in proteins, vitamin B6, and minerals, these mini bites are a great way to up your nutrient intake.",
+    Serves:"4",
+    image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/8b89c688-d56c-f9ce-e3a0-d01a4dc01869/original/Chicken_MiniBites_Boneless_Hero_Shot.jpg?format=webp"
+},
 
-    {
-        ProductID: "combo118",
-        image: "https://dao54xqhg9jfa.cloudfront.net/ProductMerchantdising/af189f08-8063-fdb3-60da-054b9c02b537/original/1601405662.7327--2020-09-3000_24_22--472.jpeg?format=webp",
-        Title: "Country Eggs- 12 Pcs",
-        Details: "Combo pack of 12 delicious, country eggs.",
-        Netwt: "200gms",
-        MeatType:"Mutton",
-        Gross: "",
-        
-        BoneType:"Bone-in",
-        MRP: 143,
-        BestSuitedFor:"Roast",
-        Delivery: "Express delivery",
-        productPagedetails: "Laid by country chickens, Country Eggs are quite eye-catching. The shell colour is between off-white and light brown. The yolks vary from light to deep yellow. They make a perfect addition to your breakfasts, for dishes such as scrambled eggs, omelettes, eggs sunny-side-up and more. All Licious eggs are antibiotic residue-free, thoroughly hand-checked and packed carefully to ensure they arrive safely to your doorstep. Order Country Eggs - Pack of 6 and get them home delivered!",
-        image1: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/51ca82af-ff66-08d4-c028-069a870e0496/original/Country-Eggs---Pack-Of-6--No-of-Piece-Shot.jpg?format=webp"
-    },
-]
+{
+    ProductID:"chicken-107",
+    image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_15ckn5pzo5x/18/prod_display_image/1618388769.9292--2021-04-1413:56:09--738",
+    Title:"Chicken Drumstick",
+    Details:"Bone-in,juicy meat from the lower leg with a unique flav...",
+    Netwt:"450gms",
+    Gross:"600gms",
+    MRP:"269",
+  
+    Delivery:"Normal Delivery",
+    ChickenType:"Broiler",
+    BoneType:"Bone-in",
+    CutType:"Mince",
+    BestSuitedFor:"Roast",
+    PackSize:"Mini",
+  
+    productPageDetails:"A mix of dark and white meat, our large Chicken Curry Cut pieces include one leg, one wing without tip, and one breast quarter with backbone. Obtained from pasture-raised healthy chickens, the meat has a rich, juicy flavour with a tender, smooth and moderate-firm texture. ",
+    Serves:"4",
+    image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/041fd1e0-80fa-2cf1-387e-5c13b7310def/original/HeroShot.jpg?format=webp"
+},
+  
+{
+    ProductID:"chicken-108",
+    image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/aa1e97a3-d275-3257-bff8-49c02b175e9a/original/Chicken-Tangdi-Kebab-Tag.jpg?format=webp",
+    Title:"Chicken Boneless-Cubes",
+    Details:"Skinless & boneless Cut & cleaned",
+    Netwt:"450gms",
+    Gross:"690gms",
+    MRP:"220",
+  
+    Delivery:"Normal Delivery",
+    ChickenType:"Broiler",
+    BoneType:"Boneless",
+    CutType:"Cubes & Strips",
+    BestSuitedFor:"Grill",
+    PackSize:"Combo",
+  
+    productPageDetails:"Licious Chicken Tikka Cut is a mix of skinless & boneless leg & breast pieces. These pieces turn juicy & tender when cooked which makes them ideal for grilling or pan-roasting/frying. Marinate them in a mix of aromatic spices and grill them to make a perfect, finger-licking chicken tikka.",
+    Serves:"4",
+    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_ffojtznsds8/3/prod_display_image/1636891440.6105--2021-11-1417:34:00--1818?format=webp"
+},
+
+{
+    ProductID:"chicken-109",
+    image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/efa4244d-a05f-6d07-fab0-6c1c4ecdfd95/original/Chicken-Malai-Tikka-Tag.jpg?format=webp",
+    Title:"Chicken Breast Fillet- Thinly Sliced",
+    Details:"Moist tender chicken best for steaks, and BBQ chicken.",
+    Netwt:"450gms",
+    Gross:"1303gms",
+    MRP:"231",
+  
+    Delivery:"Express Delivery",
+    ChickenType:"Broiler",
+    BoneType:"Boneless",
+    CutType:"Breast",
+    BestSuitedFor:"Roast",
+    PackSize:"Large Pack",
+  
+    productPageDetails:"Chicken Breast is one of the meatier cuts of a chicken, which comes from the breast-bone of the bird. This fillet cut is skinless and thinly sliced for more even cooking. A good source of vitamins and minerals, Chicken Breast, is also a great choice for a lean protein diet. ",
+    Serves:"2-3",
+    image1:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/5f58bbca-0809-022c-9f87-9cef97627a5e/original/1618587644.jpg?format=webp"
+},
+
+{
+    ProductID:"chicken-110",
+    image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_ikuk3im2bid/18/prod_display_image/1634311525.3958--2021-10-1520:55:25--905?format=webp",
+    Title:"Chicken Leg-Whole with Thigh",
+    Details:"Skinless and bone-in chicken thigh and drumstick with a...",
+    Netwt:"400gms",
+    Gross:"533gms",
+    MRP:"265",
+  
+    Delivery:"Normal Delivery",
+    ChickenType:"Country",
+    BoneType:"Bone-in",
+    CutType:"Thigh & Drumstick",
+    BestSuitedFor:"Curry",
+    PackSize:"Large Pack",
+  
+    productPageDetails:"Skinless and bone-in, Chicken Leg Whole from Licious consists of both, the thigh and drumstick. This cut of the chicken includes dark meat that is rich in flavour and has a moist texture. Packed with proteins, vitamins, and minerals, Chicken Leg can be an ideal cut for a wholesome meal.",
+    Serves:"2",
+    image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_5jxjsbhief7/3/prod_display_image/1622911758.7296--2021-06-0522:19:18--738?format=webp"
+}
+
+];
+  
 
 let productcontainer = document.querySelector(".card");
  
@@ -1911,42 +1991,43 @@ display(data);
         })
     }
 
-    let filterMeatType = document.querySelector(".MeatType");
-  let filterBoneType = document.querySelector(".BoneType");//
- 
+    let filterChickenType = document.querySelector(".ChickenType");
+  let filterBoneType = document.querySelector(".BoneType");
+  let filterCutType = document.querySelector(".CutType");
   let filterBestSuitedFor = document.querySelector(".BestSuitedFor");
-  let filterdelivery = document.querySelector(".Delivery");//
+  let filterdelivery = document.querySelector(".Delivery");
+  let filterpack = document.querySelector(".pack");
 
 
 
-  filterBestSuitedFor.addEventListener("change", function () {
-    console.log("inside menu");
+//   filterBestSuitedFor.addEventListener("change", function () {
+//     console.log("inside menu");
 
-    let filtered = data.filter(function (element) {
-      return element.BestSuitedFor === filterBestSuitedFor.value;
-    })
-    display(filtered);
-  })
+//     let filtered = data.filter(function (element) {
+//       return element.BestSuitedFor === filterBestSuitedFor.value;
+//     })
+//     display(filtered);
+//   })
 
- 
-  filterMeatType.addEventListener("change", function () {
-    console.log("inside meet");
+  
+//   filterCutType.addEventListener("change", function () {
+//     console.log("inside menu");
 
-    let filtered = data.filter(function (element) {
-      return element.MeatType === filterMeatType.value;
-    })
-    display(filtered);
-  })
+//     let filtered = data.filter(function (element) {
+//       return element.CutType === filterCutType.value;
+//     })
+//     display(filtered);
+//   })
 
 
-  filterBoneType.addEventListener("change", function () {
-    console.log("inside menu");
+//   filterBoneType.addEventListener("change", function () {
+//     console.log("inside menu");
 
-    let filtered = data.filter(function (element) {
-      return element.BoneType === filterBoneType.value;
-    })
-    display(filtered);
-  })
+//     let filtered = data.filter(function (element) {
+//       return element.BoneType === filterBoneType.value;
+//     })
+//     display(filtered);
+//   })
   
 
 //   filterChickenType.addEventListener("change", function () {
@@ -1957,14 +2038,26 @@ display(data);
 //     })
 //     display(filtered);
 //   })
-filterdelivery.addEventListener("click", function () {
-    console.log("inside delivery");
 
-    let filtereddev = data.filter(function (element) {
-      return element.Delivery === filterdelivery.innerText;
-    })
-    display(filtereddev);
-  })
+
+//   filterdelivery.addEventListener("click", function () {
+//     console.log("inside delivery");
+
+//     let filtereddev = data.filter(function (element) {
+//       return element.Delivery === filterdelivery.innerText;
+//     })
+//     display(filtereddev);
+//   })
+
+
+//   filterpack.addEventListener("change", function () {
+//     console.log("inside pack");
+
+//     let filtered = data.filter(function (element) {
+//       return element.PackSize === filterpack.value;
+//     })
+//     display(filtered);
+//   })
 
 
 // function add to cart declare
