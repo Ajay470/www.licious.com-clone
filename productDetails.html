@@ -4,325 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prawn page</title>
-    <!-- <link rel="stylesheet" href="stylenav.css"> -->
-<style>
-   * {
-          margin: 0px;
-          padding: 0px;
-          font-family: 'Lato', sans-serif;
-    font-family: 'Rubik', sans-serif;
-          font-size: 15px;
-      
-        }
-        body{
-          background-color: #F7F6F6;
-          width: 1500px;
-        }
-    .card{
-                display: grid;
-                grid-template-columns: repeat(3,420px);
-                width: 1300px;
-                margin: auto;
-    
-                gap: 18px;
-            }
-            .mainbox{
-                /* border: 1px solid red; */
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-           border-radius: 10px; 
-           border-radius: 10px;
-           background-color: white;
-          
-                
-            }
-            .topimg{
-          width: 100%;
-          padding: 0px;
-          border-radius: 10px 10px 0px 0px ;
-          
-        }
-        .carddetails{
-          padding: 15px 15px 0px 15px;
-          background-color: white;
-         
-        }
-        .cardbottom{
-          padding: 0px 15px 0px 15px;
-          /* background-color: white; */
-         
-        }
-        .cardtitle{
-          line-height: 55px;
-          font-weight: 600;
-           
-          white-space: nowrap  ;
-          width: 90%;
-          overflow-wrap: break-word;
-    
-        
-        }
-        .carddesc{
-          line-height: 30px;
-          color: rgb(98, 98, 98);
-          
-          
-        }
-        .cardweight{
-          font-weight: 600;
-          display: flex;
-          line-height: 45px;
-          
-          
-        }
-        .cardweight>span{
-          margin-right: 40px;
-          font-size: 15px;
-          /* margin-bottom: 15px; */
-          
-        }
-        .cardaction{
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          justify-content: space-between;
-          margin-bottom: 10px;
-        }
-        .endbotton1{
-          /* border: 1px solid red; */
-          margin: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .cardbottomspan{
-        margin-left: 12px;
-        color: rgb(98, 98, 98);
-      
-      }
-        .cardactionmain{
-          
-          display: flex;
-          width: 55%;
-          justify-content: space-between;
-          align-items: baseline;
-    
-        }
-        .rate{
-          font-size: 20px;
-          color: #d11243;
-          font-weight: 600;
-    
-        }
-        .ratelogo{
-          color: rgb(98, 98, 98);
-    
-        }
-        .rateprice{
-    
-      color: rgb(98, 98, 98);
-      text-decoration: line-through;
-        }
-        .ratediscount{
-          color: green;
-        font-weight: 600;
-        font-size: 17px;
-    
-          
-        }
-        .buttoncart{
-          background-color: #d11243;
-          border: none;
-          color: white;
-          padding: 10px 15px;
-          border-radius: 8px;
-          justify-content: center;
-          align-items: center;
-        }
-      
+    <title>Document</title>
     
     
-     
-    /* /////////////////////////////////////////////////////////// */
-            .bottomstatic {
-                display: flex;
-                justify-content: left;
-                align-items: center;
-              
-            }
-    .static{
-        width: 1300px; 
-        margin: auto;
-    }
-            .bottomstatic>span {
-                display: flex;
-                justify-content: left;
-                align-items: center;
-    
-            }
-    
-            .bottomstatic>span>span {
-    
-                margin-left: 15px;
-                margin-right: 15px;
-            }
-    
-            .bottomstatic>span>h1 {
-    
-                font-size: 25px;
-                color: rgb(98, 98, 98);
-                margin-right: 55px;
-            }
-    
-            .topstatic {
-                margin: 20px;
-                margin-left: 0px;
-                
-            }
-    
-            .topstatic>span {
-                margin: 10px 10px 10px 0px;
-            }
-    /* ///////////////////////////////////// */
-            .filterpart {
-                padding: 20px 20px 20px 50px;
-                width: 1500px;
-
-                margin: auto;
-                padding-left: 100px;
-                position: sticky;
-                top: 80px;
-                background-color: #F7F6F6;
-            }
-    
-            .filterpart>span {
-                margin-right: 20px;
-    
-    
-            }
-    
-            .Delivery {
-                margin-right: 20px;
-                /* background-color: red; */
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid rgb(180, 180, 180);
-    
-    
-            }
-    
-            .Menu {
-                margin-right: 20px;
-    
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid rgb(180, 180, 180);
-            }
-            .ChickenType{
-                margin-right: 20px;
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid rgb(180, 180, 180);
-    
-    
-            }
-            .BoneType{
-                margin-right: 20px;
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid rgb(180, 180, 180);
-    
-    
-            }
-            .CutType{
-                margin-right: 20px;
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid rgb(180, 180, 180);
-    
-    
-            }
-            .BestSuitedFor{
-                margin-right: 20px;
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid rgb(180, 180, 180);
-    
-    
-            }
-    
-            .pack {
-                margin-right: 20px;
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid rgb(180, 180, 180);
-    
-    
-            }
-    
-            .imgcato {
-                display: flex;
-                width: 1300px;
-                /* border: 1px solid red; */
-                margin: auto;
-                justify-content: space-between;
-    
-            }
-    
-            .concato {
-                display: flex;
-                width: 1300px;
-                /* border: 1px solid red; */
-                margin: auto;
-                justify-content: space-between;
-            }
-    
-            .concato>span {
-                text-align: center;
-                border: 1px solid black;
-            }
-    
-            /* for cata */
-            #cata {
-                display: flex;
-                text-align: center;
-                padding-left: 100px;
-                background-color: white;
-    
-    
-            }
-    
-            .cataimg {
-                width: 80px;
-                /* margin: 10px; */
-            }
-    
-            .cataspan {
-                margin: 10px;
-    
-    
-            }
-    
-            .catatxt>p {
-                margin: 10px;
-            }
-    
-            .catatxt {
-    
-                color: gray;
-                text-decoration: none;
-            }
-    
-            br+span:hover {
-                color: #d11243;
-            }
-
-            /* other */
-
-
-
-/* ////////////////////////ajay end */
-* {
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        * {
     margin: 0px;
     padding: 0px;
     font-family: 'Lato', sans-serif;
@@ -330,9 +17,6 @@ font-family: 'Rubik', sans-serif;
     font-size: 15px;
 
   }
-
-
-
 
 #footcontainer p{
     line-height: 25px;
@@ -842,7 +526,7 @@ font-family: 'Rubik', sans-serif;
         }
 
         .nameBox>h4{
-            /* border: 1px solid gray; */
+            border: 1px solid gray;
             width: 250px;
             
         }
@@ -866,7 +550,7 @@ font-family: 'Rubik', sans-serif;
 
         .item_weight {
             color: #6D6E71;
-            border-radius: 5px;
+          
             font: 8px;
             margin: 0px 0px 0px 32px;
             padding: 3px 5px;
@@ -877,8 +561,7 @@ font-family: 'Rubik', sans-serif;
 
         .item_price {
             color: #D11243;
-            font: 16px;
-            font-weight: bold;
+            font: 13px;
             margin: 3px 0px 0px -20px;
         }
 
@@ -937,7 +620,7 @@ font-family: 'Rubik', sans-serif;
 
         #design>button {
             border: transparent;
-            color: #D11243;
+            color: red;
         }
 
         /* #BillDetail {
@@ -1013,7 +696,7 @@ font-family: 'Rubik', sans-serif;
         
         }
         #bill>ul>span{
-             /* border: 1px solid silver; */
+             border: 1px solid silver;
              font-size: medium;
              padding-right: 10px;
            
@@ -1026,10 +709,244 @@ font-family: 'Rubik', sans-serif;
             padding-right: 8px;
         }
 /* cartend */
-</style>
+
+#cata {
+            display: flex;
+            text-align: center;
+            padding-left: 100px;
+            background-color: white;
+
+
+        }
+
+        .cataimg {
+            width: 80px;
+            /* margin: 10px; */
+        }
+
+        .cataspan {
+            margin: 10px;
+
+
+        }
+
+        .catatxt>p {
+            margin: 10px;
+        }
+
+        .catatxt {
+
+            color: gray;
+            text-decoration: none;
+        }
+
+        br+span:hover {
+            color: #d11243;
+        }
+
+        /* /////cata end/////////////// */
+
+      
+
+
+body{
+    background-color: #f7f6f6;
+    font-family: "Source Sans Pro";
+}
+#main{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    min-height: 400px;
+    margin-top: 100px;
+    background-color: white;
+}
+
+#main>.image>img{
+    width: 550px;
+}
+
+#main>.details{
+    box-sizing: border-box;
+    padding: 0px 30px 15px 30px;
+    text-align: justify;
+}
+
+.details>button{
+    background-color: #d11243 ;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 9px 10px;
+    margin-left: 270px;
+}
+
+.details>h2{
+display: inline;
+color: #d11243 ;
+}
+
+.details>p{
+line-height: 20px;
+color: gray;
+margin-bottom: 15px;
+font-size: 14px;
+}
+.details>h1{
+color: #4a4a4a;
+font-size: 28px;
+}
+
+.details>p:last-child{
+display: inline;
+margin-left: 8px;
+}
+.details>img{
+margin-bottom: -6px;
+margin-left: 140px;
+}
+
+.details>div{
+border: 1px solid gray;
+border-radius: 5px;
+display: flex;
+margin-bottom: 15px;
+font-size: 15px;
+}
+.details>div>img{
+width: 25px;
+height: 25px;
+margin-top: 13px;
+margin-left: 18px;
+}
+
+.details>div>#imgwt{
+margin-left: 200px;
+}
+
+
+#partition{
+width: 108%;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+background-color: white;
+margin-top: 80px;
+height: 330px;
+margin: 80px -20px 80px -20px;
+}
+
+#header{
+width: 600px;
+margin: auto;
+text-align: center;
+padding-top: 40px;
+}
+#header>h2{
+display: inline;
+margin-right: 3px;
+color: #4a4a4a;
+}
+#header>h2:nth-child(2){
+color: #d11243;
+font-size: 27px;
+}
+
+#partition>#body{
+width: 1200px;
+margin: auto;
+display: flex;
+margin-top: 20px;
+justify-content: space-evenly;
+}
+
+#partition>#body>div{
+width: 140px;
+text-align: center;
+font-size: 12px;
+}
+
+#partition>#body img{
+width: 140px;
+}
+
+#body>div:first-child{
+padding-top: 30px;
+}
+#body>div:nth-child(2){
+padding-top: 50px;
+}
+#body>div:nth-child(3){
+padding-top: 20px;
+}
+
+#finalpay{
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+width: 1000px;
+height: 115px;
+background-color: white;
+margin: auto;
+box-sizing: border-box;
+display: flex;
+justify-content: space-between;
+padding: 15px 20px;
+}
+
+#product{
+display: flex;
+
+}
+
+#product>img{
+width: 140px;
+height: 90px;
+border-radius: 5px;
+}
+
+#price{
+width: 450px;
+}
+#price>h2{
+display: inline;
+}
+
+#price>p{
+display: inline;
+margin-left: 8px;
+}
+
+#price>img{
+margin-bottom: -6px;
+margin-left: 120px;
+}
+
+#price>button{
+background-color: #d11243 ;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 9px 10px;
+    margin-left: 230px;
+}
+
+#product>div{
+margin-left: 10px;
+}
+
+#price>h2{
+color: #d11243;
+}
+        /* //////////////////demo1 CSS MAYANK//////////// */
+
+
+          /* //////////////////demo1 CSS MAYANK//////////// */
+
+
+    
 
 
 
+    </style>
+
+<!-- /////////////////////////////////Navbar start//////////////////////// -->
 </head>
 <body>
      <!-- /* nav+login */       /* nav+login */       /* nav+login */        /* nav+login */ -->
@@ -1097,207 +1014,6 @@ font-family: 'Rubik', sans-serif;
     </div>
     <!-- <div id="demo">
     </div> -->
-
-<!-- ajay html -->
-<div id="cata">
-    <span class="cataspan">
-        <a style="text-decoration:none" href="Today's Dealspage.html">
-            <img class="cataimg"
-                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/59724ce1-1f3d-f1f4-c688-c05a0005c8de/original/Circle@3x-16.png?format=webp"
-                alt="">
-            <br>
-            <span class="catatxt">
-                <p>Today's Deals</p>
-            </span>
-
-        </a>
-    </span>
-    <span class="cataspan">
-        <a style="text-decoration:none" href="Chickenpage.html">
-            <img class="cataimg"
-                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c777a59e-f2f7-dd37-9ba0-7f385aed3eb3/original/Circle@3x.png?format=webp"
-                alt="">
-            <br>
-            <span class="catatxt">
-                <p>Chicken </p>
-            </span>
-        </a>
-    </span>
-    <span class="cataspan">
-        <a style="text-decoration:none" href="Fish & Seafoodpage.html">
-            <img class="cataimg"
-                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/e13f894d-d51e-beea-4ef5-aab1a193d373/original/Circle@3x-13.png?format=webp"
-                alt="">
-            <br><span class="catatxt">
-                <p> Fish & Seafood </p>
-            </span>
-
-        </a>
-    </span>
-    <span class="cataspan">
-        <a style="text-decoration:none" href="Muttonpage.html">
-            <img class="cataimg"
-                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/4d9c0c72-c070-dd56-4a2e-9fbfe8230f42/original/Circle@3x-1.png?format=webp"
-                alt="">
-            <br><span class="catatxt">
-                <p> Mutton </p>
-            </span>
-        </a>
-    </span>
-
-    <span class="cataspan">
-        <a style="text-decoration:none" href="Ready to Cookpage.html">
-            <img class="cataimg"
-                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/450e3217-59ac-8145-3bee-296e729f03bf/original/Circle@3x-17.png?format=webp"
-                alt="">
-            <br><span class="catatxt">
-                <p> Ready to Cook </p>
-            </span>
-        </a>
-    </span>
-    <span class="cataspan">
-        <a style="text-decoration:none" href="Prawnspage.html">
-            <img class="cataimg"
-                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/f7ef9035-9baa-b9b5-d56d-97059ffe6c39/original/Circle@3x-18.png?format=webp"
-                alt="">
-            <br><span class="catatxt">
-                <p> Prawns</p>
-            </span>
-        </a>
-    </span>
-    <span class="cataspan">
-        <a style="text-decoration:none" href="spreadpage.html">
-            <img class="cataimg"
-                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/7b500ec8-8001-436b-74ca-430fd4e2ff0b/original/Circle@3x-14.png?format=webp"
-                alt="">
-            <br><span class="catatxt">
-                <p> Spreads</p>
-            </span>
-        </a>
-    </span>
-    <span class="cataspan">
-        <a style="text-decoration:none" href="Eggspage.html">
-            <img class="cataimg"
-                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/27cf80b9-2a8f-d70d-7695-8142c85e5bcb/original/Circle@3x-2.png?format=webp"
-                alt="">
-            <br><span class="catatxt">
-                <p> Eggs </p>
-            </span>
-        </a>
-    </span>
-    <span class="cataspan">
-        <a style="text-decoration:none" href="Kebabs & Tandoorpage.html">
-            <img class="cataimg"
-                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c7cde9d8-4e31-8ea5-79a4-cce48c7ed109/original/Circle@3x-15.png?format=webp"
-                alt="">
-            <br><span class="catatxt">
-                <p> Kebabs & Tandoor</p>
-            </span>
-        </a>
-    </span>
-    <span class="cataspan">
-        <a style="text-decoration:none" href="Combospage.html">
-            <img class="cataimg"
-                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/3130cc9b-71e5-ff33-d413-9fcda531afac/original/Circle@3x-20.png?format=webp"
-                alt="">
-            <br><span class="catatxt">
-                <p>Combos</p>
-            </span>
-        </a>
-    </span>
-    <span class="cataspan">
-        <a style="text-decoration:none" href="BestSeller.html">
-            <img class="cataimg"
-                src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/90882875-962a-8e96-6c45-f7d6492abd3b/original/Circle@3x-16.png?format=webp"
-                alt="">
-            <br><span class="catatxt">
-                <p>Bestsellers </p>
-            </span>
-        </a>
-    </span>
-
-
-</div>
-
-<div class="cointainer">
-
-<div class="static">
-  <div class="topstatic">
-    <div class="topstatic">
-        <span> <a href="">Home</a></span> <span> > </span><span>Prawns</span>
-    </div>
-    <div class="bottomstatic">
-        <span>
-            <h1>Prawns</h1>
-        </span>
-    <span>
-      <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_60828eb6451d0" alt="">
-      <span>Ready To Eat</span>
-      <span>|</span>
-    </span>
-
-    <span>
-      <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_60828f0a9667d" alt="">
-      <span>Real Meat Chunks</span>
-      <span>|</span>
-    </span>
-
-    <span>
-      <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_6082903259d91" alt="">
-      <span>No Artificial Preservatives</span>
-      <span>|</span>
-    </span>
-
-    <span>
-      <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_6082906db5f90" alt="">
-      <span>Delicious Flavours</span>
-    </span>
-
-    
-  </div>
-  
-  
- </div>
- <div class="filterpart">
-    <!-- append filterpart here -->
-    <span><button class="Delivery">Express Delivery</button>
-        <!-- <select id="Delivery">  
-        <option value="Express Delivery">Express Delivery</option>
-    </select> -->
-    </span>
-    <span> <select class="Menu">
-            <option>Menu</option>
-            <option value="Chicken Spreads">Chicken Spreads</option>
-            <option value="Prawn Spreads">Prawn Spreads</option>
-            <option value="Egg Spreads">Egg Spreads</option>
-        </select></span>
-    <span> <select class="pack">
-            <option>Pack Size </option>
-            <option value="Mini">Mini</option>
-            <option value="Combo">Combo</option>
-            <option value="Regular">Regular</option>
-        </select></span>
-
-
-
-
-</div>
- <div class="card">
-    <!-- <a id="card-a"> -->
-
-    <!-- </a> -->
-
-    <!-- append all products here -->
-  </div>
-
-</div>
-
-
-
-
-
-
-<!--other start  -->
     <!-- signup-slide in-->
     <div class="signin-slide">
 
@@ -1347,9 +1063,10 @@ font-family: 'Rubik', sans-serif;
         </div>
     </div>
 
+<!-- 
+       //////////////////////////// login ends ///////////////// -->
 
-    <!-- login ends -->
-    <!-- ///////////////////////////cart /////////////////////////////////-->
+    <!-- ///////////////////////////cart start/////////////////////////////////-->
    
     <div class="slideCart"  id="surajcart">
         <div id="main">
@@ -1397,7 +1114,7 @@ font-family: 'Rubik', sans-serif;
         <div id="design">
             <img src="https://www.licious.in/img/rebranding/loyalty_licious_logo.svg" alt="Meatopia">
             <button class="popup" onclick="myFunction()">
-                <span class="popuptext" id="myPopup"></span>JOIN NOW ></button>
+                <span class="popuptext" id="myPopup"></span>>JOIN NOW ></button>
         </div>
         <h4>Don't miss out on these Meaty Treats!</h4>
         <div id="treats">
@@ -1415,19 +1132,8 @@ font-family: 'Rubik', sans-serif;
                 <ul>Discount <span>0</span></ul>
                 <hr>
                 <h3 id="padit">Total <span style="margin-left: 280px; color: #d11243;">₹<span>0</span></span></h3>
-                <!-- <h4 >Total <span style="margin-left: 280px;">₹<span  id="toPay">0</span></span></h4> -->
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                
-                
+                <h4 >Total <span style="margin-left: 280px;">₹<span  id="toPay">0</span></span></h4>   
             </div>
-
         </div>
         <div id="last">
             <div id="firstHalf">
@@ -1437,11 +1143,182 @@ font-family: 'Rubik', sans-serif;
             <div id="secondHalf">
                 <button>Proceed to checkout</button>
             </div>
-
         </div>
-
     </div>
 
+    <!-- //////////////////////////cart end////////////////////// -->
+<!-- ////////////////////categories////////////////////// -->
+    <div id="cata">
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Today's Dealspage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/59724ce1-1f3d-f1f4-c688-c05a0005c8de/original/Circle@3x-16.png?format=webp"
+                    alt="">
+                <br>
+                <span class="catatxt">
+                    <p>Today's Deals</p>
+                </span>
+
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Chickenpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c777a59e-f2f7-dd37-9ba0-7f385aed3eb3/original/Circle@3x.png?format=webp"
+                    alt="">
+                <br>
+                <span class="catatxt">
+                    <p>Chicken </p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Fish & Seafoodpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/e13f894d-d51e-beea-4ef5-aab1a193d373/original/Circle@3x-13.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Fish & Seafood </p>
+                </span>
+
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Muttonpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/4d9c0c72-c070-dd56-4a2e-9fbfe8230f42/original/Circle@3x-1.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Mutton </p>
+                </span>
+            </a>
+        </span>
+
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Ready to Cookpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/450e3217-59ac-8145-3bee-296e729f03bf/original/Circle@3x-17.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Ready to Cook </p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Prawnspage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/f7ef9035-9baa-b9b5-d56d-97059ffe6c39/original/Circle@3x-18.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Prawns</p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="spreadpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/7b500ec8-8001-436b-74ca-430fd4e2ff0b/original/Circle@3x-14.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Spreads</p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Eggspage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/27cf80b9-2a8f-d70d-7695-8142c85e5bcb/original/Circle@3x-2.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Eggs </p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Kebabs & Tandoorpage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/c7cde9d8-4e31-8ea5-79a4-cce48c7ed109/original/Circle@3x-15.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p> Kebabs & Tandoor</p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="Combospage.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/3130cc9b-71e5-ff33-d413-9fcda531afac/original/Circle@3x-20.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p>Combos</p>
+                </span>
+            </a>
+        </span>
+        <span class="cataspan">
+            <a style="text-decoration:none" href="BestSeller.html">
+                <img class="cataimg"
+                    src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/90882875-962a-8e96-6c45-f7d6492abd3b/original/Circle@3x-16.png?format=webp"
+                    alt="">
+                <br><span class="catatxt">
+                    <p>Bestsellers </p>
+                </span>
+            </a>
+        </span>
+
+
+    </div>
+  
+        <!-- //////////////////////cata END///////////// -->
+
+        <div id="main">
+            <div class="image">
+                <!-- Product image appended here -->
+            </div>
+            <div class="details">
+                <!-- Product details appended here -->
+            </div>
+        </div>
+    
+        <!-- Static Part -->
+    
+        <div id="partition">
+            <div id="header">
+                <h2>The</h2>
+                <h2>Licious</h2>
+                <h2>Way</h2>
+            </div>
+            <div id="body">
+                <div>
+                    <img src="https://www.licious.in/img/rebranding/landing/USP1.png" alt="error">
+                    <p>Premium produce, sourced directly from the origin</p>
+                </div>
+                <div>
+                    <img src="https://www.licious.in/img/rebranding/landing/USP2.png" alt="error">
+                    <p>Scientifically designed central production Unit</p>
+                </div>
+                <div>
+                    <img src="https://www.licious.in/img/rebranding/landing/USP3.png" alt="error">
+                    <p>Compliance to stringent quality checks</p>
+                </div>
+                <div>
+                    <img src="https://www.licious.in/img/rebranding/landing/USP4.png" alt="error">
+                    <p>Delivered fresh everyday</p>
+                </div>
+                <div>
+                    <img src="https://www.licious.in/img/rebranding/landing/USP5.png" alt="error">
+                    <p>Experience extraordinary cooking</p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="finalpay">
+            <div id="product">
+                <!-- Product image and title -->
+            </div>
+            <div id="price">
+                <!-- Price details and button -->
+            </div>
+        </div>
 
 
 
@@ -1459,6 +1336,10 @@ font-family: 'Rubik', sans-serif;
 
 
 
+
+
+
+<!-- //////////////////////////footer START/////////////// -->
 
     <div id="footContainer">
         <!-- <hr> -->
@@ -1560,7 +1441,7 @@ font-family: 'Rubik', sans-serif;
           <p>Doesn’t everyone do this? Not really. Most other places first weigh the meat, then cut up the pieces, and throw out the parts which aren’t fit to eat, such as offal, gizzard, wingtips, etc. But you still pay based on the original weight even though what you finally get is 10% to 30% less</p>
     <br><br>
           <hr class="linefull">
-          <div id="copyright">x
+          <div id="copyright">
             <img src="" alt="">
             <div>
     
@@ -1575,394 +1456,120 @@ font-family: 'Rubik', sans-serif;
           </div>
     
     </div>
-
-    
+<!-- //////////////////////////footer END/////////////// -->
 </body>
-<!-- <script src="navbar.js"> -->
-    <script>
+</html>
 
 
-let data = [
-
-{
-
+<!-- /////////////////////////SCRIPT START ///////////////////////////// -->
+<script>
 
 
-    ProductID: "spreads-101",
-    image: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/21f139cd-c4bb-93a2-19e6-0b93407c35e0/original/1624645711.jpg?format=webp",
-
-    Title: "Chunky Butter Chicken Spread (Single Serve)",
-    Details: "Freshly roasted chunks of chicken ....",
-    Netwt: "35gms",
-    Gross: "35gms",
-    MRP: "139",
-
-
-
-    Delivery: "Express Dilevery",
-    Menu: "Chicken Spreads",
-    Packsize: "Regular",
-
-    productPagedetails: "Freshly roasted chunks of chicken coated in the ever-favourite butter chicken base make this spread a gourmet treat. This ready-to-eat, single-serve pack is ideal for your protein-rich, quick lunch break. Apply the mildly spicy spread generously on a roti or a naan and satiate your hunger and butter chicken cravings. Our chunky meat spreads have zero trans-fat and are preservative free. Order the Chunky Butter Chicken Spread online from Licious and get doorstep delivery.",
-    Bestbuy: "Best before 25 days",
-    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5vxs7/18/prod_image/1634636036.2392--2021-10-1915:03:56--1818?format=webp",
-
-},
-
-{
-
-    ProductID: "spreads-102",
-    image: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/6b50ecdd-432c-6fe2-67c3-8f1578779b99/original/Freshwater-Prawns-medium2.jpeg?format=webp",
-
-    Title: "Chunky Butter Chicken Spread",
-    Details: "Our Chunky Butter Chicken Spread offers freshly....",
-    Netwt: "200gms",
-    Gross: "200gms",
-    MRP: "199",
-
-    Delivery: "Normal Dilevery",
-    Menu: "Egg Spreads",
-    Packsize: "Mini",
-
-    productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
-    Bestbuy: "Best before 30 days",
-    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
-
-},
-
-{
-
-    ProductID: "spreads-103",
-    image: "https://dao54xqhg9jfa.cloudfront.net/ProductMerchantdising/9723401c-b12d-0ad9-d2c7-dec7f1f628b2/original/1586376460.2379--2020-04-0901_37_40--472.jpeg?format=webp",
-
-    Title: "Chunky Shawarma Chicken Spread",
-    Details: "Get the authentic smoky taste of ....",
-    Netwt: "200gms",
-    Gross: "200gms",
-    MRP: "199",
-
-    Delivery: "Express Delivery",
-    Menu: "Chicken Spreads",
-    Packsize: "Regular",
-
-    productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
-    Bestbuy: "Best before 30 days",
-    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_fagkel6pboh/3/prod_display_image/1599039295.0495--2020-09-0215:04:55--472",
-
-},
-
-{
-
-    ProductID: "spreads-104",
-    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_123kq19agfk/18/prod_display_image/1632811974.4061--2021-09-2812:22:54--1818",
-
-    Title: "Chunky Continental Chicken Spread - 400gms",
-    Details: "A meaty delight which has the right ....",
-    Netwt: "200gms",
-    Gross: "400gms",
-    MRP: "390",
-
-    Delivery: "Express Delivery",
-    Menu: "Prawn Spreads",
-    Packsize: "Combo",
-
-    productPagedetails: "A meaty delight which has the right mix of freshly roasted chunks, crushed jalapenos, garlic and cracked pepper packed in a flavorful rich base. The creamy ready to eat spread is expertly crafted to transform your lunch pack, canape platter or sandwich board.",
-    Bestbuy: "Best before 30 days",
-    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
-
-},
-
-{
-
-    ProductID: "spreads-105",
-    image: "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/6b50ecdd-432c-6fe2-67c3-8f1578779b99/original/Freshwater-Prawns-medium2.jpeg?format=webp",
-
-    Title: "Chunky Butter Chicken Spread",
-    Details: "Our Chunky Butter Chick....",
-    Netwt: "200gms",
-    Gross: "200gms",
-    MRP: "199",
-
-    Delivery: "Normal Dilevery",
-    Menu: "Prawn Spreads",
-    Packsize: "Mini",
-
-    productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
-    Bestbuy: "Best before 30 days",
-    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
-
-},
-
-{
-
-    ProductID: "spreads-106",
-    image: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_123kq19agfk/18/prod_display_image/1632811974.4061--2021-09-2812:22:54--1818",
-
-    Title: "Chunky Honey-Mustard Chicken Spread (Single Serve)",
-    Details: "Freshly cooked chunks of chicken are ....",
-    Netwt: "200gms",
-    Gross: "200gms",
-    MRP: "199",
-
-    Delivery: "Normal Delivery",
-    Menu: "Chicken Spreads",
-    Packsize: "Mini",
-
-    productPagedetails: "Our Chunky Butter Chicken Spread offers freshly roasted chicken chunks in a creamy Butter Chicken base. This ready-to-eat spread is prepared using gourmet ingredients with an authentic Indian twist, giving it the mildly spicy, Makhni taste. Ideal to pair with roti, naan or bread, this spread is perfect for a wholesome meal or party platter. Our chunky meat spreads have zero trans-fat and are preservative free. Order Chunky Butter Chicken Spread online from Licious and satiate your butter chicken cravings right at your home.",
-    Bestbuy: "Best before 30 days",
-    image1: "https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_4cyjya5ry5e/18/prod_image/1634636527.688--2021-10-1915:12:07--1818?format=webp",
-
-},
-
-
-
-
-
-
-]
-
-
-let productcontainer = document.querySelector(".card");
- 
+// let data={
+//     ProductID:"chicken-101",
+//     image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/58b7f670-6e56-a198-73a6-039b07182868/original/ChickenLC.jpg?format=webp",
+//     Title:"Chicken Curry Cut (Small Pcs)",
+//     Details:"Small pieces of bone-in & boneless chicken for curries",
+//     Netwt:"500gms",
+//     Gross:"526gms",
+//     MRP:"170",
   
+//     Delivery:"Normal Delivery",
+//     ChickenType:"Broiler",
+//     BoneType:"Bone-in",
+//     CutType:"Breast",
+//     BestSuitedFor:"Grill",
+//     PackSize:"Regular",
   
-  let cartls = JSON.parse(localStorage.getItem("cartpage")) || [];
-// console.log(cartls)
+//     productPageDetails:"With our Chicken Curry Cut on hand, making a delicious chicken curry has never been easier! Licious Chicken Curry Cut is a mix of bone-in, small pieces of breast, wing (without the tip), leg and thigh meat, enough to feed a small to medium-sized family. This Small pack consists of 13-16 pieces of smaller cuts of chicken, for when you are making a smaller portion of curry or looking to reduce cooking time. Smaller pieces of chicken cook faster because of the higher surface-to-volume ratio.These pieces remain juicy and turn tender once cooked. Make Andhra Style Chicken Curry, Dhaba Style Chicken Curry, Mughlai Chicken Curry and more with Licious Chicken Curry Cut (Small).  Licious chickens are raised on bio-secure farms and are antibiotic-residue free.",
+//     Serves:"4",
+//     image1:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_5785b9065d7e1/3/prod_display_image/1584770437.9208--2020-03-2111:30:37--738?format=webp"
+//   }
 
-display(data);
-  function display(data) {
-        productcontainer.innerHTML = "";
- 
+let data=JSON.parse(localStorage.getItem("in-page-obj"));
+
+//PRODUCT DETAILS DISPLAY - 1
+
+let image=document.createElement("img")
+image.setAttribute("src", data.image)
+let title=document.createElement("h1")
+title.innerText=data.Title
+let details=document.createElement("p")
+details.innerText=data.productPagedetails
+let div2=document.createElement("div")
+let image5=document.createElement("img")
+image5.setAttribute("src", "https://d2407na1z3fc0t.cloudfront.net/Banner/ColdCut.png")
+image5.setAttribute("id", "imgwt")
+let netwt=document.createElement("p")
+netwt.innerText="Net wt."+data.Netwt;
+let image6=document.createElement("img")
+image6.setAttribute("src", "https://d2407na1z3fc0t.cloudfront.net/Banner/Netwt.png")
+
+let grosswt=document.createElement("p")
+grosswt.innerText="Gross Wt."+data.Gross;
+div2.append(image6, grosswt, image5, netwt)
+let price=document.createElement("h2")
+price.innerText="MRP:₹"+data.MRP
+let btn=document.createElement("button")
+btn.innerText="ADD TO CART"
+btn.addEventListener("click", addtoCart)
+let line=document.createElement("hr")
+let image2=document.createElement("img")
+image2.setAttribute("src", "https://www.licious.in/img/rebranding/express_delivery.svg")
+let delivery=document.createElement("p")
+delivery.innerText="Tomorrow 6 AM - 8 AM"
+
+document.querySelector(".image").append(image)
+document.querySelector(".details").append(title, details, div2, price, btn, line, image2, delivery)
+
+//PRODUCT DETAILS DISPLAY - 2
+
+let image3=document.createElement("img")
+image3.setAttribute("src", data.image)
+let div=document.createElement("div")
+let title2=document.createElement("h3")
+title2.innerText=data.Title
+let title3=document.createElement("p")
+title3.innerText=data.Title
+
+div.append(title2, title3);
+document.querySelector("#product").append(image3, div);
+
+let price2=document.createElement("h2")
+price2.innerText="MRP:₹"+data.MRP
+let btn2=document.createElement("button")
+btn2.innerText="ADD TO CART"
+btn2.addEventListener("click", addtoCart)
+let line2=document.createElement("hr")
+let image4=document.createElement("img")
+image4.setAttribute("src", "https://www.licious.in/img/rebranding/express_delivery.svg")
+let delivery2=document.createElement("p")
+delivery2.innerText="Tomorrow 6 AM - 8 AM"
+
+document.querySelector("#price").append(price2, btn2, line2, image4, delivery2)
+
+function addtoCart(){
+    let cartProduct=JSON.parse(localStorage.getItem("cartpage")) || []
+    let filtered=cartProduct.filter(function(el){
         
+        return el.ProductID === data.ProductID;
         
-        data.forEach(function (elem, index) {
-            let main1 = document.createElement("div");
-            main1.classList.add("mainbox");
-            // create a tag
-                                          let ipage = document.createElement("a");//
-                                          
-                                          ipage.addEventListener("click", function () {
-                                            
-                                          console.log("inside ipage");
-                                           let insidepageobj = elem;
-                                          
-                                           
-                                           localStorage.setItem("in-page-obj", JSON.stringify(insidepageobj));
-                                           ipage.href = "productDetails.html";
-                                        })
-                                           
-
-                                            //div-1.1
-                                            let cardtop = document.createElement("div");
-                                            cardtop.classList.add("otherclass");
-
-                                              //img            
-                                            let img = document.createElement("img");
-                                            img.classList.add("topimg");
-                                            img.src = elem.image;
-                   
-                                                //div
-                                            let itemdetails = document.createElement("div");
-                                            itemdetails.classList.add("carddetails");
-
-                                            //div
-                                            let detailstitle = document.createElement("div");
-
-                                              //span            
-                                            let detailstitlespan = document.createElement("span");
-                                            detailstitlespan.classList.add("cardtitle");
-                                            detailstitlespan.innerText = elem.Title;
-                                            detailstitle.append(detailstitlespan);              
-
-                                            //div  
-                                            let detailsdesc = document.createElement("div");
-                                            detailsdesc.classList.add("carddesc");
-                                            detailsdesc.innerText = elem.Details;
-                      
-                                            //p            
-                                            let itemweight = document.createElement("p");
-
-                                             itemweight.classList.add("cardweight");
-
-                                             //span           
-                                             let itemnetweight = document.createElement("span");
-                                             itemnetweight.innerText = "Net wt: " + elem.Netwt;
-
-                                             //span           
-                                             let itemgrossweight = document.createElement("span");
-                                             itemgrossweight.innerText = "Gross: " + elem.Gross;
-                                             itemweight.append(itemnetweight, itemgrossweight);           
-                                             
-                                             
-                                             itemdetails.append(detailstitle, detailsdesc, itemweight);
-                                             cardtop.append(img, itemdetails);
-                                           
-
-                                             ipage.append(cardtop)
-
-                                            
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                        
-                                                let cartend = document.createElement("div");//
-                                                cartend.classList.add("cardbottom");
-
-
-                                                            //div           
-                                                           let rateaction = document.createElement("div");//
-                                                           rateaction.classList.add("cardaction");
-                                                            //div           
-                                                           let rateline = document.createElement("div");
-                                                           rateline.classList.add("cardactionmain");
-                                                           //span           
-                                                           let rate = document.createElement("span");
-                                                           rate.classList.add("rate");
-                                                           let percent = elem.MRP * .8;
-                                                           rate.innerText = "₹" + percent.toFixed(0);;
-                                                           //span           
-                                                           let ratelogo = document.createElement("span");
-                                                           ratelogo.classList.add("ratelogo");
-                                                           ratelogo.innerText = "MRP:" + " ";
-                                                           //span           
-                                                           let rateprice = document.createElement("span");
-                                                           rateprice.classList.add("rateprice");
-                                                           rateprice.innerText = " " + "  ₹" + elem.MRP;
-                                                           //span           
-                                                           let ratediscount = document.createElement("span");
-                                                           ratediscount.classList.add("ratediscount");
-                                                           ratediscount.innerText = "20% OFF";
-                                                           rateline.append(rate, ratelogo, rateprice, ratediscount);
-                                                        //    div            
-                                                           let ratelinened = document.createElement("div");
-                                                           ratelinened.classList.add("cardactionend");
-                                               
-                                               
-                                               
-                                               
-                                                           let minus = document.createElement("div");
-                                                           // minus.innerText="1";
-                                               
-                                                           let addtocart = document.createElement("button");
-                                                           addtocart.classList.add("button");
-                                                           addtocart.classList.add("buttoncart");
-                                               
-                                                           let plus = document.createElement("div");
-                                                           // plus.innerText="1";
-                                               
-                                               
-                                                           addtocart.innerText = "Add To Cart";
-                                               
-                                                           addtocart.addEventListener("click", function () {
-                                                               // console.log("101-",elem.ProductID);
-                                               
-                                                               if (addtocartfunction(elem.ProductID) === true) {
-                                                                   // console.log("4");
-                                                                   alert("Product Added Successfully");
-                                                                   elem["Quantity"] = 1;
-                                                                   
-                                               
-                                                                   // addtocart.innerText=elem.Quantity
-                                               
-                                               
-                                                                   cartls.push(elem);
-                                                                   // console.log(elem);
-                                                                   localStorage.setItem("cartpage", JSON.stringify(cartls));
-                                                                   window.location.reload();
-                                                               } else {
-                                                                   // console.log("5");
-                                                                   alert("Product Already In Cart");
-                                                               }
-                                               
-                                                           })
-                                               
-                                               
-                                               
-                                                           ratelinened.append(minus, addtocart, plus);
-                                                           rateaction.append(rateline, ratelinened);
-
-                                                           let line1 = document.createElement("hr");
-                                                           let endbotton=document.createElement("div");
-                                                           endbotton.classList.add("endbotton1");
-                                                           let imgdel = document.createElement("img");
-                                                           imgdel.src = "https://www.licious.in/img/rebranding/express_delivery.svg";
-                                                           let ipageendspan = document.createElement("span");
-                                                           ipageendspan.classList.add("cardbottomspan");
-                                                           ipageendspan.innerText = "   Today 6 PM - 9 PM";
-                                                           endbotton.append(imgdel,ipageendspan)
-                                                           cartend.append(rateaction,line1,endbotton);
-                 
-            
-            
-      main1.append(ipage,cartend);
-            document.querySelector(".card").append(main1);
-
-
-
-        })
+    })
+    console.log(filtered)
+    if(filtered.length>0){
+        alert("Product is already in Cart")
+    }else{
+        cartProduct.push(data)
+        localStorage.setItem("cartpage", JSON.stringify(cartProduct));
+        window.location.reload();
     }
-
-   
-  
-    let filtermenu = document.querySelector(".Menu");
-    let filterdelivery = document.querySelector(".Delivery");
-    let filterpack = document.querySelector(".pack");
-
-
-
-
-    filtermenu.addEventListener("change", function () {
-        console.log("inside menu");
-
-        let filtered = data.filter(function (element) {
-            return element.Menu === filtermenu.value;
-        })
-        display(filtered);
-    })
-
-
-    filterdelivery.addEventListener("click", function () {
-        console.log("inside delivery");
-
-        let filtereddev = data.filter(function (element) {
-            return element.Delivery === filterdelivery.innerText;
-        })
-        display(filtereddev);
-    })
-
-
-    filterpack.addEventListener("change", function () {
-        console.log("inside pack");
-
-        let filtered = data.filter(function (element) {
-            return element.Packsize === filterpack.value;
-        })
-        display(filtered);
-    })
-
-
-
-// function add to cart declare
-function addtocartfunction(ProductID){
-  // console.log(ProductID);
-  let newcart=cartls.filter(function(elem){
-    return elem.ProductID===ProductID;
-  })
-  // console.log("newcart.length",newcart.length);
-  if(newcart.length>0){
-    // console.log("2");
-                return false;
-             }else{
-              // console.log("3");
-                return true;
-             }
-
-
 }
 
 
- /////////////////////////////////////////////////////////////////////////////////////////////
 
+///////////////////////////////////////////////////
 
-// ////////////////////ajay end
+   // ////////////////////ajay end
 
 
 
@@ -2046,53 +1653,37 @@ let signinbtn =document.querySelector(".signin");
     }
     //login use
 
-    let loginArrr=JSON.parse(localStorage.getItem("logindone"))||[];
+    let formin=document.querySelector("#signinin");
 
-if(loginArrr.length==0){
-    document.querySelector("#person").textContent="Login";
-}else{
-    document.querySelector("#person").textContent=loginArrr[0].name+"\n"+"(logout)"
-}
-
-let formin=document.querySelector("#signinin");
-
-formin.addEventListener("submit",makeLoginin)
+    formin.addEventListener("submit",makeLoginin)
 
 
-function makeLoginin(event){
-    event.preventDefault();
-    
-    let loginArrr= [];
-    localStorage.setItem("logindone",JSON.stringify(loginArrr))
-    
-    count=0;
-    for(let i=0; i<userdetails.length; i++){
-        if(userdetails[i].email===formin.inmail.value && userdetails[i].password==formin.inpassword.value){
-            loginArrr.push(userdetails[i]);
-            count++;
-            
-            localStorage.setItem("logindone",JSON.stringify(loginArrr))
+    function makeLoginin(event){
+        event.preventDefault();
+        let loginArrr=[];
+        count=0;
+        for(let i=0; i<userdetails.length; i++){
+            if(userdetails[i].email===formin.inmail.value && userdetails[i].password==formin.inpassword.value){
+                loginArrr.push(userdetails[i]);
+                count++;
+            }
+        }  
+        if(count==1){
+            alert("Successfully Signin") 
+            formin.inmail.value=""
+            formin.inpassword.value=""
+            itscool(loginArrr);
+        }else{
+            alert("Wrong input data") 
         }
-    }  
-    if(count==1){
-        alert("Successfully Signin")
-        formin.inmail.value=""
-        formin.inpassword.value=""
-        itscool(loginArrr);
-        
-    }else{
-        alert("Wrong input data") 
+        let slidein=document.querySelector(".signin-slide")
+        slidein.style.right="-500px"
     }
-    let slidein=document.querySelector(".signin-slide")
-    slidein.style.right="-500px"
-
-}
-function itscool(loginArrr){
-    if(loginArrr.length==1){
-        console.log(loginArrr[0].name)
-        document.querySelector("#person").textContent=loginArrr[0].name+"\n"+"(logout)"
-}
-// window.location.reload();       
+    function itscool(loginArrr){
+        if(loginArrr.length==1){
+            console.log(loginArrr[0].name)
+            document.querySelector("#person").textContent=loginArrr[0].name+"\n"+"(logout)"
+    }
 }
 /////////////////////////////////////////////////////////////////////////cart//////////////////////
 
@@ -2317,5 +1908,7 @@ function deleteOne(index,elem){
 
       
  }
+
+
+
 </script>
-</html>
