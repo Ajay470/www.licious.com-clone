@@ -2206,37 +2206,53 @@ let signinbtn =document.querySelector(".signin");
     }
     //login use
 
-    let formin=document.querySelector("#signinin");
+    let loginArrr=JSON.parse(localStorage.getItem("logindone"))||[];
 
-    formin.addEventListener("submit",makeLoginin)
+if(loginArrr.length==0){
+    document.querySelector("#person").textContent="Login";
+}else{
+    document.querySelector("#person").textContent=loginArrr[0].name+"\n"+"(logout)"
+}
+
+let formin=document.querySelector("#signinin");
+
+formin.addEventListener("submit",makeLoginin)
 
 
-    function makeLoginin(event){
-        event.preventDefault();
-        let loginArrr=[];
-        count=0;
-        for(let i=0; i<userdetails.length; i++){
-            if(userdetails[i].email===formin.inmail.value && userdetails[i].password==formin.inpassword.value){
-                loginArrr.push(userdetails[i]);
-                count++;
-            }
-        }  
-        if(count==1){
-            alert("Successfully Signin") 
-            formin.inmail.value=""
-            formin.inpassword.value=""
-            itscool(loginArrr);
-        }else{
-            alert("Wrong input data") 
+function makeLoginin(event){
+    event.preventDefault();
+    
+    let loginArrr= [];
+    localStorage.setItem("logindone",JSON.stringify(loginArrr))
+    
+    count=0;
+    for(let i=0; i<userdetails.length; i++){
+        if(userdetails[i].email===formin.inmail.value && userdetails[i].password==formin.inpassword.value){
+            loginArrr.push(userdetails[i]);
+            count++;
+            
+            localStorage.setItem("logindone",JSON.stringify(loginArrr))
         }
-        let slidein=document.querySelector(".signin-slide")
-        slidein.style.right="-500px"
+    }  
+    if(count==1){
+        alert("Successfully Signin")
+        formin.inmail.value=""
+        formin.inpassword.value=""
+        itscool(loginArrr);
+        
+    }else{
+        alert("Wrong input data") 
     }
-    function itscool(loginArrr){
-        if(loginArrr.length==1){
-            console.log(loginArrr[0].name)
-            document.querySelector("#person").textContent=loginArrr[0].name+"\n"+"(logout)"
-    }
+    let slidein=document.querySelector(".signin-slide")
+    slidein.style.right="-500px"
+
+}
+function itscool(loginArrr){
+    if(loginArrr.length==1){
+        console.log(loginArrr[0].name)
+        document.querySelector("#person").textContent=loginArrr[0].name+"\n"+"(logout)"
+}
+// window.location.reload();       
 }
 /////////////////////////////////////////////////////////////////////////cart//////////////////////
 
